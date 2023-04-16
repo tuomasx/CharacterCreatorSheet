@@ -5,7 +5,7 @@ Course Project: D&D Character Sheet Creator App
 Change Log:
 
 Version 1.1.1 - 16.4.2023
-- Changed Background color to macth content
+- Changed Background color to match content
 - Aligned Content to the top of the side Menu
 
 Version 1.1.2 - 16.4.2023
@@ -28,5 +28,12 @@ Version 1.1.6 - 16.4.2023
 - Added CharacterAbilityScore class
 - Added added Ability Score selectors using JSpinner
 
+Version 1.1.6 - 16.4.2023
+- Added CharacterEquipment class
+- Added added Armor dropdown menu using JComboBox
+
+Version 1.1.6 - 16.4.2023
+- Added CharacterDescription class
+- Added Character description fields
 
 

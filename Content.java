@@ -52,7 +52,7 @@ public class Content extends JPanel{
 		GridBagConstraints constraints4 = new GridBagConstraints();
     	
 		constraints4.anchor = GridBagConstraints.NORTH;
-    	constraints4.weighty = 1;
+    	constraints4.weighty = 0;
 		
 		constraints4.gridx = 0;
         constraints4.gridy = 3;
@@ -60,9 +60,16 @@ public class Content extends JPanel{
 		add(new CharacterEquipment(), constraints4);
 
 
-
 		//Character Description
-
+		GridBagConstraints constraints5 = new GridBagConstraints();
+    	
+		constraints5.anchor = GridBagConstraints.NORTH;
+    	constraints5.weighty = 1;
+		
+		constraints5.gridx = 0;
+        constraints5.gridy = 4;
+        constraints5.gridwidth = 5;
+		add(new CharacterDescription(), constraints5);
 
 
     }
