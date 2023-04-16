@@ -2,7 +2,7 @@ Ohjelmointi 4 : Programming 4
 Group 20: 
 Course Project: D&D Character Sheet Creator App
 
-Change Log:
+Changelog:
 
 Version 1.1.1 - 16.4.2023
 - Changed Background color to match content
@@ -43,4 +43,15 @@ Version 1.1.9 - 16.4.2023
 Version 1.2.0 - 16.4.2023
 - Changed CharacterSheet to use Singleton
 - Added input reading to CharacterDescription to update CharacterSheet using DocumentListener
+
+Version 1.2.1 - 16.4.2023
+- Added DocumentListener CharacterDetails Name & PlayerName
+- TODO: Change Age, Gender & Alignment Types to JSpinner, ComboBox & ComboBox
+
+
+
+
+
+
+
 

@@ -1,5 +1,9 @@
 import java.awt.*;
 import javax.swing.*;
+import java.awt.event.*;  
+import javax.swing.event.*;
+import javax.swing.text.*;
+
 
 public class CharacterDetails extends JPanel{
     
@@ -28,9 +32,40 @@ public class CharacterDetails extends JPanel{
         JPanel fieldsPanel = new JPanel(new GridBagLayout());
         fieldsPanel.setBorder(BorderFactory.createEmptyBorder(10, 10, 10, 10));
         
+        //Name:
         JLabel nameLabel = new JLabel("Name: ");
         nameField = new JTextField(10);
         nameField.setPreferredSize(new Dimension(150, 24));
+        //DocumentListener:
+        nameField.getDocument().addDocumentListener(new DocumentListener() {
+            public void changedUpdate(DocumentEvent e) {
+              update();
+            }
+            public void removeUpdate(DocumentEvent e) {
+              update();
+            }
+            public void insertUpdate(DocumentEvent e) {
+              update();
+            }
+          
+            public void update() {
+               //Set input values from GUI to CharacterSheet Inputs:
+                CharacterSheet.getInstance().setInputName(nameField.getText());
+                //Wrong Type of Field for Age
+                //CharacterSheet.getInstance().setInputAge(ageField.getText());
+                //Change Gender to ComboBox dropdown select?
+                CharacterSheet.getInstance().setInputGender(genderField.getText());
+                //Change Alignment to ComboBox dropdown select.
+                CharacterSheet.getInstance().setInputAlignment(alignmentField.getText());
+                CharacterSheet.getInstance().setInputPlayerName(playerField.getText());
+                //CharacterSheet.getInstance().setInputCharacterDescription(characterDescription.getText());
+                //Calculate Changes:
+                CharacterSheet.getInstance().calculateOutput();
+                //Display Changes:
+                //Test print to console
+                CharacterSheet.getInstance().printOutputs();
+            }
+        }); //End of DocumentListener
         constraints.gridx = 0;
         constraints.gridy = 0;
         constraints.gridwidth = 1;
@@ -39,6 +74,7 @@ public class CharacterDetails extends JPanel{
         constraints.gridx = 1;
         fieldsPanel.add(nameField, constraints);
 
+        //Age:
         JLabel ageLabel = new JLabel("Age: ");
         ageField = new JTextField(3);
         ageField.setPreferredSize(new Dimension(150, 24));
@@ -48,6 +84,7 @@ public class CharacterDetails extends JPanel{
         constraints.gridx = 1;
         fieldsPanel.add(ageField, constraints);
 
+        //Gender:
         JLabel genderLabel = new JLabel("Gender: ");
         genderField = new JTextField(6);
         genderField.setPreferredSize(new Dimension(75, 24));
@@ -57,6 +94,7 @@ public class CharacterDetails extends JPanel{
         constraints.gridx = 1;
         fieldsPanel.add(genderField, constraints);
 
+        //Alignment:
         JLabel alignmentLabel = new JLabel("Alignment: ");
         alignmentField = new JTextField(10);
         alignmentField.setPreferredSize(new Dimension(150, 24));
@@ -66,9 +104,40 @@ public class CharacterDetails extends JPanel{
         constraints.gridx = 1;
         fieldsPanel.add(alignmentField, constraints);
 
+        //Player Name:
         JLabel playerLabel = new JLabel("Player Name: ");
         playerField = new JTextField(10);
         playerField.setPreferredSize(new Dimension(150, 24));
+        //DocumentListener:
+        playerField.getDocument().addDocumentListener(new DocumentListener() {
+            public void changedUpdate(DocumentEvent e) {
+              update();
+            }
+            public void removeUpdate(DocumentEvent e) {
+              update();
+            }
+            public void insertUpdate(DocumentEvent e) {
+              update();
+            }
+          
+            public void update() {
+               //Set input values from GUI to CharacterSheet Inputs:
+                CharacterSheet.getInstance().setInputName(nameField.getText());
+                //Wrong Type of Field for Age
+                //CharacterSheet.getInstance().setInputAge(ageField.getText());
+                //Change Gender to ComboBox dropdown select?
+                CharacterSheet.getInstance().setInputGender(genderField.getText());
+                //Change Alignment to ComboBox dropdown select.
+                CharacterSheet.getInstance().setInputAlignment(alignmentField.getText());
+                CharacterSheet.getInstance().setInputPlayerName(playerField.getText());
+                //CharacterSheet.getInstance().setInputCharacterDescription(characterDescription.getText());
+                //Calculate Changes:
+                CharacterSheet.getInstance().calculateOutput();
+                //Display Changes:
+                //Test print to console
+                CharacterSheet.getInstance().printOutputs();
+            }
+        }); //End of DocumentListener
         constraints.gridx = 0;
         constraints.gridy = 4;
         fieldsPanel.add(playerLabel, constraints);
