@@ -250,13 +250,30 @@ public class CharacterSheet {
     
 
 
+    private static CharacterSheet characterSheetInstance;
 
+    public static CharacterSheet getInstance() {
+        if (characterSheetInstance == null) {
+            characterSheetInstance = new CharacterSheet();
+        }
+        return characterSheetInstance;
+    }
+
+    // Singleton: prevent duplicate objects
+    private CharacterSheet() {
+    }
+
+
+
+
+    /* 
     //Constructor:
     public CharacterSheet() {
         //Sets Input & Output values to Defaults
         clearInputs();
         clearOutputs();
     }
+    */
 
 
 
@@ -267,7 +284,7 @@ public class CharacterSheet {
 
 
 
-    public static void calculateOutput() {
+    public void calculateOutput() {
         // Calculates input variables to produce output variables
 
         //Clears previous calculated outputs
@@ -1246,7 +1263,7 @@ public class CharacterSheet {
 
 
 
-    private static void clearOutputs() {
+    public static void clearOutputs() {
         // Sets output variables Back to 0
 
         // Proficiency Bonus:
@@ -1428,7 +1445,7 @@ public class CharacterSheet {
 
     }
 
-    private static void clearInputs() {
+    public static void clearInputs() {
         // Input Variables:
 
         // 1. Character Details
@@ -1469,7 +1486,7 @@ public class CharacterSheet {
 
     }
 
-    private static void printOutputs() {
+    public void printOutputs() {
         //Print Outputs for testing:
 
         System.out.println("Character Sheet:");
@@ -1771,7 +1788,7 @@ public class CharacterSheet {
 
 
 
-    public static void setInputCharacterDescription(String inputCharacterDescription) {
+    public void setInputCharacterDescription(String inputCharacterDescription) {
         CharacterSheet.inputCharacterDescription = inputCharacterDescription;
     }
 
@@ -1783,7 +1800,7 @@ public class CharacterSheet {
 
 
 
-    public static void setInputCharacterPersonality(String inputCharacterPersonality) {
+    public void setInputCharacterPersonality(String inputCharacterPersonality) {
         CharacterSheet.inputCharacterPersonality = inputCharacterPersonality;
     }
 
@@ -1795,7 +1812,7 @@ public class CharacterSheet {
 
 
 
-    public static void setInputCharacterIdeals(String inputCharacterIdeals) {
+    public void setInputCharacterIdeals(String inputCharacterIdeals) {
         CharacterSheet.inputCharacterIdeals = inputCharacterIdeals;
     }
 
@@ -1807,7 +1824,7 @@ public class CharacterSheet {
 
 
 
-    public static void setInputCharacterBonds(String inputCharacterBonds) {
+    public void setInputCharacterBonds(String inputCharacterBonds) {
         CharacterSheet.inputCharacterBonds = inputCharacterBonds;
     }
 
@@ -1819,7 +1836,7 @@ public class CharacterSheet {
 
 
 
-    public static void setInputCharacterFlaws(String inputCharacterFlaws) {
+    public void setInputCharacterFlaws(String inputCharacterFlaws) {
         CharacterSheet.inputCharacterFlaws = inputCharacterFlaws;
     }
 

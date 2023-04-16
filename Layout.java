@@ -6,7 +6,7 @@ import java.awt.*;
 public class Layout extends JFrame{
 	
 	
-	public Layout() {
+	public Layout( ) {
 		
 		
 		JFrame frame = new JFrame();
@@ -52,7 +52,7 @@ public class Layout extends JFrame{
         
 	}
 	
-	public static void createMainFrame() {
+	public static void createMainFrame( ) {
 		new Layout();
 	}
 

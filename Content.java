@@ -9,7 +9,7 @@ public class Content extends JPanel{
     
 	private JPanel contentPane;
     
-    Content() {
+    Content( ) {
     	
 		//Character Details:
     	setLayout(new GridBagLayout());

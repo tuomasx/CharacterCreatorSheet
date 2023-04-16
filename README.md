@@ -40,3 +40,7 @@ Version 1.1.9 - 16.4.2023
 - Added Weapon Select Dropdown
 - Added Other item & Gold selections
 
+Version 1.2.0 - 16.4.2023
+- Changed CharacterSheet to use Singleton
+- Added input reading to CharacterDescription to update CharacterSheet using DocumentListener
+
