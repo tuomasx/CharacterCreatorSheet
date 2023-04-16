@@ -17,7 +17,9 @@ Version 1.1.2 - 16.4.2023
 Version 1.1.3 - 16.4.2023
 -Added a Scrollbar to the side menu using JScrollPane
 
-
+Version 1.1.4 - 16.4.2023
+-Added CharacterFeatures Class
+-Implemented a Dropdown menu for Race & class using JComboBox
 
 
 
