@@ -12,10 +12,13 @@ public class CharacterFeatures extends JPanel {
     
 
     // "Dragonborn" "Dwarf" "Elf" "Gnome" "Half-Elf" "Half-Orc" "Halfling" "Human" "Tiefling"
-    private String races[]={"Dragonborn","Dwarf","Elf","Gnome","Half-Elf","Half-Orc","Halfling","Human","Tiefling"};
-    //
-    private String classes[]={"Artificer","Dwarf","Elf","Gnome","Half-Elf","Half-Orc","Halfling","Human","Tiefling"};
-
+    private String races[]={"", "Dragonborn","Dwarf","Elf","Gnome","Half-Elf","Half-Orc","Halfling","Human","Tiefling"};
+    // "Artificer" "Barbarian" "Bard" "Cleric" "Druid" "Fighter" "Monk" "Paladin" "Ranger" "Rogue" "Sorcerer" "Warlock" "Wizard"
+    private String classes[]={"", "Artificer","Barbarian","Cleric","Druid","Fighter","Monk","Paladin","Ranger","Rogue","Sorcerer","Warlock","Wizard"};
+    // "Acolyte" "Charlatan" "Criminal" "Entertainer" "Folk Hero" "Gladiator" "Guild Artisan" "Guild Merchant" "Hermit" "Knight" "Noble" "Outlander" "Pirate" "Sage" "Sailor" "Soldier" "Urchin" ""
+    private String backgrounds[]={"", "Acolyte","Charlatan","Criminal","Entertainer","Folk Hero","Gladiator","Guild Artisan","Guild Merchant","Hermit","Knight","Noble","Outlander","Pirate","Sage","Sailor","Soldier","Urchin"};
+    // Level: Number range: 1 - 20
+    SpinnerModel levelValue = new SpinnerNumberModel(1, 1, 20, 1);
 
 
     public CharacterFeatures () {
@@ -66,8 +69,28 @@ public class CharacterFeatures extends JPanel {
         fieldsPanel.add(classComboBox, constraints2);
 
         //Number select Menu: Level
+        JLabel levelLabel = new JLabel("Level: ");
+        //JSpinner number select:
+        JSpinner levelSpinner = new JSpinner(levelValue);
+        constraints2.gridx = 0;
+        constraints2.gridy = 2;
+        constraints2.gridwidth = 1;
+        constraints2.fill = GridBagConstraints.HORIZONTAL;
+        fieldsPanel.add(levelLabel, constraints2);
+        constraints2.gridx = 1;
+        fieldsPanel.add(levelSpinner, constraints2);
 
         //Dropdown Menu: Background
+        JLabel backgroundLabel = new JLabel("Background: ");
+        JComboBox backgroundComboBox = new JComboBox<>(backgrounds);
+        backgroundComboBox.setPreferredSize(new Dimension(150, 24));
+        constraints2.gridx = 0;
+        constraints2.gridy = 3;
+        constraints2.gridwidth = 1;
+        constraints2.fill = GridBagConstraints.HORIZONTAL;
+        fieldsPanel.add(backgroundLabel, constraints2);
+        constraints2.gridx = 1;
+        fieldsPanel.add(backgroundComboBox, constraints2);
 
 
         //
