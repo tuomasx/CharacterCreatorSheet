@@ -14,6 +14,8 @@ Version 1.1.2 - 16.4.2023
 -Added Getters & Setters for CharacterSheet class Inputs
 -Created README.md File 
 
+Version 1.1.3 - 16.4.2023
+-Added a Scrollbar to the side menu using JScrollPane
 
 
 

@@ -9,7 +9,9 @@ public class CharacterDetails extends JPanel{
     private JTextField alignmentField;
     private JTextField playerField;
     
-    private String races[]={"India","Aus","U.S.A","England","Newzealand"};
+    //private String races[]={"India","Aus","U.S.A","England","Newzealand"};
+    // "Dragonborn" "Dwarf" "Elf" "Gnome" "Half-Elf" "Half-Orc" "Halfling" "Human" "Tiefling"
+    private String races[]={"Dragonborn","Dwarf","Elf","Gnome","Half-Elf","Half-Orc","Halfling","Human","Tiefling"};
     
     public CharacterDetails() {
         
