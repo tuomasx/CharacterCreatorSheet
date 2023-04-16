@@ -23,3 +23,10 @@ Version 1.1.4 - 16.4.2023
 Version 1.1.5 - 16.4.2023
 - Added Level selector using JSpinner
 - Added Background dropdown Menu
+
+Version 1.1.6 - 16.4.2023
+- Added CharacterAbilityScore class
+- Added added Ability Score selectors using JSpinner
+
+
+

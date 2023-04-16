@@ -11,7 +11,7 @@ public class Content extends JPanel{
     
     Content() {
     	
-		
+		//Character Details:
     	setLayout(new GridBagLayout());
     	GridBagConstraints constraints = new GridBagConstraints();
     	
@@ -24,16 +24,28 @@ public class Content extends JPanel{
     	
     	add(new CharacterDetails(), constraints);
 		
-
+		//Character Features
 		GridBagConstraints constraints2 = new GridBagConstraints();
     	
 		constraints2.anchor = GridBagConstraints.NORTH;
-    	constraints2.weighty = 1;
+    	constraints2.weighty = 0;
 		
 		constraints2.gridx = 0;
-        constraints2.gridy = 2;
+        constraints2.gridy = 1;
         constraints2.gridwidth = 5;
 		add(new CharacterFeatures(), constraints2);
+
+
+		//Character Ability Scores
+		GridBagConstraints constraints3 = new GridBagConstraints();
+    	
+		constraints3.anchor = GridBagConstraints.NORTH;
+    	constraints3.weighty = 1;
+		
+		constraints3.gridx = 0;
+        constraints3.gridy = 2;
+        constraints3.gridwidth = 5;
+		add(new CharacterAbilityScores(), constraints3);
 
 
 
