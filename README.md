@@ -28,12 +28,15 @@ Version 1.1.6 - 16.4.2023
 - Added CharacterAbilityScore class
 - Added added Ability Score selectors using JSpinner
 
-Version 1.1.6 - 16.4.2023
+Version 1.1.7 - 16.4.2023
 - Added CharacterEquipment class
 - Added added Armor dropdown menu using JComboBox
 
-Version 1.1.6 - 16.4.2023
+Version 1.1.8 - 16.4.2023
 - Added CharacterDescription class
 - Added Character description fields
 
+Version 1.1.9 - 16.4.2023
+- Added Weapon Select Dropdown
+- Added Other item & Gold selections
 
