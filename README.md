@@ -60,3 +60,6 @@ Version 1.2.3 - 17.4.2023
 Version 1.2.4 - 17.4.2023
 - Changed CharacterDetails Age to JSpinner & Added input reading using DocumentReader
 
+Version 1.2.5 - 17.4.2023
+- Changed character Alignment & gender to ComboBox & Added input Reading
+
