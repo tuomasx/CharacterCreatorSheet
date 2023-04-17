@@ -99,32 +99,21 @@ public class CharacterFeatures extends JPanel implements ActionListener {
         JTextField textField = editor.getTextField();
         textField.getDocument().addDocumentListener( new DocumentListener()
         {
-            public void insertUpdate(DocumentEvent e)
-            {
-                //System.out.println("insert");
+            public void insertUpdate(DocumentEvent e) {
                 update();
             }
-
-            public void removeUpdate(DocumentEvent e)
-            {
-                //System.out.println("remove");
+            public void removeUpdate(DocumentEvent e) {
                 update();
             }
-
             public void changedUpdate(DocumentEvent e) {
                 update();
             }
-
             public void update() {
                 //Set input values from GUI to CharacterSheet Inputs:
-                 //CharacterSheet.getInstance().setInputCharacterDescription(characterDescription.getText());
-                 
                 //Race
-                //CharacterSheet.getInstance().setInputRace(raceField.getText());
                 charRace = raceComboBox.getSelectedItem().toString();
                 CharacterSheet.getInstance().setInputRace(charRace);
                 //Class
-                //CharacterSheet.getInstance().setInputClass(classField.getText());
                 charClass = classComboBox.getSelectedItem().toString();
                 CharacterSheet.getInstance().setInputClass(charClass);
                 //Added Change Listener to Level JSpinner instead
@@ -134,11 +123,11 @@ public class CharacterFeatures extends JPanel implements ActionListener {
                 charBackground = backgroundComboBox.getSelectedItem().toString();
                 CharacterSheet.getInstance().setInputBackground(charBackground);
                  
-                 //Calculate Changes:
-                 CharacterSheet.getInstance().calculateOutput();
-                 //Display Changes:
-                 //Test print to console
-                 CharacterSheet.getInstance().printOutputs();
+                //Calculate Changes:
+                CharacterSheet.getInstance().calculateOutput();
+                //Display Changes:
+                //Test print to console
+                CharacterSheet.getInstance().printOutputs();
              }
         }); //End of DocumentListener for Level
 

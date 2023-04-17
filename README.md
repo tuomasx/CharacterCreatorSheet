@@ -57,5 +57,6 @@ Version 1.2.3 - 17.4.2023
 - Updated CharacterSheet Default values to match
 - Added DocumentListener to Level JSpinner in CharacterFeatures
 
-
+Version 1.2.4 - 17.4.2023
+- Changed CharacterDetails Age to JSpinner & Added input reading using DocumentReader
 
