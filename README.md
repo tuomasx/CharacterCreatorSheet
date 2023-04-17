@@ -53,9 +53,9 @@ Version 1.2.2 - 17.4.2023
 - Added ActionListener to Race, Class & Background
 - TODO: add input reading to Level
 
-
-
-
+Version 1.2.3 - 17.4.2023
+- Updated CharacterSheet Default values to match
+- Added DocumentListener to Level JSpinner in CharacterFeatures
 
 
 

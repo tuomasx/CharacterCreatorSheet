@@ -26,15 +26,15 @@ public class CharacterSheet {
     // 2. Character Features
     static String inputRace = "";
     static String inputClass = "";
-    static int inputLevel = 0;
+    static int inputLevel = 1;
     static String inputBackground = "";
     // 3. Ability Scores
-    static int inputStrenght = 0;
-    static int inputDexterity = 0;
-    static int inputConstitution = 0;
-    static int inputIntelligence = 0;
-    static int inputWisdom = 0;
-    static int inputCharisma = 0;
+    static int inputStrenght = 10;
+    static int inputDexterity = 10;
+    static int inputConstitution = 10;
+    static int inputIntelligence = 10;
+    static int inputWisdom = 10;
+    static int inputCharisma = 10;
     // 4. Equipment
     static String inputArmor = "";
     static String inputWeapon = "";
@@ -1457,15 +1457,15 @@ public class CharacterSheet {
         // 2. Character Features
         inputRace = "";
         inputClass = "";
-        inputLevel = 0;
+        inputLevel = 1;
         inputBackground = "";
         // 3. Ability Scores
-        inputStrenght = 0;
-        inputDexterity = 0;
-        inputConstitution = 0;
-        inputIntelligence = 0;
-        inputWisdom = 0;
-        inputCharisma = 0;
+        inputStrenght = 10;
+        inputDexterity = 10;
+        inputConstitution = 10;
+        inputIntelligence = 10;
+        inputWisdom = 10;
+        inputCharisma = 10;
         // 4. Equipment
         inputArmor = "";
         inputWeapon = "";
