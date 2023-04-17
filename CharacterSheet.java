@@ -1608,7 +1608,7 @@ public class CharacterSheet {
 
 
 
-    public static void setInputRace(String inputRace) {
+    public void setInputRace(String inputRace) {
         CharacterSheet.inputRace = inputRace;
     }
 
@@ -1620,7 +1620,7 @@ public class CharacterSheet {
 
 
 
-    public static void setInputClass(String inputClass) {
+    public void setInputClass(String inputClass) {
         CharacterSheet.inputClass = inputClass;
     }
 
@@ -1632,7 +1632,7 @@ public class CharacterSheet {
 
 
 
-    public static void setInputLevel(int inputLevel) {
+    public void setInputLevel(int inputLevel) {
         CharacterSheet.inputLevel = inputLevel;
     }
 
@@ -1644,7 +1644,7 @@ public class CharacterSheet {
 
 
 
-    public static void setInputBackground(String inputBackground) {
+    public void setInputBackground(String inputBackground) {
         CharacterSheet.inputBackground = inputBackground;
     }
 

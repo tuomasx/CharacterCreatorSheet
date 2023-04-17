@@ -2,13 +2,18 @@
 import java.awt.*;
 import javax.swing.*;
 
+import java.awt.event.*;  
 
-public class CharacterFeatures extends JPanel {
+import javax.swing.event.*;
+import javax.swing.text.*;
 
-    private JTextField raceField;
-    private JTextField classField;
-    private JTextField levelField;
-    private JTextField backgroundField;
+public class CharacterFeatures extends JPanel implements ActionListener {
+
+    private JTextField raceField = new JTextField("");
+    private JTextField classField = new JTextField("");
+    //private JTextField levelField;
+    private JTextField backgroundField = new JTextField("");
+    
     
 
     // "Dragonborn" "Dwarf" "Elf" "Gnome" "Half-Elf" "Half-Orc" "Halfling" "Human" "Tiefling"
@@ -20,6 +25,14 @@ public class CharacterFeatures extends JPanel {
     // Level: Number range: 1 - 20
     SpinnerModel levelValue = new SpinnerNumberModel(1, 1, 20, 1);
 
+    private JComboBox raceComboBox = new JComboBox<>(races);
+    private JComboBox classComboBox = new JComboBox<>(classes);
+    private JComboBox backgroundComboBox = new JComboBox<>(backgrounds);
+    
+    private String charRace = "";
+    private String charClass = "";
+    private int charLevel = 1;
+    private String charBackground = "";
 
     public CharacterFeatures () {
 
@@ -46,8 +59,11 @@ public class CharacterFeatures extends JPanel {
 
         //Dropdown Menu: Race
         JLabel raceLabel = new JLabel("Race: ");
-        JComboBox raceComboBox = new JComboBox<>(races);
+        raceComboBox = new JComboBox<>(races);
         raceComboBox.setPreferredSize(new Dimension(150, 24));
+        //Actionlistener:
+        raceComboBox.addActionListener(this);
+        //Constraints:
         constraints2.gridx = 0;
         constraints2.gridy = 0;
         constraints2.gridwidth = 1;
@@ -55,11 +71,15 @@ public class CharacterFeatures extends JPanel {
         fieldsPanel.add(raceLabel, constraints2);
         constraints2.gridx = 1;
         fieldsPanel.add(raceComboBox, constraints2);
+        
 
         //Dropdown Menu: Class
         JLabel classLabel = new JLabel("Class: ");
-        JComboBox classComboBox = new JComboBox<>(classes);
-        raceComboBox.setPreferredSize(new Dimension(150, 24));
+        classComboBox = new JComboBox<>(classes);
+        classComboBox.setPreferredSize(new Dimension(150, 24));
+        //Actionlistener:
+        classComboBox.addActionListener(this);
+        //Constraints:
         constraints2.gridx = 0;
         constraints2.gridy = 1;
         constraints2.gridwidth = 1;
@@ -68,10 +88,38 @@ public class CharacterFeatures extends JPanel {
         constraints2.gridx = 1;
         fieldsPanel.add(classComboBox, constraints2);
 
+
         //Number select Menu: Level
         JLabel levelLabel = new JLabel("Level: ");
         //JSpinner number select:
         JSpinner levelSpinner = new JSpinner(levelValue);
+        //ChangeListener:
+
+        /*
+        levelSpinner.addChangeListener(new ChangeListener() {      
+            @Override
+            public void stateChanged(ChangeEvent e) {
+              // handle update:
+                //Level:
+                int value = (Integer) levelValue.getValue();
+                CharacterSheet.getInstance().setInputLevel(value);
+
+                //Set input values from GUI to CharacterSheet Inputs:
+                //Race
+                charRace = raceComboBox.getSelectedItem().toString();
+                CharacterSheet.getInstance().setInputRace(charRace);
+                //Class
+                charClass = classComboBox.getSelectedItem().toString();
+                CharacterSheet.getInstance().setInputClass(charClass);
+                //Background
+                charBackground = backgroundComboBox.getSelectedItem().toString();
+                CharacterSheet.getInstance().setInputBackground(charBackground);
+
+            }
+          });
+        */
+        
+        //Constraints:
         constraints2.gridx = 0;
         constraints2.gridy = 2;
         constraints2.gridwidth = 1;
@@ -82,8 +130,11 @@ public class CharacterFeatures extends JPanel {
 
         //Dropdown Menu: Background
         JLabel backgroundLabel = new JLabel("Background: ");
-        JComboBox backgroundComboBox = new JComboBox<>(backgrounds);
+        backgroundComboBox = new JComboBox<>(backgrounds);
         backgroundComboBox.setPreferredSize(new Dimension(150, 24));
+        //Actionlistener:
+        backgroundComboBox.addActionListener(this);
+        //Constraints:
         constraints2.gridx = 0;
         constraints2.gridy = 3;
         constraints2.gridwidth = 1;
@@ -91,7 +142,7 @@ public class CharacterFeatures extends JPanel {
         fieldsPanel.add(backgroundLabel, constraints2);
         constraints2.gridx = 1;
         fieldsPanel.add(backgroundComboBox, constraints2);
-
+        
 
         //
         constraints2.gridx = 0;
@@ -101,5 +152,41 @@ public class CharacterFeatures extends JPanel {
         add(fieldsPanel, constraints2);
         
     }
+
+
+
+    
+    
+    @Override
+    public void actionPerformed(ActionEvent e) {
+
+        //Check for null before: ?
+
+
+        //Set input values from GUI to CharacterSheet Inputs:
+        //Race
+        //CharacterSheet.getInstance().setInputRace(raceField.getText());
+        charRace = raceComboBox.getSelectedItem().toString();
+        CharacterSheet.getInstance().setInputRace(charRace);
+        //Class
+        //CharacterSheet.getInstance().setInputClass(classField.getText());
+        charClass = classComboBox.getSelectedItem().toString();
+        CharacterSheet.getInstance().setInputClass(charClass);
+        //Added Change Listener to Level JSpinner instead
+        int value = (Integer) levelValue.getValue();
+        CharacterSheet.getInstance().setInputLevel(value);
+        //Background
+        charBackground = backgroundComboBox.getSelectedItem().toString();
+        CharacterSheet.getInstance().setInputBackground(charBackground);
+
+        //Calculate Changes:
+        CharacterSheet.getInstance().calculateOutput();
+        //Display Changes:
+        //Test print to console
+        CharacterSheet.getInstance().printOutputs();
+        
+       
+    }
     
 }
+

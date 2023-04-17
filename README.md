@@ -48,6 +48,10 @@ Version 1.2.1 - 16.4.2023
 - Added DocumentListener CharacterDetails Name & PlayerName
 - TODO: Change Age, Gender & Alignment Types to JSpinner, ComboBox & ComboBox
 
+Version 1.2.2 - 17.4.2023
+- Added Input reading to CharacterFeatures
+- Added ActionListener to Race, Class & Background
+- TODO: add input reading to Level
 
 
 
