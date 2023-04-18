@@ -77,3 +77,8 @@ Version 1.2.9 - 18.4.2023
 
 Version 1.3.0 - 18.4.2023
 - Added OutputSheet label updating from name field
+
+Version 1.3.1 - 18.4.2023
+- Changed to relative path for baseImage. 
+- OutputSheet now displays boolean value of shield.
+- CharacterEquipment listener implemented
