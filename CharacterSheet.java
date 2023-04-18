@@ -1535,10 +1535,11 @@ public class CharacterSheet {
         System.out.println("");
         System.out.println("Passive Perception  " + passivePerception);
         System.out.println("");
-        System.out.println("Equipment:          " + inputArmor);
-        System.out.println("Equipment:          " + inputWeapon);
-        System.out.println("Equipment:          " + inputOther);
-        System.out.println("Equipment: Gold:    " + outputGold); // input + class + background?
+        System.out.println("Equipment Armor:    " + inputArmor);
+        System.out.println("Equipment Shield:   " + inputShield); 
+        System.out.println("Equipment Weapon:   " + inputWeapon);
+        System.out.println("Equipment Other:    " + inputOther);
+        System.out.println("Equipment Gold:     " + outputGold); // input + class + background?
         System.out.println("");
         System.out.println("Personality Traits: " + inputCharacterPersonality);
         System.out.println("Ideals:             " + inputCharacterIdeals);
