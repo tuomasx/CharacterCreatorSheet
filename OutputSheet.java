@@ -92,7 +92,8 @@ public class OutputSheet extends JPanel {
 
 	public void setOutputName(String outputName) {
 		this.outputName = outputName;
-		//label.setText(outputName);
+        //Test: Update test label:
+		label.setText(outputName);
 	}
 
 

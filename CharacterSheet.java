@@ -360,6 +360,9 @@ public class CharacterSheet {
 
     private void updateOutputSheet() {
         //Send update to output sheet
+
+        //Test Output: Name
+        OutputSheet.getInstance().setOutputName(inputName);
     }
 
 

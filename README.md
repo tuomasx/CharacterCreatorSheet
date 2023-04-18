@@ -74,3 +74,6 @@ Version 1.2.8 - 18.4.2023
 
 Version 1.2.9 - 18.4.2023
 - Added Class OutputSheet & Migrated characterSheet image & label to it.
+
+Version 1.3.0 - 18.4.2023
+- Added OutputSheet label updating from name field
