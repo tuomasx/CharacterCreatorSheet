@@ -68,3 +68,6 @@ Version 1.2.6 - 18.4.2023
 
 Version 1.2.7 - 18.4.2023
 - Added Label on top of Image
+
+Version 1.2.8 - 18.4.2023
+- Added Input reading to CharacterAbilityScores class

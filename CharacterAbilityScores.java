@@ -1,12 +1,18 @@
 
 
 import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+
 import javax.swing.*;
+import javax.swing.event.DocumentEvent;
+
+import java.awt.event.*;  
+import javax.swing.event.*;
+import javax.swing.text.*;
 
 
-
-
-public class CharacterAbilityScores extends JPanel {
+public class CharacterAbilityScores extends JPanel implements ActionListener {
 
     //Ability Scores: Value range: 1 - 20, Default 10
     SpinnerModel strenghtValue = new SpinnerNumberModel(10, 1, 20, 1);
@@ -16,6 +22,12 @@ public class CharacterAbilityScores extends JPanel {
     SpinnerModel wisdomValue = new SpinnerNumberModel(10, 1, 20, 1);
     SpinnerModel charismaValue = new SpinnerNumberModel(10, 1, 20, 1);
 
+    private int charStrenght = 10;
+    private int charDexterity = 10;
+    private int charConstitution = 10;
+    private int charIntelligence = 10;
+    private int charWisdom = 10;
+    private int charCharisma = 10;
 
     public CharacterAbilityScores () {
 
@@ -40,6 +52,20 @@ public class CharacterAbilityScores extends JPanel {
         JLabel strenghtLabel = new JLabel("Strenght: ");
         //JSpinner number select:
         JSpinner strenghtSpinner = new JSpinner(strenghtValue);
+        //Document Listener:
+        JSpinner.DefaultEditor editorStr = (JSpinner.DefaultEditor)strenghtSpinner.getEditor();
+        JTextField textFieldStr = editorStr.getTextField();
+        textFieldStr.getDocument().addDocumentListener( new DocumentListener() {
+            public void insertUpdate(DocumentEvent e) {
+                update();
+            }
+            public void removeUpdate(DocumentEvent e) {
+                update();
+            }
+            public void changedUpdate(DocumentEvent e) {
+                update();
+            }
+        }); //End of DocumentListener
         constraints2.gridx = 0;
         constraints2.gridy = 0;
         constraints2.gridwidth = 1;
@@ -52,6 +78,20 @@ public class CharacterAbilityScores extends JPanel {
         JLabel dexterityLabel = new JLabel("Dexterity: ");
         //JSpinner number select:
         JSpinner dexteritySpinner = new JSpinner(dexterityValue);
+        //Document Listener:
+        JSpinner.DefaultEditor editorDex = (JSpinner.DefaultEditor)dexteritySpinner.getEditor();
+        JTextField textFieldDex = editorDex.getTextField();
+        textFieldDex.getDocument().addDocumentListener( new DocumentListener() {
+            public void insertUpdate(DocumentEvent e) {
+                update();
+            }
+            public void removeUpdate(DocumentEvent e) {
+                update();
+            }
+            public void changedUpdate(DocumentEvent e) {
+                update();
+            }
+        }); //End of DocumentListener
         constraints2.gridx = 0;
         constraints2.gridy = 1;
         constraints2.gridwidth = 1;
@@ -64,6 +104,20 @@ public class CharacterAbilityScores extends JPanel {
         JLabel constitutionLabel = new JLabel("Constitution: ");
         //JSpinner number select:
         JSpinner constitutionSpinner = new JSpinner(constitutionValue);
+        //Document Listener:
+        JSpinner.DefaultEditor editorCon = (JSpinner.DefaultEditor)constitutionSpinner.getEditor();
+        JTextField textFieldCon = editorCon.getTextField();
+        textFieldCon.getDocument().addDocumentListener( new DocumentListener() {
+            public void insertUpdate(DocumentEvent e) {
+                update();
+            }
+            public void removeUpdate(DocumentEvent e) {
+                update();
+            }
+            public void changedUpdate(DocumentEvent e) {
+                update();
+            }
+        }); //End of DocumentListener
         constraints2.gridx = 0;
         constraints2.gridy = 2;
         constraints2.gridwidth = 1;
@@ -76,6 +130,20 @@ public class CharacterAbilityScores extends JPanel {
         JLabel intelligenceLabel = new JLabel("Intelligence: ");
         //JSpinner number select:
         JSpinner intelligenceSpinner = new JSpinner(intelligenceValue);
+        //Document Listener:
+        JSpinner.DefaultEditor editorInt = (JSpinner.DefaultEditor)intelligenceSpinner.getEditor();
+        JTextField textFieldInt = editorInt.getTextField();
+        textFieldInt.getDocument().addDocumentListener( new DocumentListener() {
+            public void insertUpdate(DocumentEvent e) {
+                update();
+            }
+            public void removeUpdate(DocumentEvent e) {
+                update();
+            }
+            public void changedUpdate(DocumentEvent e) {
+                update();
+            }
+        }); //End of DocumentListener
         constraints2.gridx = 0;
         constraints2.gridy = 3;
         constraints2.gridwidth = 1;
@@ -88,6 +156,20 @@ public class CharacterAbilityScores extends JPanel {
         JLabel wisdomLabel = new JLabel("Wisdom: ");
         //JSpinner number select:
         JSpinner wisdomSpinner = new JSpinner(wisdomValue);
+        //Document Listener:
+        JSpinner.DefaultEditor editorWis = (JSpinner.DefaultEditor)wisdomSpinner.getEditor();
+        JTextField textFieldWis = editorWis.getTextField();
+        textFieldWis.getDocument().addDocumentListener( new DocumentListener() {
+            public void insertUpdate(DocumentEvent e) {
+                update();
+            }
+            public void removeUpdate(DocumentEvent e) {
+                update();
+            }
+            public void changedUpdate(DocumentEvent e) {
+                update();
+            }
+        }); //End of DocumentListener
         constraints2.gridx = 0;
         constraints2.gridy = 4;
         constraints2.gridwidth = 1;
@@ -100,6 +182,20 @@ public class CharacterAbilityScores extends JPanel {
         JLabel charismaLabel = new JLabel("Charisma: ");
         //JSpinner number select:
         JSpinner charismaSpinner = new JSpinner(charismaValue);
+        //Document Listener:
+        JSpinner.DefaultEditor editorCha = (JSpinner.DefaultEditor)charismaSpinner.getEditor();
+        JTextField textFieldCha = editorCha.getTextField();
+        textFieldCha.getDocument().addDocumentListener( new DocumentListener() {
+            public void insertUpdate(DocumentEvent e) {
+                update();
+            }
+            public void removeUpdate(DocumentEvent e) {
+                update();
+            }
+            public void changedUpdate(DocumentEvent e) {
+                update();
+            }
+        }); //End of DocumentListener
         constraints2.gridx = 0;
         constraints2.gridy = 5;
         constraints2.gridwidth = 1;
@@ -117,5 +213,43 @@ public class CharacterAbilityScores extends JPanel {
 
 
     }
+
+
+    @Override
+    public void actionPerformed(ActionEvent e) {
+        // TODO Auto-generated method stub
+        //throw new UnsupportedOperationException("Unimplemented method 'actionPerformed'");
+        update();
+    }
     
+
+
+    public void update() {
+            //Set input values from GUI to CharacterSheet Inputs:
+
+            //Strenght:
+            charStrenght = (Integer) strenghtValue.getValue();
+            CharacterSheet.getInstance().setInputStrenght(charStrenght);
+            //Dexterity:
+            charDexterity = (Integer) dexterityValue.getValue();
+            CharacterSheet.getInstance().setInputDexterity(charDexterity);
+            //Constitution:
+            charConstitution = (Integer) constitutionValue.getValue();
+            CharacterSheet.getInstance().setInputConstitution(charConstitution);
+            //Intelligence:
+            charIntelligence = (Integer) intelligenceValue.getValue();
+            CharacterSheet.getInstance().setInputIntelligence(charIntelligence);
+            //Wisdom:
+            charWisdom = (Integer) wisdomValue.getValue();
+            CharacterSheet.getInstance().setInputWisdom(charWisdom);
+            //Charisma:
+            charCharisma = (Integer) charismaValue.getValue();
+            CharacterSheet.getInstance().setInputCharisma(charCharisma);
+
+            //Calculate Changes:
+            CharacterSheet.getInstance().calculateOutput();
+            //Display Changes: //Test print to console
+            CharacterSheet.getInstance().printOutputs();
+    }
+
 }
