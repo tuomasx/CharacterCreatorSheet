@@ -9,6 +9,8 @@ import java.io.IOException;
 
 public class Layout extends JFrame{
 	
+	//private String outputName = "";
+	//private JLabel label = new JLabel("TestLabel");
 	
 	public Layout( ) {
 		
@@ -45,54 +47,12 @@ public class Layout extends JFrame{
 
 
 		//Character sheet Preview side:
-		JPanel panel2 = new JPanel();
-		panel2.setBackground(new Color(255, 255, 255));
-		//Adding an empty White frame to the center & right side
+		//JPanel panel2 = new JPanel();
+		//JPanel panel2 = new OutputSheet();
+		//JPanel panel2 = OutputSheet.getInstance();
+		JPanel panel2 = OutputSheet.getInstance().createOutputSheet();
 
-		//jlabel.getBackground().setOpaque(false);
-
-		//Adding image to panel:
-		//CharacterSheetBase Resolution: 1700 x 2200
-		//1275 x 1650
-		try {
-			//Change File Path:
-			BufferedImage myPicture = ImageIO.read(new File("C:/Users/Heikki/Desktop/Ohj4_CharacterCreatorSheet/CharacterCreatorSheet/CharacterSheetBase.png"));
-			Image newImage = myPicture.getScaledInstance(850, 1100, Image.SCALE_DEFAULT);
-			JLabel picLabel = new JLabel(new ImageIcon(newImage));
-			
-
-
-			JLabel background = new JLabel(new ImageIcon(newImage));
-			background.setLayout(new BorderLayout());
-			panel2.add(background);
-
-			JLabel label = new JLabel("TestLabel");
-    		label.setFont(label.getFont().deriveFont(Font.BOLD, 48));
-    		label.setForeground(Color.BLACK);
-    		label.setHorizontalAlignment(JLabel.CENTER);
-    		background.add(label);
-
-    		pack();
-    		setLocationRelativeTo(null);
-    		setVisible(true);
-
-			/* 
-			JLabel label = new JLabel("Test");
-			label.setText("Test Label");
-			label.setVisible(true);
-			//picLabel.add(label);
-			//picLabel.setPreferredSize(new Dimension(640, 480));
-			panel2.add(picLabel);
-			*/
-			
-
-
-		} catch (IOException e) {
-			//Image not found
-			System.out.println("Image not Found");
-		}
-		
-		
+		//OutputSheet.getInstance().printOutputs();
 
 		//Scrolling:
 		JScrollPane scrollPane2 = new JScrollPane(panel2);
@@ -114,5 +74,48 @@ public class Layout extends JFrame{
 		new Layout();
 	}
 
+
 }
 
+
+
+
+/*
+		panel2.setBackground(new Color(255, 255, 255));
+		//Adding an empty White frame to the center & right side
+
+		//jlabel.getBackground().setOpaque(false);
+
+		//Adding image to panel:
+		//CharacterSheetBase Resolution: 1700 x 2200
+		//1275 x 1650
+		try {
+			//Change File Path:
+			BufferedImage myPicture = ImageIO.read(new File("C:/Users/Heikki/Desktop/Ohj4_CharacterCreatorSheet/CharacterCreatorSheet/CharacterSheetBase.png"));
+			Image newImage = myPicture.getScaledInstance(850, 1100, Image.SCALE_DEFAULT);
+			JLabel picLabel = new JLabel(new ImageIcon(newImage));
+			
+
+
+			JLabel background = new JLabel(new ImageIcon(newImage));
+			background.setLayout(new BorderLayout());
+			panel2.add(background);
+
+			
+			label.setText("Test Label");
+
+    		label.setFont(label.getFont().deriveFont(Font.BOLD, 48));
+    		label.setForeground(Color.BLACK);
+    		label.setHorizontalAlignment(JLabel.CENTER);
+    		background.add(label);
+
+    		pack();
+    		setLocationRelativeTo(null);
+    		setVisible(true);
+
+			
+		} catch (IOException e) {
+			//Image not found
+			System.out.println("Image not Found");
+		}
+		*/

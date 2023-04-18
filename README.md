@@ -71,3 +71,6 @@ Version 1.2.7 - 18.4.2023
 
 Version 1.2.8 - 18.4.2023
 - Added Input reading to CharacterAbilityScores class
+
+Version 1.2.9 - 18.4.2023
+- Added Class OutputSheet & Migrated characterSheet image & label to it.

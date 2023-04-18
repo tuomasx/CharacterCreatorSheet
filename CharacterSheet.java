@@ -358,6 +358,10 @@ public class CharacterSheet {
 
     }
 
+    private void updateOutputSheet() {
+        //Send update to output sheet
+    }
+
 
 
     private static void calculateProficiency() {
@@ -1537,6 +1541,9 @@ public class CharacterSheet {
         System.out.println("Ideals:             " + inputCharacterIdeals);
         System.out.println("Bonds:              " + inputCharacterBonds);
         System.out.println("Flaws:              " + inputCharacterFlaws);
+
+
+        updateOutputSheet();
 
     }
 
