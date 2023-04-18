@@ -63,3 +63,5 @@ Version 1.2.4 - 17.4.2023
 Version 1.2.5 - 17.4.2023
 - Changed character Alignment & gender to ComboBox & Added input Reading
 
+Version 1.2.6 - 18.4.2023
+- Added CharacterSheet Image

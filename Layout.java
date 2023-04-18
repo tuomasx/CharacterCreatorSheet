@@ -1,6 +1,10 @@
 
+import javax.imageio.ImageIO;
 import javax.swing.*;
 import java.awt.*;
+import java.awt.image.BufferedImage;
+import java.io.File;
+import java.io.IOException;
 
 
 public class Layout extends JFrame{
@@ -35,17 +39,44 @@ public class Layout extends JFrame{
 		//scrollPane.setPreferredSize(getPreferredSize());
 		scrollPane.setPreferredSize(new Dimension( 300, 1000));
 		
-
-
-		JPanel panel2 = new JPanel();
-		panel2.setBackground(new Color(255, 255, 255));
-
 		//Adding a scrolling panel containing the Content
 		frame.add(scrollPane, BorderLayout.WEST);
 		//frame.add(panel1, BorderLayout.WEST);
 
+
+		//Character sheet Preview side:
+		JPanel panel2 = new JPanel();
+		panel2.setBackground(new Color(255, 255, 255));
 		//Adding an empty White frame to the center & right side
-		frame.add(panel2, BorderLayout.CENTER);
+
+		//jlabel.getBackground().setOpaque(false);
+
+		//Adding image to panel:
+		//CharacterSheetBase Resolution: 1700 x 2200
+		//1275 x 1650
+		try {
+			BufferedImage myPicture = ImageIO.read(new File("C:/Users/Heikki/Desktop/Ohj4_CharacterCreatorSheet/CharacterCreatorSheet/CharacterSheetBase.png"));
+			Image newImage = myPicture.getScaledInstance(850, 1100, Image.SCALE_DEFAULT);
+			JLabel picLabel = new JLabel(new ImageIcon(newImage));
+			
+			//picLabel.setPreferredSize(new Dimension(640, 480));
+
+			panel2.add(picLabel);
+		} catch (IOException e) {
+			//Image not found
+			System.out.println("Image not Found");
+		}
+		
+		//Scrolling:
+		JScrollPane scrollPane2 = new JScrollPane(panel2);
+		panel2.setAutoscrolls(true);
+		//scrollPane.setPreferredSize(getPreferredSize());
+		scrollPane2.setPreferredSize(new Dimension( 1275, 1650));
+		
+
+		frame.add(scrollPane2, BorderLayout.CENTER);
+
+
 
 		frame.setVisible(true);
         
