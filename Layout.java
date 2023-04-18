@@ -55,18 +55,45 @@ public class Layout extends JFrame{
 		//CharacterSheetBase Resolution: 1700 x 2200
 		//1275 x 1650
 		try {
+			//Change File Path:
 			BufferedImage myPicture = ImageIO.read(new File("C:/Users/Heikki/Desktop/Ohj4_CharacterCreatorSheet/CharacterCreatorSheet/CharacterSheetBase.png"));
 			Image newImage = myPicture.getScaledInstance(850, 1100, Image.SCALE_DEFAULT);
 			JLabel picLabel = new JLabel(new ImageIcon(newImage));
 			
-			//picLabel.setPreferredSize(new Dimension(640, 480));
 
+
+			JLabel background = new JLabel(new ImageIcon(newImage));
+			background.setLayout(new BorderLayout());
+			panel2.add(background);
+
+			JLabel label = new JLabel("TestLabel");
+    		label.setFont(label.getFont().deriveFont(Font.BOLD, 48));
+    		label.setForeground(Color.BLACK);
+    		label.setHorizontalAlignment(JLabel.CENTER);
+    		background.add(label);
+
+    		pack();
+    		setLocationRelativeTo(null);
+    		setVisible(true);
+
+			/* 
+			JLabel label = new JLabel("Test");
+			label.setText("Test Label");
+			label.setVisible(true);
+			//picLabel.add(label);
+			//picLabel.setPreferredSize(new Dimension(640, 480));
 			panel2.add(picLabel);
+			*/
+			
+
+
 		} catch (IOException e) {
 			//Image not found
 			System.out.println("Image not Found");
 		}
 		
+		
+
 		//Scrolling:
 		JScrollPane scrollPane2 = new JScrollPane(panel2);
 		panel2.setAutoscrolls(true);
@@ -88,3 +115,4 @@ public class Layout extends JFrame{
 	}
 
 }
+

@@ -65,3 +65,6 @@ Version 1.2.5 - 17.4.2023
 
 Version 1.2.6 - 18.4.2023
 - Added CharacterSheet Image
+
+Version 1.2.7 - 18.4.2023
+- Added Label on top of Image
