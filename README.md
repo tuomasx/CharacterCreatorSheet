@@ -85,5 +85,5 @@ Version 1.3.1 - 18.4.2023
 
 Version 1.3.2 - 20.4.2023
 - Migrated All project files to a src folder to fix path on the default folder created when cloning from git
-
+- Changed File path to get current location root and use it to find the image
 

@@ -8,6 +8,7 @@ import javax.imageio.ImageIO;
 import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.IOException;
+import java.net.URISyntaxException;
 
 
 
@@ -46,9 +47,11 @@ public class OutputSheet extends JPanel {
 		try {
 			//Change File Path:
 			//BufferedImage myPicture = ImageIO.read(new File("src/CharacterSheetBase.png"));
-			BufferedImage myPicture = ImageIO.read(new File("CharacterCreatorSheet/src/CharacterSheetBase.png"));
-			//BufferedImage myPicture = ImageIO.read(new File("C:/Users/Heikki/Desktop/Ohj4_CharacterCreatorSheet/CharacterCreatorSheet/src/CharacterSheetBase.png"));
-			//C:\Users\Heikki\Desktop\Ohj4_CharacterCreatorSheet\CharacterCreatorSheet\src
+			//BufferedImage myPicture = ImageIO.read(new File("CharacterCreatorSheet/src/CharacterSheetBase.png"));
+			//File path to root
+			File root = new File(Thread.currentThread().getContextClassLoader().getResource("").toURI());
+			BufferedImage myPicture = ImageIO.read(new File( root, "CharacterSheetBase.png"));
+			
 			Image newImage = myPicture.getScaledInstance(850, 1100, Image.SCALE_DEFAULT);
 			JLabel picLabel = new JLabel(new ImageIcon(newImage));
 			
@@ -82,6 +85,9 @@ public class OutputSheet extends JPanel {
 		} catch (IOException e) {
 			//Image not found
 			System.out.println("Image not Found");
+		} catch (URISyntaxException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
 		}
 
         return panel;
