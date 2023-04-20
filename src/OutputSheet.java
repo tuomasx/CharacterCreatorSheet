@@ -45,7 +45,10 @@ public class OutputSheet extends JPanel {
 		//1275 x 1650
 		try {
 			//Change File Path:
-			BufferedImage myPicture = ImageIO.read(new File("src/CharacterSheetBase.png"));
+			//BufferedImage myPicture = ImageIO.read(new File("src/CharacterSheetBase.png"));
+			BufferedImage myPicture = ImageIO.read(new File("CharacterCreatorSheet/src/CharacterSheetBase.png"));
+			//BufferedImage myPicture = ImageIO.read(new File("C:/Users/Heikki/Desktop/Ohj4_CharacterCreatorSheet/CharacterCreatorSheet/src/CharacterSheetBase.png"));
+			//C:\Users\Heikki\Desktop\Ohj4_CharacterCreatorSheet\CharacterCreatorSheet\src
 			Image newImage = myPicture.getScaledInstance(850, 1100, Image.SCALE_DEFAULT);
 			JLabel picLabel = new JLabel(new ImageIcon(newImage));
 			
