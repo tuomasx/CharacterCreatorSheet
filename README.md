@@ -82,3 +82,8 @@ Version 1.3.1 - 18.4.2023
 - Changed to relative path for baseImage. 
 - OutputSheet now displays boolean value of shield.
 - CharacterEquipment listener implemented
+
+Version 1.3.2 - 20.4.2023
+- Migrated All project files to a src folder to fix path on the default folder created when cloning from git
+
+
