@@ -179,41 +179,62 @@ public class OutputSheet extends JPanel {
 
 
 			JLabel background = new JLabel(new ImageIcon(newImage));
-			background.setLayout(new BorderLayout());
+
+			//background.setLayout(new BorderLayout());
+			//Changed to GridBagLayout
+			background.setLayout(new GridBagLayout());
+        	GridBagConstraints constraints = new GridBagConstraints();
+			
 			panel.add(background);
 
-			//background.setLayout(new GridBagLayout());
-        	//GridBagConstraints constraints = new GridBagConstraints();
-			//background.setLayout(new GroupLayout());
+			//Constraints:
+			constraints.gridx = 0;
+        	constraints.gridy = 0;
+			constraints.gridwidth = 5;
+        	constraints.anchor = GridBagConstraints.NORTH;
+			
 
 			//Test Label 1: Name
 			//labelName.setText("Test Label");
     		labelName.setFont(labelName.getFont().deriveFont(Font.BOLD, 48));
     		labelName.setForeground(Color.BLACK);
-    		labelName.setHorizontalAlignment(JLabel.CENTER);
-			//Set Coordinates:
-			labelName.setLocation(100, 100);
-    		background.add(labelName);
+    		//labelName.setHorizontalAlignment(JLabel.CENTER);
+			//Constraints
+			constraints.gridx = 0;
+        	constraints.gridy = 0;
+    		background.add(labelName, constraints);
 			//Age
 			labelAge.setFont(labelAge.getFont().deriveFont(Font.BOLD, 48));
     		labelAge.setForeground(Color.BLACK);
-    		labelAge.setHorizontalAlignment(JLabel.CENTER);
-    		background.add(labelAge);
+    		//labelAge.setHorizontalAlignment(JLabel.CENTER);
+			//Constraints
+			constraints.gridx = 0;
+        	constraints.gridy = 1;
+    		background.add(labelAge, constraints);
 			//Gender
 			labelGender.setFont(labelGender.getFont().deriveFont(Font.BOLD, 48));
     		labelGender.setForeground(Color.BLACK);
-    		labelGender.setHorizontalAlignment(JLabel.CENTER);
-    		background.add(labelGender);
+    		//labelGender.setHorizontalAlignment(JLabel.CENTER);
+			//Constraints
+			constraints.gridx = 0;
+        	constraints.gridy = 2;
+    		background.add(labelGender, constraints);
 			//Alignment
 			labelAlignment.setFont(labelAlignment.getFont().deriveFont(Font.BOLD, 48));
     		labelAlignment.setForeground(Color.BLACK);
-    		labelAlignment.setHorizontalAlignment(JLabel.CENTER);
-    		background.add(labelAlignment);
+    		//labelAlignment.setHorizontalAlignment(JLabel.CENTER);
+			//Constraints
+			constraints.gridx = 0;
+        	constraints.gridy = 3;
+    		background.add(labelAlignment, constraints);
 			//PlayerName
 			labelPlayerName.setFont(labelPlayerName.getFont().deriveFont(Font.BOLD, 48));
     		labelPlayerName.setForeground(Color.BLACK);
-    		labelPlayerName.setHorizontalAlignment(JLabel.CENTER);
-    		background.add(labelPlayerName);
+    		//labelPlayerName.setHorizontalAlignment(JLabel.CENTER);
+			//Constraints
+			constraints.gridx = 0;
+        	constraints.gridy = 4;
+    		background.add(labelPlayerName, constraints);
 
     		//pack();
     		//setLocationRelativeTo(null);

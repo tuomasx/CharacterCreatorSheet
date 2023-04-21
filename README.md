@@ -90,3 +90,6 @@ Version 1.3.2 - 20.4.2023
 Version 1.3.3 - 21.4.2023
 - Added Output Variables to OutputSheet
 - Added Output Labels to OutputSheet
+
+Version 1.3.4 - 21.4.2023
+- Changed OutputSheet to use GridBagLayout to fix labels
