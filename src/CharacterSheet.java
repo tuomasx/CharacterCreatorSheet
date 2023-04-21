@@ -363,6 +363,70 @@ public class CharacterSheet {
 
         //Test Output: Name
         OutputSheet.getInstance().setOutputName(inputName);
+        //inputAge
+        OutputSheet.getInstance().setOutputAge(inputAge);
+        //inputGender
+        OutputSheet.getInstance().setOutputGender(inputGender);
+        //inputAlignment
+        OutputSheet.getInstance().setOutputAlignment(inputAlignment);
+        //inputPlayerName
+        OutputSheet.getInstance().setOutputPlayerName(inputPlayerName);
+
+        //Race
+        //Class
+        //Level
+        //Background
+
+
+
+        /*
+      
+        // 2. Character Features
+        inputRace = "";
+        inputClass = "";
+        inputLevel = 1;
+        inputBackground = "";
+
+        // 3. Ability Scores
+        totalStrenght = 10;
+        totalDexterity = 10;
+        totalConstitution = 10;
+        totalIntelligence = 10;
+        totalWisdom = 10;
+        totalCharisma = 10;
+
+        //Modifiers
+        bonusProficiency = 2;
+        bonusStrenght = 0;
+        bonusDexterity = 0;
+        bonusConstitution = 0;
+        bonusIntelligence = 0;
+        bonusWisdom = 0;
+        bonusCharisma = 0;
+
+        //Other Stats
+        armorClass = 10;
+        bonusInitative = 0;
+        baseMovementSpeed = 30;
+        hitPointMaximum = 0;
+        passivePerception = 10;
+
+        // 4. Equipment
+        inputArmor = "";
+        inputWeapon = "";
+        inputShield = false;
+        inputOther = "";
+        outputGold = 0;
+        
+        // 5. Character Description
+        inputCharacterDescription = "";
+        inputCharacterPersonality = "";
+        inputCharacterIdeals = "";
+        inputCharacterBonds = "";
+        inputCharacterFlaws = "";
+        */
+
+
     }
 
 
@@ -1548,6 +1612,63 @@ public class CharacterSheet {
 
 
         updateOutputSheet();
+
+
+        /*
+        // 1. Character Details
+        inputName = "";
+        inputAge = 0;
+        inputGender = "";
+        inputAlignment = "";
+        inputPlayerName = "";
+
+        // 2. Character Features
+        inputRace = "";
+        inputClass = "";
+        inputLevel = 1;
+        inputBackground = "";
+
+        // 3. Ability Scores
+        totalStrenght = 10;
+        totalDexterity = 10;
+        totalConstitution = 10;
+        totalIntelligence = 10;
+        totalWisdom = 10;
+        totalCharisma = 10;
+
+        //Modifiers
+        bonusProficiency = 2;
+        bonusStrenght = 0;
+        bonusDexterity = 0;
+        bonusConstitution = 0;
+        bonusIntelligence = 0;
+        bonusWisdom = 0;
+        bonusCharisma = 0;
+
+        //Other Stats
+        armorClass = 10;
+        bonusInitative = 0;
+        baseMovementSpeed = 30;
+        hitPointMaximum = 0;
+        passivePerception = 10;
+
+        // 4. Equipment
+        inputArmor = "";
+        inputWeapon = "";
+        inputShield = false;
+        inputOther = "";
+        outputGold = 0;
+        
+        // 5. Character Description
+        inputCharacterDescription = "";
+        inputCharacterPersonality = "";
+        inputCharacterIdeals = "";
+        inputCharacterBonds = "";
+        inputCharacterFlaws = "";
+       
+         */
+
+
 
     }
 

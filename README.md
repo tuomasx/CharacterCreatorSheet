@@ -87,3 +87,6 @@ Version 1.3.2 - 20.4.2023
 - Migrated All project files to a src folder to fix path on the default folder created when cloning from git
 - Changed File path to get current location root and use it to find the image
 
+Version 1.3.3 - 21.4.2023
+- Added Output Variables to OutputSheet
+- Added Output Labels to OutputSheet

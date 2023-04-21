@@ -14,11 +14,132 @@ import java.net.URISyntaxException;
 
 public class OutputSheet extends JPanel {
 
-    private String outputName = "";
-	private JLabel label = new JLabel("TestLabel");
-    private JPanel panel = new JPanel();
-
+	private JPanel panel = new JPanel();
     private static OutputSheet outputSheetInstance;
+
+	//Output variables & labels
+	//Name
+    private String outputName = "";
+	private JLabel labelName = new JLabel("TestLabelName");
+	//Age
+	private int outputAge = 0;
+	private JLabel labelAge = new JLabel("LabelAge");
+	//Gender
+	private String outputGender = "";
+	private JLabel labelGender = new JLabel("LabelGender");
+	//Aligment
+	private String outputAlignment = "";
+	private JLabel labelAlignment = new JLabel("LabelAlignment");
+	//Playername
+	private String outputPlayerName = "";
+	private JLabel labelPlayerName = new JLabel("LabelPlayerName");
+	//Character Features
+	//Race
+	private String outputRace = "";
+	private JLabel labelRace = new JLabel("LabelRace");
+	//Class
+	private String outputClass = "";
+	private JLabel labelClass = new JLabel("LabelClass");
+	//Level
+	private int outputLevel = 1;
+	private JLabel labelLevel = new JLabel("LabelLevel");
+	//Background
+	private String outputBackground = "";
+	private JLabel labelBackground = new JLabel("LabelBackground");
+	//Ability Scores
+	//
+	private int totalStrenght = 10;
+	private JLabel labeltotalStrenght = new JLabel("LabelSTR");
+	//
+	private int totalDexterity = 10;
+	private JLabel labeltotalDexterity = new JLabel("LabelDEX");
+	//
+	private int totalConstitution = 10;
+	private JLabel labeltotalConstitution = new JLabel("LabelCON");
+	//
+	private int totalIntelligence = 10;
+	private JLabel labeltotalIntelligence = new JLabel("LabelINT");
+	//
+	private int totalWisdom = 10;
+	private JLabel labeltotalWisdom = new JLabel("LabelWIS");
+	//
+	private int totalCharisma = 10;
+	private JLabel labeltotalCharisma = new JLabel("LabelCHA");
+	//Modifiers
+	//
+	private int bonusProficiency = 2;
+	private JLabel labelbonusProficiency = new JLabel("LabelProficiency");
+	//
+	private int bonusStrenght = 0;
+	private JLabel labelbonusStrenght = new JLabel("LabelSTRB");
+	//
+	private int bonusDexterity = 0;
+	private JLabel labelbonusDexterity = new JLabel("LabelDEXB");
+	//
+	private int bonusConstitution = 0;
+	private JLabel labelbonusConstitution = new JLabel("LabelCONB");
+	//
+	private int bonusIntelligence = 0;
+	private JLabel labelbonusIntelligence = new JLabel("LabelINTB");
+	//
+	private int bonusWisdom = 0;
+	private JLabel labelbonusWisdom = new JLabel("LabelWISB");
+	//
+	private int bonusCharisma = 0;
+	private JLabel labelbonusCharisma = new JLabel("LabelCHAB");
+	//Other Stats
+	//
+	private int armorClass = 10;
+	private JLabel labelarmorClass = new JLabel("LabelArmorClass");
+	//
+	private int bonusInitative = 0;
+	private JLabel labelbonusInitative = new JLabel("LabelIniativeBonus");
+	//
+	private int baseMovementSpeed = 30;
+	private JLabel labelbaseMovementSpeed = new JLabel("LabelMovementSpeed");
+	//
+	private int hitPointMaximum = 0;
+	private JLabel labelhitPointMaximum = new JLabel("LabelHitPointMaximum");
+	//
+	private int passivePerception = 10;
+	private JLabel labelpassivePerception = new JLabel("LabelPassivePerception");
+	//Equipment
+	//
+	private String outputArmor = "";
+	private JLabel labeloutputArmor = new JLabel("LabelArmor");
+	//
+	private String outputWeapon = "";
+	private JLabel labeloutputWeapon = new JLabel("LabelWeapon");
+	//
+	private boolean outputShield = false;
+	//private JLabel labeloutputShield = new JLabel("LabelShield");
+	//
+	private String outputOther = "";
+	private JLabel labeloutputOther = new JLabel("LabelOtherItem");
+	//
+	private int outputGold = 0;
+	private JLabel labeloutputGold = new JLabel("LabelGold");
+	//Character Description
+	//
+	private String outputCharacterDescription = "";
+	private JLabel labeloutputCharacterDescription = new JLabel("LabelCharDescription");
+	//
+	private String outputCharacterPersonality = "";
+	private JLabel labeloutputCharacterPersonality = new JLabel("LabelCharPersonality");
+	//
+	private String outputCharacterIdeals = "";
+	private JLabel labeloutputCharacterIdeals = new JLabel("LabelCharIdeals");
+	//
+	private String outputCharacterBonds = "";
+	private JLabel labeloutputCharacterBonds = new JLabel("LabelCharBonds");
+	//
+	private String outputCharacterFlaws = "";
+	private JLabel labeloutputCharacterFlaws = new JLabel("LabelCharFlaws");
+	//
+
+
+	
+
 
     // Singleton: prevent duplicate objects
     private OutputSheet() {
@@ -61,13 +182,38 @@ public class OutputSheet extends JPanel {
 			background.setLayout(new BorderLayout());
 			panel.add(background);
 
-			
-			label.setText("Test Label");
+			//background.setLayout(new GridBagLayout());
+        	//GridBagConstraints constraints = new GridBagConstraints();
+			//background.setLayout(new GroupLayout());
 
-    		label.setFont(label.getFont().deriveFont(Font.BOLD, 48));
-    		label.setForeground(Color.BLACK);
-    		label.setHorizontalAlignment(JLabel.CENTER);
-    		background.add(label);
+			//Test Label 1: Name
+			//labelName.setText("Test Label");
+    		labelName.setFont(labelName.getFont().deriveFont(Font.BOLD, 48));
+    		labelName.setForeground(Color.BLACK);
+    		labelName.setHorizontalAlignment(JLabel.CENTER);
+			//Set Coordinates:
+			labelName.setLocation(100, 100);
+    		background.add(labelName);
+			//Age
+			labelAge.setFont(labelAge.getFont().deriveFont(Font.BOLD, 48));
+    		labelAge.setForeground(Color.BLACK);
+    		labelAge.setHorizontalAlignment(JLabel.CENTER);
+    		background.add(labelAge);
+			//Gender
+			labelGender.setFont(labelGender.getFont().deriveFont(Font.BOLD, 48));
+    		labelGender.setForeground(Color.BLACK);
+    		labelGender.setHorizontalAlignment(JLabel.CENTER);
+    		background.add(labelGender);
+			//Alignment
+			labelAlignment.setFont(labelAlignment.getFont().deriveFont(Font.BOLD, 48));
+    		labelAlignment.setForeground(Color.BLACK);
+    		labelAlignment.setHorizontalAlignment(JLabel.CENTER);
+    		background.add(labelAlignment);
+			//PlayerName
+			labelPlayerName.setFont(labelPlayerName.getFont().deriveFont(Font.BOLD, 48));
+    		labelPlayerName.setForeground(Color.BLACK);
+    		labelPlayerName.setHorizontalAlignment(JLabel.CENTER);
+    		background.add(labelPlayerName);
 
     		//pack();
     		//setLocationRelativeTo(null);
@@ -102,8 +248,300 @@ public class OutputSheet extends JPanel {
 	public void setOutputName(String outputName) {
 		this.outputName = outputName;
         //Test: Update test label:
-		label.setText(outputName);
+		labelName.setText(outputName);
 	}
+	public int getOutputAge() {
+		return outputAge;
+	}
+
+	public void setOutputAge(int outputAge) {
+		this.outputAge = outputAge;
+		labelAge.setText("" + outputAge);
+	}
+
+	public String getOutputGender() {
+		return outputGender;
+	}
+
+	public void setOutputGender(String outputGender) {
+		this.outputGender = outputGender;
+		labelGender.setText(outputGender);
+	}
+
+	public String getOutputAlignment() {
+		return outputAlignment;
+	}
+
+	public void setOutputAlignment(String outputAlignment) {
+		this.outputAlignment = outputAlignment;
+		labelAlignment.setText(outputAlignment);
+	}
+
+	public String getOutputPlayerName() {
+		return outputPlayerName;
+	}
+
+	public void setOutputPlayerName(String outputPlayerName) {
+		this.outputPlayerName = outputPlayerName;
+		labelPlayerName.setText(outputPlayerName);
+	}
+
+	public String getOutputRace() {
+		return outputRace;
+	}
+
+	public void setOutputRace(String outputRace) {
+		this.outputRace = outputRace;
+	}
+
+	public String getOutputClass() {
+		return outputClass;
+	}
+
+	public void setOutputClass(String outputClass) {
+		this.outputClass = outputClass;
+	}
+
+	public int getOutputLevel() {
+		return outputLevel;
+	}
+
+	public void setOutputLevel(int outputLevel) {
+		this.outputLevel = outputLevel;
+	}
+
+	public String getOutputBackground() {
+		return outputBackground;
+	}
+
+	public void setOutputBackground(String outputBackground) {
+		this.outputBackground = outputBackground;
+	}
+
+	public int getTotalStrenght() {
+		return totalStrenght;
+	}
+
+	public void setTotalStrenght(int totalStrenght) {
+		this.totalStrenght = totalStrenght;
+	}
+
+	public int getTotalDexterity() {
+		return totalDexterity;
+	}
+
+	public void setTotalDexterity(int totalDexterity) {
+		this.totalDexterity = totalDexterity;
+	}
+
+	public int getTotalConstitution() {
+		return totalConstitution;
+	}
+
+	public void setTotalConstitution(int totalConstitution) {
+		this.totalConstitution = totalConstitution;
+	}
+
+	public int getTotalIntelligence() {
+		return totalIntelligence;
+	}
+
+	public void setTotalIntelligence(int totalIntelligence) {
+		this.totalIntelligence = totalIntelligence;
+	}
+
+	public int getTotalWisdom() {
+		return totalWisdom;
+	}
+
+	public void setTotalWisdom(int totalWisdom) {
+		this.totalWisdom = totalWisdom;
+	}
+
+	public int getTotalCharisma() {
+		return totalCharisma;
+	}
+
+	public void setTotalCharisma(int totalCharisma) {
+		this.totalCharisma = totalCharisma;
+	}
+
+	public int getBonusProficiency() {
+		return bonusProficiency;
+	}
+
+	public void setBonusProficiency(int bonusProficiency) {
+		this.bonusProficiency = bonusProficiency;
+	}
+
+	public int getBonusStrenght() {
+		return bonusStrenght;
+	}
+
+	public void setBonusStrenght(int bonusStrenght) {
+		this.bonusStrenght = bonusStrenght;
+	}
+
+	public int getBonusDexterity() {
+		return bonusDexterity;
+	}
+
+	public void setBonusDexterity(int bonusDexterity) {
+		this.bonusDexterity = bonusDexterity;
+	}
+
+	public int getBonusConstitution() {
+		return bonusConstitution;
+	}
+
+	public void setBonusConstitution(int bonusConstitution) {
+		this.bonusConstitution = bonusConstitution;
+	}
+
+	public int getBonusIntelligence() {
+		return bonusIntelligence;
+	}
+
+	public void setBonusIntelligence(int bonusIntelligence) {
+		this.bonusIntelligence = bonusIntelligence;
+	}
+
+	public int getBonusWisdom() {
+		return bonusWisdom;
+	}
+
+	public void setBonusWisdom(int bonusWisdom) {
+		this.bonusWisdom = bonusWisdom;
+	}
+
+	public int getBonusCharisma() {
+		return bonusCharisma;
+	}
+
+	public void setBonusCharisma(int bonusCharisma) {
+		this.bonusCharisma = bonusCharisma;
+	}
+
+	public int getArmorClass() {
+		return armorClass;
+	}
+
+	public void setArmorClass(int armorClass) {
+		this.armorClass = armorClass;
+	}
+
+	public int getBonusInitative() {
+		return bonusInitative;
+	}
+
+	public void setBonusInitative(int bonusInitative) {
+		this.bonusInitative = bonusInitative;
+	}
+
+	public int getBaseMovementSpeed() {
+		return baseMovementSpeed;
+	}
+
+	public void setBaseMovementSpeed(int baseMovementSpeed) {
+		this.baseMovementSpeed = baseMovementSpeed;
+	}
+
+	public int getHitPointMaximum() {
+		return hitPointMaximum;
+	}
+
+	public void setHitPointMaximum(int hitPointMaximum) {
+		this.hitPointMaximum = hitPointMaximum;
+	}
+
+	public int getPassivePerception() {
+		return passivePerception;
+	}
+
+	public void setPassivePerception(int passivePerception) {
+		this.passivePerception = passivePerception;
+	}
+
+	public String getOutputArmor() {
+		return outputArmor;
+	}
+
+	public void setOutputArmor(String outputArmor) {
+		this.outputArmor = outputArmor;
+	}
+
+	public String getOutputWeapon() {
+		return outputWeapon;
+	}
+
+	public void setOutputWeapon(String outputWeapon) {
+		this.outputWeapon = outputWeapon;
+	}
+
+	public boolean isOutputShield() {
+		return outputShield;
+	}
+
+	public void setOutputShield(boolean outputShield) {
+		this.outputShield = outputShield;
+	}
+
+	public String getOutputOther() {
+		return outputOther;
+	}
+
+	public void setOutputOther(String outputOther) {
+		this.outputOther = outputOther;
+	}
+
+	public int getOutputGold() {
+		return outputGold;
+	}
+
+	public void setOutputGold(int outputGold) {
+		this.outputGold = outputGold;
+	}
+
+	public String getOutputCharacterDescription() {
+		return outputCharacterDescription;
+	}
+
+	public void setOutputCharacterDescription(String outputCharacterDescription) {
+		this.outputCharacterDescription = outputCharacterDescription;
+	}
+
+	public String getOutputCharacterPersonality() {
+		return outputCharacterPersonality;
+	}
+
+	public void setOutputCharacterPersonality(String outputCharacterPersonality) {
+		this.outputCharacterPersonality = outputCharacterPersonality;
+	}
+
+	public String getOutputCharacterIdeals() {
+		return outputCharacterIdeals;
+	}
+
+	public void setOutputCharacterIdeals(String outputCharacterIdeals) {
+		this.outputCharacterIdeals = outputCharacterIdeals;
+	}
+
+	public String getOutputCharacterBonds() {
+		return outputCharacterBonds;
+	}
+
+	public void setOutputCharacterBonds(String outputCharacterBonds) {
+		this.outputCharacterBonds = outputCharacterBonds;
+	}
+
+	public String getOutputCharacterFlaws() {
+		return outputCharacterFlaws;
+	}
+
+	public void setOutputCharacterFlaws(String outputCharacterFlaws) {
+		this.outputCharacterFlaws = outputCharacterFlaws;
+	}
+
 
 
     
