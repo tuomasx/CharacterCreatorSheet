@@ -373,58 +373,81 @@ public class CharacterSheet {
         OutputSheet.getInstance().setOutputPlayerName(inputPlayerName);
 
         //Race
+        OutputSheet.getInstance().setOutputRace(inputRace);
         //Class
+        OutputSheet.getInstance().setOutputClass(inputClass);
         //Level
+        OutputSheet.getInstance().setOutputLevel(inputLevel);
         //Background
+        OutputSheet.getInstance().setOutputBackground(inputBackground);
+
+        //totalStrenght
+        OutputSheet.getInstance().setTotalStrenght(totalStrenght);
+        //totalDexterity 
+        OutputSheet.getInstance().setTotalDexterity(totalDexterity);
+        //totalConstitution 
+        OutputSheet.getInstance().setTotalConstitution(totalConstitution);
+        //totalIntelligence 
+        OutputSheet.getInstance().setTotalIntelligence(totalIntelligence);
+        //totalWisdom 
+        OutputSheet.getInstance().setTotalWisdom(totalWisdom);
+        //totalCharisma 
+        OutputSheet.getInstance().setTotalCharisma(totalCharisma);
+
+        //bonusProficiency
+        OutputSheet.getInstance().setBonusProficiency(bonusProficiency);
+        //bonusStrenght
+        OutputSheet.getInstance().setBonusStrenght(bonusStrenght);
+        //bonusDexterity
+        OutputSheet.getInstance().setBonusDexterity(bonusDexterity);
+        //bonusConstitution
+        OutputSheet.getInstance().setBonusConstitution(bonusConstitution);
+        //bonusIntelligence
+        OutputSheet.getInstance().setBonusIntelligence(bonusIntelligence);
+        //bonusWisdom
+        OutputSheet.getInstance().setBonusWisdom(bonusWisdom);
+        //bonusCharisma
+        OutputSheet.getInstance().setBonusCharisma(bonusCharisma);
 
 
 
-        /*
-      
-        // 2. Character Features
-        inputRace = "";
-        inputClass = "";
-        inputLevel = 1;
-        inputBackground = "";
+        //armorClass
+        OutputSheet.getInstance().setArmorClass(armorClass);
+        //bonusInitative
+        OutputSheet.getInstance().setBonusInitative(bonusInitative);
+        //baseMovementSpeed
+        OutputSheet.getInstance().setBaseMovementSpeed(baseMovementSpeed);
+        //hitPointMaximum
+        OutputSheet.getInstance().setHitPointMaximum(hitPointMaximum);
+        //passivePerception
+        OutputSheet.getInstance().setPassivePerception(passivePerception);
 
-        // 3. Ability Scores
-        totalStrenght = 10;
-        totalDexterity = 10;
-        totalConstitution = 10;
-        totalIntelligence = 10;
-        totalWisdom = 10;
-        totalCharisma = 10;
+        //inputArmor
+        OutputSheet.getInstance().setOutputArmor(inputArmor);
+        //inputWeapon
+        OutputSheet.getInstance().setOutputWeapon(inputWeapon);
+        //inputShield
+        OutputSheet.getInstance().setOutputShield(inputShield);
+        //inputOther
+        OutputSheet.getInstance().setOutputOther(inputOther);
+        //outputGold
+        OutputSheet.getInstance().setOutputGold(outputGold);
 
-        //Modifiers
-        bonusProficiency = 2;
-        bonusStrenght = 0;
-        bonusDexterity = 0;
-        bonusConstitution = 0;
-        bonusIntelligence = 0;
-        bonusWisdom = 0;
-        bonusCharisma = 0;
 
-        //Other Stats
-        armorClass = 10;
-        bonusInitative = 0;
-        baseMovementSpeed = 30;
-        hitPointMaximum = 0;
-        passivePerception = 10;
+        //inputCharacterDescription
+        OutputSheet.getInstance().setOutputCharacterDescription(inputCharacterDescription);
+        //inputCharacterPersonality
+        OutputSheet.getInstance().setOutputCharacterPersonality(inputCharacterPersonality);
+        //inputCharacterIdeals
+        OutputSheet.getInstance().setOutputCharacterIdeals(inputCharacterIdeals);
+        //inputCharacterBonds
+        OutputSheet.getInstance().setOutputCharacterBonds(inputCharacterBonds);
+        //inputCharacterFlaws
+        OutputSheet.getInstance().setOutputCharacterFlaws(inputCharacterFlaws);
 
-        // 4. Equipment
-        inputArmor = "";
-        inputWeapon = "";
-        inputShield = false;
-        inputOther = "";
-        outputGold = 0;
-        
-        // 5. Character Description
-        inputCharacterDescription = "";
-        inputCharacterPersonality = "";
-        inputCharacterIdeals = "";
-        inputCharacterBonds = "";
-        inputCharacterFlaws = "";
-        */
+
+
+        //
 
 
     }

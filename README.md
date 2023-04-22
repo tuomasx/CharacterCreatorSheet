@@ -96,3 +96,6 @@ Version 1.3.4 - 21.4.2023
 
 Version 1.3.5 - 22.4.2023
 - Finished Setters in OutputSheet
+
+Version 1.3.6 - 22.4.2023
+- Finished OutputSheet updater in CharacterSheet
