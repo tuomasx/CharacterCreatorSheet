@@ -261,7 +261,7 @@ public class OutputSheet extends JPanel {
 
     }
 
-
+	//Getters & Setters
     public String getOutputName() {
 		return outputName;
 	}
@@ -313,6 +313,7 @@ public class OutputSheet extends JPanel {
 
 	public void setOutputRace(String outputRace) {
 		this.outputRace = outputRace;
+		labelRace.setText(outputRace);
 	}
 
 	public String getOutputClass() {
@@ -321,6 +322,7 @@ public class OutputSheet extends JPanel {
 
 	public void setOutputClass(String outputClass) {
 		this.outputClass = outputClass;
+		labelClass.setText(outputClass);
 	}
 
 	public int getOutputLevel() {
@@ -329,6 +331,7 @@ public class OutputSheet extends JPanel {
 
 	public void setOutputLevel(int outputLevel) {
 		this.outputLevel = outputLevel;
+		labelLevel.setText("" + outputLevel);
 	}
 
 	public String getOutputBackground() {
@@ -337,6 +340,7 @@ public class OutputSheet extends JPanel {
 
 	public void setOutputBackground(String outputBackground) {
 		this.outputBackground = outputBackground;
+		labelBackground.setText(outputBackground);
 	}
 
 	public int getTotalStrenght() {
@@ -345,6 +349,7 @@ public class OutputSheet extends JPanel {
 
 	public void setTotalStrenght(int totalStrenght) {
 		this.totalStrenght = totalStrenght;
+		labeltotalStrenght.setText("" + totalStrenght);
 	}
 
 	public int getTotalDexterity() {
@@ -353,6 +358,7 @@ public class OutputSheet extends JPanel {
 
 	public void setTotalDexterity(int totalDexterity) {
 		this.totalDexterity = totalDexterity;
+		labeltotalDexterity.setText("" + totalDexterity);
 	}
 
 	public int getTotalConstitution() {
@@ -361,6 +367,7 @@ public class OutputSheet extends JPanel {
 
 	public void setTotalConstitution(int totalConstitution) {
 		this.totalConstitution = totalConstitution;
+		labeltotalConstitution.setText("" + totalConstitution);
 	}
 
 	public int getTotalIntelligence() {
@@ -369,6 +376,7 @@ public class OutputSheet extends JPanel {
 
 	public void setTotalIntelligence(int totalIntelligence) {
 		this.totalIntelligence = totalIntelligence;
+		labeltotalIntelligence.setText("" + totalIntelligence);
 	}
 
 	public int getTotalWisdom() {
@@ -377,6 +385,7 @@ public class OutputSheet extends JPanel {
 
 	public void setTotalWisdom(int totalWisdom) {
 		this.totalWisdom = totalWisdom;
+		labeltotalWisdom.setText("" + totalWisdom);
 	}
 
 	public int getTotalCharisma() {
@@ -385,6 +394,7 @@ public class OutputSheet extends JPanel {
 
 	public void setTotalCharisma(int totalCharisma) {
 		this.totalCharisma = totalCharisma;
+		labeltotalCharisma.setText("" + totalCharisma);
 	}
 
 	public int getBonusProficiency() {
@@ -393,6 +403,7 @@ public class OutputSheet extends JPanel {
 
 	public void setBonusProficiency(int bonusProficiency) {
 		this.bonusProficiency = bonusProficiency;
+		labelbonusProficiency.setText("" + bonusProficiency);
 	}
 
 	public int getBonusStrenght() {
@@ -401,6 +412,7 @@ public class OutputSheet extends JPanel {
 
 	public void setBonusStrenght(int bonusStrenght) {
 		this.bonusStrenght = bonusStrenght;
+		labelbonusStrenght.setText("" + bonusStrenght);
 	}
 
 	public int getBonusDexterity() {
@@ -409,6 +421,7 @@ public class OutputSheet extends JPanel {
 
 	public void setBonusDexterity(int bonusDexterity) {
 		this.bonusDexterity = bonusDexterity;
+		labelbonusDexterity.setText("" + bonusDexterity);
 	}
 
 	public int getBonusConstitution() {
@@ -417,6 +430,7 @@ public class OutputSheet extends JPanel {
 
 	public void setBonusConstitution(int bonusConstitution) {
 		this.bonusConstitution = bonusConstitution;
+		labelbonusConstitution.setText("" + bonusConstitution);
 	}
 
 	public int getBonusIntelligence() {
@@ -425,6 +439,7 @@ public class OutputSheet extends JPanel {
 
 	public void setBonusIntelligence(int bonusIntelligence) {
 		this.bonusIntelligence = bonusIntelligence;
+		labelbonusIntelligence.setText("" + bonusIntelligence);
 	}
 
 	public int getBonusWisdom() {
@@ -433,6 +448,7 @@ public class OutputSheet extends JPanel {
 
 	public void setBonusWisdom(int bonusWisdom) {
 		this.bonusWisdom = bonusWisdom;
+		labelbonusWisdom.setText("" + bonusWisdom);
 	}
 
 	public int getBonusCharisma() {
@@ -441,6 +457,7 @@ public class OutputSheet extends JPanel {
 
 	public void setBonusCharisma(int bonusCharisma) {
 		this.bonusCharisma = bonusCharisma;
+		labelbonusCharisma.setText("" + bonusCharisma);
 	}
 
 	public int getArmorClass() {
@@ -449,6 +466,7 @@ public class OutputSheet extends JPanel {
 
 	public void setArmorClass(int armorClass) {
 		this.armorClass = armorClass;
+		labelarmorClass.setText("" + armorClass);
 	}
 
 	public int getBonusInitative() {
@@ -457,6 +475,7 @@ public class OutputSheet extends JPanel {
 
 	public void setBonusInitative(int bonusInitative) {
 		this.bonusInitative = bonusInitative;
+		labelbonusInitative.setText("" + bonusInitative);
 	}
 
 	public int getBaseMovementSpeed() {
@@ -465,6 +484,7 @@ public class OutputSheet extends JPanel {
 
 	public void setBaseMovementSpeed(int baseMovementSpeed) {
 		this.baseMovementSpeed = baseMovementSpeed;
+		labelbaseMovementSpeed.setText("" + baseMovementSpeed);
 	}
 
 	public int getHitPointMaximum() {
@@ -473,6 +493,7 @@ public class OutputSheet extends JPanel {
 
 	public void setHitPointMaximum(int hitPointMaximum) {
 		this.hitPointMaximum = hitPointMaximum;
+		labelhitPointMaximum.setText("" + hitPointMaximum);
 	}
 
 	public int getPassivePerception() {
@@ -481,6 +502,7 @@ public class OutputSheet extends JPanel {
 
 	public void setPassivePerception(int passivePerception) {
 		this.passivePerception = passivePerception;
+		labelpassivePerception.setText("" + passivePerception);
 	}
 
 	public String getOutputArmor() {
@@ -489,6 +511,7 @@ public class OutputSheet extends JPanel {
 
 	public void setOutputArmor(String outputArmor) {
 		this.outputArmor = outputArmor;
+		labeloutputArmor.setText(outputArmor);
 	}
 
 	public String getOutputWeapon() {
@@ -497,6 +520,7 @@ public class OutputSheet extends JPanel {
 
 	public void setOutputWeapon(String outputWeapon) {
 		this.outputWeapon = outputWeapon;
+		labeloutputWeapon.setText(outputWeapon);
 	}
 
 	public boolean isOutputShield() {
@@ -505,6 +529,7 @@ public class OutputSheet extends JPanel {
 
 	public void setOutputShield(boolean outputShield) {
 		this.outputShield = outputShield;
+		//labeloutputShield.setText(outputShield);
 	}
 
 	public String getOutputOther() {
@@ -513,6 +538,7 @@ public class OutputSheet extends JPanel {
 
 	public void setOutputOther(String outputOther) {
 		this.outputOther = outputOther;
+		labeloutputOther.setText(outputOther);
 	}
 
 	public int getOutputGold() {
@@ -521,6 +547,7 @@ public class OutputSheet extends JPanel {
 
 	public void setOutputGold(int outputGold) {
 		this.outputGold = outputGold;
+		labeloutputGold.setText("" + outputGold);
 	}
 
 	public String getOutputCharacterDescription() {
@@ -529,6 +556,7 @@ public class OutputSheet extends JPanel {
 
 	public void setOutputCharacterDescription(String outputCharacterDescription) {
 		this.outputCharacterDescription = outputCharacterDescription;
+		labeloutputCharacterPersonality.setText(outputCharacterPersonality);
 	}
 
 	public String getOutputCharacterPersonality() {
@@ -537,6 +565,7 @@ public class OutputSheet extends JPanel {
 
 	public void setOutputCharacterPersonality(String outputCharacterPersonality) {
 		this.outputCharacterPersonality = outputCharacterPersonality;
+		labeloutputCharacterPersonality.setText(outputCharacterPersonality);
 	}
 
 	public String getOutputCharacterIdeals() {
@@ -545,6 +574,7 @@ public class OutputSheet extends JPanel {
 
 	public void setOutputCharacterIdeals(String outputCharacterIdeals) {
 		this.outputCharacterIdeals = outputCharacterIdeals;
+		labeloutputCharacterIdeals.setText(outputCharacterIdeals);
 	}
 
 	public String getOutputCharacterBonds() {
@@ -553,6 +583,7 @@ public class OutputSheet extends JPanel {
 
 	public void setOutputCharacterBonds(String outputCharacterBonds) {
 		this.outputCharacterBonds = outputCharacterBonds;
+		labeloutputCharacterBonds.setText(outputCharacterBonds);
 	}
 
 	public String getOutputCharacterFlaws() {
@@ -561,6 +592,7 @@ public class OutputSheet extends JPanel {
 
 	public void setOutputCharacterFlaws(String outputCharacterFlaws) {
 		this.outputCharacterFlaws = outputCharacterFlaws;
+		labeloutputCharacterFlaws.setText(outputCharacterFlaws);
 	}
 
 

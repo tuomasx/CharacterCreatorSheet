@@ -93,3 +93,6 @@ Version 1.3.3 - 21.4.2023
 
 Version 1.3.4 - 21.4.2023
 - Changed OutputSheet to use GridBagLayout to fix labels
+
+Version 1.3.5 - 22.4.2023
+- Finished Setters in OutputSheet
