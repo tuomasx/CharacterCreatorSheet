@@ -106,3 +106,6 @@ Version 1.3.7 - 24.4.2023
 Version 1.3.8 - 24.4.2023
 - Added Save & Load Dialogs to File Menu
 - TODO: Optional Saving & Loading functionality
+
+Version 1.3.9 - 24.4.2023
+- Added New File functionality to File Menu

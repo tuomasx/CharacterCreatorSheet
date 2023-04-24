@@ -15,7 +15,8 @@ public class Main {
 		//For testing:
 		//characterSheet.setInputName("");
 		
-		Layout.createMainFrame();
+		//Layout.createMainFrame();
+		Layout layout = Layout.getInstance();
 	}
 	
 

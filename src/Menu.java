@@ -69,8 +69,12 @@ public class Menu extends JMenuBar implements ActionListener{
 			CharacterSheet.getInstance().newFile();
 			//Reset Layout content menu values:
 			//incomplete:
-			Layout.clearContentMenu();
+			//Layout.clearContentMenu();
+			Layout.getInstance().clearContentMenu();
+			//Layout.getInstance().createLayout();
 			//
+			
+			Layout.panel1 = new Content();
 			
 		}
 		//Save File

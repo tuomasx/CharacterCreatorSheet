@@ -11,15 +11,34 @@ public class Layout extends JFrame{
 	
 	//private String outputName = "";
 	//private JLabel label = new JLabel("TestLabel");
-	//private static Layout layout;
 	
-	private static JPanel panel1 = new Content();
+	//private static Layout layout;
+	private static Layout layoutInstance;
+	private static JFrame frame = new JFrame();
+
+	public static JPanel panel1 = new Content();
+	private static JPanel panel2 = OutputSheet.getInstance().createOutputSheet();
+
+	// Singleton: prevent duplicate objects
+    private Layout() {
+    }
+
+    public static Layout getInstance() {
+        if (layoutInstance == null) {
+            layoutInstance = new Layout();
+			//frame = layoutInstance.createLayout();
+			layoutInstance = layoutInstance.createLayout();
+        }
+        return layoutInstance;
+    }
 	
 
-	public Layout( ) {
+	//public JFrame createLayout( ) {
+	public Layout createLayout( ) {
+	//public Layout( ) {
 		
-		
-		JFrame frame = new JFrame();
+		//JFrame frame = new JFrame();
+		Layout frame = new Layout();
 		//JFrame frame = new Layout();
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		frame.setSize(1600, 1000);
@@ -33,11 +52,12 @@ public class Layout extends JFrame{
 		
 		//JPanel panel1 = new JPanel();
 
-		panel1 = new Content();
+		//panel1 = new Content();
 
 		//panel1.setBackground(new Color(255, 255, 255));
 		panel1.setPreferredSize(new Dimension(300, 1000));
 		
+		//panel1.
 
 		//Scrolling:
 		JScrollPane scrollPane = new JScrollPane(panel1);
@@ -54,7 +74,9 @@ public class Layout extends JFrame{
 		//JPanel panel2 = new JPanel();
 		//JPanel panel2 = new OutputSheet();
 		//JPanel panel2 = OutputSheet.getInstance();
-		JPanel panel2 = OutputSheet.getInstance().createOutputSheet();
+		//JPanel panel2 = OutputSheet.getInstance().createOutputSheet();
+		
+		//panel2 = OutputSheet.getInstance().createOutputSheet();
 
 		//OutputSheet.getInstance().printOutputs();
 
@@ -71,21 +93,35 @@ public class Layout extends JFrame{
 
 		frame.setVisible(true);
         
-        
+        return frame;
+
 	}
 	
 	public static void createMainFrame( ) {
-		new Layout();
+		//new Layout();
 		//layout = new Layout();
+		//layout = Layout.getInstance();
 	}
 
 	public static void clearContentMenu() {
 		
 		System.out.println("Clearing Content Menu");
-		//
-		//panel1 = new Content();
-		//layout.add(panel1);
+		//Remove Previous:
+		Layout.layoutInstance.dispose();
+		
+		//Create New:
+		Layout.layoutInstance = Layout.getInstance().createLayout();
+		//Layout.getInstance().createLayout();
+	
+		Layout.panel1.removeAll();
+		//panel1.setPreferredSize(new Dimension(300, 1000));
 
+		Layout.panel1.add(new Content());
+	
+
+		Layout.panel1.revalidate();
+		//layoutInstance.revalidate();
+		
 
 
 
