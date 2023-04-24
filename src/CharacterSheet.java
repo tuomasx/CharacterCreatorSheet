@@ -279,7 +279,13 @@ public class CharacterSheet {
 
 
 
+    public void newFile() {
+        //Resets input variables, calculates & sends updated values:
+        clearInputs();
+        calculateOutput();
+        updateOutputSheet();
 
+    }
 
 
 

@@ -11,7 +11,11 @@ public class Layout extends JFrame{
 	
 	//private String outputName = "";
 	//private JLabel label = new JLabel("TestLabel");
+	//private static Layout layout;
 	
+	private static JPanel panel1 = new Content();
+	
+
 	public Layout( ) {
 		
 		
@@ -29,7 +33,7 @@ public class Layout extends JFrame{
 		
 		//JPanel panel1 = new JPanel();
 
-		JPanel panel1 = new Content();
+		panel1 = new Content();
 
 		//panel1.setBackground(new Color(255, 255, 255));
 		panel1.setPreferredSize(new Dimension(300, 1000));
@@ -72,6 +76,19 @@ public class Layout extends JFrame{
 	
 	public static void createMainFrame( ) {
 		new Layout();
+		//layout = new Layout();
+	}
+
+	public static void clearContentMenu() {
+		
+		System.out.println("Clearing Content Menu");
+		//
+		//panel1 = new Content();
+		//layout.add(panel1);
+
+
+
+
 	}
 
 
@@ -79,43 +96,3 @@ public class Layout extends JFrame{
 
 
 
-
-/*
-		panel2.setBackground(new Color(255, 255, 255));
-		//Adding an empty White frame to the center & right side
-
-		//jlabel.getBackground().setOpaque(false);
-
-		//Adding image to panel:
-		//CharacterSheetBase Resolution: 1700 x 2200
-		//1275 x 1650
-		try {
-			//Change File Path:
-			BufferedImage myPicture = ImageIO.read(new File("C:/Users/Heikki/Desktop/Ohj4_CharacterCreatorSheet/CharacterCreatorSheet/CharacterSheetBase.png"));
-			Image newImage = myPicture.getScaledInstance(850, 1100, Image.SCALE_DEFAULT);
-			JLabel picLabel = new JLabel(new ImageIcon(newImage));
-			
-
-
-			JLabel background = new JLabel(new ImageIcon(newImage));
-			background.setLayout(new BorderLayout());
-			panel2.add(background);
-
-			
-			label.setText("Test Label");
-
-    		label.setFont(label.getFont().deriveFont(Font.BOLD, 48));
-    		label.setForeground(Color.BLACK);
-    		label.setHorizontalAlignment(JLabel.CENTER);
-    		background.add(label);
-
-    		pack();
-    		setLocationRelativeTo(null);
-    		setVisible(true);
-
-			
-		} catch (IOException e) {
-			//Image not found
-			System.out.println("Image not Found");
-		}
-		*/
