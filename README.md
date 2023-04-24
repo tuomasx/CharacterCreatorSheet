@@ -102,3 +102,7 @@ Version 1.3.6 - 22.4.2023
 
 Version 1.3.7 - 24.4.2023
 - Added Action Listener to File & Settings Menu
+
+Version 1.3.8 - 24.4.2023
+- Added Save & Load Dialogs to File Menu
+- TODO: Optional Saving & Loading functionality

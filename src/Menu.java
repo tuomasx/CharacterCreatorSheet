@@ -1,6 +1,9 @@
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.io.File;
 
+import javax.swing.JFileChooser;
+import javax.swing.JFrame;
 import javax.swing.JMenu;
 import javax.swing.JMenuBar;
 import javax.swing.JMenuItem;
@@ -65,6 +68,7 @@ public class Menu extends JMenuBar implements ActionListener{
 			System.out.println("New File");
 			CharacterSheet.getInstance().newFile();
 			//Reset Layout content menu values:
+			//incomplete:
 			Layout.clearContentMenu();
 			//
 			
@@ -72,14 +76,48 @@ public class Menu extends JMenuBar implements ActionListener{
 		//Save File
 		if(e.getSource()==i2){
 			System.out.println("Save File");
+			
+			
+			JFileChooser fileChooser = new JFileChooser();
+            int option = fileChooser.showSaveDialog(fileMenu);
+            if(option == JFileChooser.APPROVE_OPTION){
+               System.out.println("File saved");
+			   //
+            }else{
+			   System.out.println("Saving Canceled");
+			   //
+            }
 		}
 		//Save File As
 		if(e.getSource()==i3){
 			System.out.println("Save File As");
+			//JFrame parentFrame = new JFrame();
+			JFileChooser fileChooser = new JFileChooser();
+            int option = fileChooser.showSaveDialog(fileMenu);
+            if(option == JFileChooser.APPROVE_OPTION){
+               //File file = fileChooser.getSelectedFile();
+               //label.setText("File Saved as: " + file.getName());
+			   //System.out.println("Save as file: " + file.getAbsolutePath());
+			   System.out.println("File saved");
+			   //
+            }else{
+               //label.setText("Save command canceled");
+			   System.out.println("Saving Canceled");
+			   //
+            }
 		}
 		//Load File
 		if(e.getSource()==i4){
 			System.out.println("Load File");
+			JFileChooser fileChooser = new JFileChooser();
+            int option = fileChooser.showOpenDialog(fileMenu);
+            if(option == JFileChooser.APPROVE_OPTION){
+               System.out.println("File Opened");
+			   //
+            }else{
+			   System.out.println("Loading Canceled");
+			   //
+            }
 		}
 		//Print File
 		if(e.getSource()==i5){
