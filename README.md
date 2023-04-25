@@ -109,3 +109,6 @@ Version 1.3.8 - 24.4.2023
 
 Version 1.3.9 - 24.4.2023
 - Added New File functionality to File Menu
+
+Version 1.4.0 - 25.4.2023
+- Added Popup window to Language & Shortcuts
