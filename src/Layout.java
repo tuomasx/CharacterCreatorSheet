@@ -18,6 +18,7 @@ public class Layout extends JFrame{
 
 	public static JPanel panel1 = new Content();
 	private static JPanel panel2 = OutputSheet.getInstance().createOutputSheet();
+	public static JPanel panel3 = new HelpDialog();
 
 	// Singleton: prevent duplicate objects
     private Layout() {
@@ -88,6 +89,23 @@ public class Layout extends JFrame{
 		
 
 		frame.add(scrollPane2, BorderLayout.CENTER);
+		
+		
+		
+		frame.setGlassPane(panel3);
+		
+		JPanel glass = (JPanel) frame.getGlassPane();
+
+		
+		//glass.setLayout(new GridBagLayout());
+		glass.setLayout(new GridBagLayout());
+		//glass.setPreferredSize(new Dimension(1000,300));
+		glass.setOpaque(false);
+		//glass.setLocation(new Point(0,5000));
+		glass.setVisible(true);
+		
+		
+		frame.pack();
 
 
 
