@@ -179,7 +179,25 @@ public class OutputSheet extends JPanel {
 
 
 			JLabel background = new JLabel(new ImageIcon(newImage));
+			panel.add(background);
 
+			//X/Y Layout:
+			//
+			Dimension size = background.getPreferredSize();
+			//background.setBounds(25 + insets.left, 5 + insets.top, size.width, size.height);
+
+			//setLayout(null);
+
+			//X/Y layout
+			//Name
+			labelName.setFont(labelName.getFont().deriveFont(Font.PLAIN, 15));
+    		labelName.setForeground(Color.BLACK);
+			//
+			background.add(labelName);
+			labelName.setBounds(100, 90, 200, 30);
+			// 
+			/*
+			
 			//background.setLayout(new BorderLayout());
 			//Changed to GridBagLayout
 			GridBagLayout gridBag = new GridBagLayout();
@@ -188,7 +206,7 @@ public class OutputSheet extends JPanel {
 			background.setLayout(gridBag);
         	constraints.fill = GridBagConstraints.HORIZONTAL;
 
-			panel.add(background);
+			
 
 			//Constraints:
 			constraints.weightx = 1;
@@ -198,6 +216,7 @@ public class OutputSheet extends JPanel {
         	constraints.anchor = GridBagConstraints.NORTH;
 
 
+		
 			//Class & Level, Background, Player Name
 			labelClass.setFont(labelClass.getFont().deriveFont(Font.PLAIN, 15));
     		labelClass.setForeground(Color.BLACK);
@@ -220,6 +239,7 @@ public class OutputSheet extends JPanel {
 			constraints.gridx = 40;
 			constraints.gridy = 0;
 			background.add(labelPlayerName, constraints);
+
 
 
 			//Name
@@ -354,6 +374,7 @@ public class OutputSheet extends JPanel {
 
 			//Saving Throw Bonuses
 
+			// */
 
 
 

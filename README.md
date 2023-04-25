@@ -116,6 +116,7 @@ Version 1.4.0 - 25.4.2023
 Version 1.4.1 - 25.4.2023
 - Added more output labels to OutputSheet
 
-
+Version 1.4.2 - 25.4.2023
+- Changed output sheet to use X/Y coordinates
 
 
