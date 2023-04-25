@@ -109,3 +109,21 @@ Version 1.3.8 - 24.4.2023
 
 Version 1.3.9 - 24.4.2023
 - Added New File functionality to File Menu
+
+Version 1.4.0 - 25.4.2023
+- Added Popup window to Language & Shortcuts
+
+Version 1.4.1 - 25.4.2023
+- Added more output labels to OutputSheet
+
+Version 1.4.2 - 25.4.2023
+- Changed output sheet to use X/Y coordinates
+
+Add to Assignment submission:
+25.4.2023 - Jouni Lappalainen gave permission to use X/Y Coordinates for the Output label application.
+
+Version 1.4.3 - 25.4.2023
+- Added more X/Y Coordinate Labels to outputsheet
+- TODO: Saving throws, Skill proficiencies, Equipment
+
+

@@ -1,12 +1,19 @@
+import java.awt.Dimension;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.io.File;
+import java.io.IOException;
 
+import javax.swing.JButton;
+import javax.swing.JComboBox;
 import javax.swing.JFileChooser;
 import javax.swing.JFrame;
+import javax.swing.JLabel;
 import javax.swing.JMenu;
 import javax.swing.JMenuBar;
 import javax.swing.JMenuItem;
+import javax.swing.JOptionPane;
+import javax.swing.JPanel;
 
 public class Menu extends JMenuBar implements ActionListener{
 	
@@ -16,6 +23,12 @@ public class Menu extends JMenuBar implements ActionListener{
 	JMenuItem i1, i2, i3, i4, i5, i6, i7;
 	JMenuItem s1, s2;
 
+	//Languages
+	
+	private String[] langStrings = { "English", "Finnish" };
+	private JComboBox languageList = new JComboBox<>(langStrings);
+	private String selectLanguage = "English";
+	
 	public Menu( ){
 		//this.layout = layout;
 
@@ -139,16 +152,93 @@ public class Menu extends JMenuBar implements ActionListener{
 		//Languages
 		if(e.getSource()==s1){
 			System.out.println("Languages");
+			JFrame frameLanguage = new JFrame();
+			JPanel languagePanel = new JPanel();
+			languagePanel.setPreferredSize(new Dimension(300, 75));
+
+			JLabel languageLabel = new JLabel("Selected Language: ");
+			languageList = new JComboBox<>(langStrings);
+			languageList.setPreferredSize(new Dimension(150, 24));
+			// /* 
+			languageList.addActionListener(new ActionListener(){
+				@Override
+				public void actionPerformed( ActionEvent e ) {
+					System.out.println("Language Selected");
+					//Optional Language change function Here
+				}
+			});
+			// */
+			JButton buttonClose = new JButton("Close");
+			buttonClose.addActionListener(new ActionListener(){
+				@Override
+				public void actionPerformed( ActionEvent e ) {
+					//System.out.println("");
+					frameLanguage.setVisible(false);
+					frameLanguage.dispose();
+				}
+			});
+
+			languagePanel.add(languageLabel);
+			languagePanel.add(languageList);
+			languagePanel.add(buttonClose);
+
+			frameLanguage.add(languagePanel);
+			
+			//Set frame opening location:
+			frameLanguage.setLocationRelativeTo(null);
+			frameLanguage.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
+			frameLanguage.pack();
+			frameLanguage.setVisible(true);
 		}
+		
+		
 		//Shortcuts
 		if(e.getSource()==s2){
 			System.out.println("Shortcuts");
+			JFrame frame = new JFrame();
+
+			//Shortcut instructions Here:
+			JOptionPane.showMessageDialog(frame,"Shortcuts: \nSave File: \nLoad File: \nNew File: \n");
+			frame.setVisible(false);
 		}
-	
-	
-	
 	
 	}
 	
-
 }
+
+
+
+
+		
+		//JPanel panel = new JPanel();
+		//panel.setPreferredSize(new Dimension(300, 300));
+		
+		/* 
+		JButton button = new JButton();
+		button.setText("Close");
+		button.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent evt) {
+				System.out.println("Print Test");
+				frame.setVisible(false);
+			}
+		});
+		
+		JLabel shortcutsLabel = new JLabel("Shortcuts: ");
+
+		panel.add(shortcutsLabel);
+		panel.add(button);
+		*/
+
+		//frame.add(panel);
+		//frame.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
+		//frame.pack();
+		//frame.setVisible(true);
+
+/*
+				try {
+					//doSomethingExceptional();
+				}
+				catch(IOException e) {
+					//showQuickErrorDialog(frame, e);
+				}
+				*/
