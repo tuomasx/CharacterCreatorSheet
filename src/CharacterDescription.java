@@ -27,6 +27,7 @@ public class CharacterDescription extends JPanel implements ActionListener {
         constraints.anchor = GridBagConstraints.NORTH;
         add(label, constraints);
         
+        
         JPanel fieldsPanel = new JPanel(new GridBagLayout());
         fieldsPanel.setBorder(BorderFactory.createEmptyBorder(10, 10, 10, 10));
         
