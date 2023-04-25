@@ -182,59 +182,183 @@ public class OutputSheet extends JPanel {
 
 			//background.setLayout(new BorderLayout());
 			//Changed to GridBagLayout
-			background.setLayout(new GridBagLayout());
-        	GridBagConstraints constraints = new GridBagConstraints();
-			
+			GridBagLayout gridBag = new GridBagLayout();
+			GridBagConstraints constraints = new GridBagConstraints();
+			//background.setLayout(new GridBagLayout());
+			background.setLayout(gridBag);
+        	constraints.fill = GridBagConstraints.HORIZONTAL;
+
 			panel.add(background);
 
 			//Constraints:
+			constraints.weightx = 1;
 			constraints.gridx = 0;
         	constraints.gridy = 0;
 			constraints.gridwidth = 5;
         	constraints.anchor = GridBagConstraints.NORTH;
-			
 
-			//Test Label 1: Name
-			//labelName.setText("Test Label");
-    		labelName.setFont(labelName.getFont().deriveFont(Font.BOLD, 48));
-    		labelName.setForeground(Color.BLACK);
-    		//labelName.setHorizontalAlignment(JLabel.CENTER);
+
+			//Class & Level, Background, Player Name
+			labelClass.setFont(labelClass.getFont().deriveFont(Font.PLAIN, 15));
+    		labelClass.setForeground(Color.BLACK);
+			labelLevel.setFont(labelLevel.getFont().deriveFont(Font.PLAIN, 15));
+    		labelLevel.setForeground(Color.BLACK);
+			labelBackground.setFont(labelBackground.getFont().deriveFont(Font.PLAIN, 15));
+    		labelBackground.setForeground(Color.BLACK);
+    		labelPlayerName.setFont(labelPlayerName.getFont().deriveFont(Font.PLAIN, 15));
+    		labelPlayerName.setForeground(Color.BLACK);
 			//Constraints
-			constraints.gridx = 0;
+			constraints.gridx = 10;
         	constraints.gridy = 0;
-    		background.add(labelName, constraints);
-			//Age
-			labelAge.setFont(labelAge.getFont().deriveFont(Font.BOLD, 48));
-    		labelAge.setForeground(Color.BLACK);
-    		//labelAge.setHorizontalAlignment(JLabel.CENTER);
+    		background.add(labelClass, constraints);
+			constraints.gridx = 20;
+			constraints.gridy = 0;
+    		background.add(labelLevel, constraints);
+			constraints.gridx = 30;
+			constraints.gridy = 0;
+    		background.add(labelBackground, constraints);
+			constraints.gridx = 40;
+			constraints.gridy = 0;
+			background.add(labelPlayerName, constraints);
+
+
+			//Name
+    		labelName.setFont(labelName.getFont().deriveFont(Font.PLAIN, 15));
+    		labelName.setForeground(Color.BLACK);
 			//Constraints
 			constraints.gridx = 0;
         	constraints.gridy = 1;
-    		background.add(labelAge, constraints);
-			//Gender
-			labelGender.setFont(labelGender.getFont().deriveFont(Font.BOLD, 48));
-    		labelGender.setForeground(Color.BLACK);
-    		//labelGender.setHorizontalAlignment(JLabel.CENTER);
+    		background.add(labelName, constraints);
+
+			//Race, Alignment, Exp
+			labelRace.setFont(labelRace.getFont().deriveFont(Font.PLAIN, 15));
+    		labelRace.setForeground(Color.BLACK);
+			labelAlignment.setFont(labelAlignment.getFont().deriveFont(Font.PLAIN, 15));
+    		labelAlignment.setForeground(Color.BLACK);
+			//Experience
+    		//
 			//Constraints
-			constraints.gridx = 0;
+			constraints.gridx = 10;
+        	constraints.gridy = 1;
+    		background.add(labelRace, constraints);
+			constraints.gridx = 20;
+        	constraints.gridy = 1;
+    		background.add(labelAlignment, constraints);
+			//Experience
+			//
+			//
+
+			//Age, Gender
+			labelAge.setFont(labelAge.getFont().deriveFont(Font.PLAIN, 15));
+    		labelAge.setForeground(Color.BLACK);
+			labelGender.setFont(labelGender.getFont().deriveFont(Font.PLAIN, 15));
+    		labelGender.setForeground(Color.BLACK);
+			//Constraints
+			constraints.gridx = 10;
+        	constraints.gridy = 2;
+    		background.add(labelAge, constraints);
+			constraints.gridx = 20;
         	constraints.gridy = 2;
     		background.add(labelGender, constraints);
-			//Alignment
-			labelAlignment.setFont(labelAlignment.getFont().deriveFont(Font.BOLD, 48));
-    		labelAlignment.setForeground(Color.BLACK);
-    		//labelAlignment.setHorizontalAlignment(JLabel.CENTER);
+			
+			//Proficiency Bonus, Armor Class, Initiative, Speed:
+			labelbonusProficiency.setFont(labelbonusProficiency.getFont().deriveFont(Font.PLAIN, 15));
+    		labelbonusProficiency.setForeground(Color.BLACK);
+			labelarmorClass.setFont(labelarmorClass.getFont().deriveFont(Font.PLAIN, 15));
+    		labelarmorClass.setForeground(Color.BLACK);
+			labelbonusInitative.setFont(labelbonusInitative.getFont().deriveFont(Font.PLAIN, 15));
+    		labelbonusInitative.setForeground(Color.BLACK);
+			labelbaseMovementSpeed.setFont(labelbaseMovementSpeed.getFont().deriveFont(Font.PLAIN, 15));
+    		labelbaseMovementSpeed.setForeground(Color.BLACK);
 			//Constraints
 			constraints.gridx = 0;
         	constraints.gridy = 3;
-    		background.add(labelAlignment, constraints);
-			//PlayerName
-			labelPlayerName.setFont(labelPlayerName.getFont().deriveFont(Font.BOLD, 48));
-    		labelPlayerName.setForeground(Color.BLACK);
-    		//labelPlayerName.setHorizontalAlignment(JLabel.CENTER);
-			//Constraints
-			constraints.gridx = 0;
+    		background.add(labelbonusProficiency, constraints);
+			constraints.gridx = 10;
+        	constraints.gridy = 3;
+    		background.add(labelarmorClass, constraints);
+			constraints.gridx = 20;
+        	constraints.gridy = 3;
+    		background.add(labelbonusInitative, constraints);
+			constraints.gridx = 30;
+        	constraints.gridy = 3;
+    		background.add(labelbaseMovementSpeed, constraints);
+			
+			//Ability Scores:
+			//Strenght
+			labeltotalStrenght.setFont(labeltotalStrenght.getFont().deriveFont(Font.PLAIN, 15));
+    		labeltotalStrenght.setForeground(Color.BLACK);
+			labelbonusStrenght.setFont(labelbonusStrenght.getFont().deriveFont(Font.PLAIN, 15));
+    		labelbonusStrenght.setForeground(Color.BLACK);
+			constraints.gridx = 10;
         	constraints.gridy = 4;
-    		background.add(labelPlayerName, constraints);
+    		background.add(labeltotalStrenght, constraints);
+			constraints.gridx = 20;
+        	constraints.gridy = 4;
+    		background.add(labelbonusStrenght, constraints);
+			//Dexterity
+			labeltotalDexterity.setFont(labeltotalDexterity.getFont().deriveFont(Font.PLAIN, 15));
+    		labeltotalDexterity.setForeground(Color.BLACK);
+			labelbonusDexterity.setFont(labelbonusDexterity.getFont().deriveFont(Font.PLAIN, 15));
+    		labelbonusDexterity.setForeground(Color.BLACK);
+			constraints.gridx = 10;
+        	constraints.gridy = 5;
+    		background.add(labeltotalDexterity, constraints);
+			constraints.gridx = 20;
+        	constraints.gridy = 5;
+    		background.add(labelbonusDexterity, constraints);
+			//Constitution
+			labeltotalConstitution.setFont(labeltotalConstitution.getFont().deriveFont(Font.PLAIN, 15));
+    		labeltotalConstitution.setForeground(Color.BLACK);
+			labelbonusConstitution.setFont(labelbonusConstitution.getFont().deriveFont(Font.PLAIN, 15));
+    		labelbonusConstitution.setForeground(Color.BLACK);
+			constraints.gridx = 10;
+        	constraints.gridy = 6;
+    		background.add(labeltotalConstitution, constraints);
+			constraints.gridx = 20;
+        	constraints.gridy = 6;
+    		background.add(labelbonusConstitution, constraints);
+			//Intelligence
+			labeltotalIntelligence.setFont(labeltotalIntelligence.getFont().deriveFont(Font.PLAIN, 15));
+    		labeltotalIntelligence.setForeground(Color.BLACK);
+			labelbonusIntelligence.setFont(labelbonusIntelligence.getFont().deriveFont(Font.PLAIN, 15));
+    		labelbonusIntelligence.setForeground(Color.BLACK);
+			constraints.gridx = 10;
+        	constraints.gridy = 7;
+    		background.add(labeltotalIntelligence, constraints);
+			constraints.gridx = 20;
+        	constraints.gridy = 7;
+    		background.add(labelbonusIntelligence, constraints);
+			//Wisdom
+			labeltotalWisdom.setFont(labeltotalWisdom.getFont().deriveFont(Font.PLAIN, 15));
+    		labeltotalWisdom.setForeground(Color.BLACK);
+			labelbonusWisdom.setFont(labelbonusWisdom.getFont().deriveFont(Font.PLAIN, 15));
+    		labelbonusWisdom.setForeground(Color.BLACK);
+			constraints.gridx = 10;
+        	constraints.gridy = 8;
+    		background.add(labeltotalWisdom, constraints);
+			constraints.gridx = 20;
+        	constraints.gridy = 8;
+    		background.add(labelbonusWisdom, constraints);
+			//Charisma
+			labeltotalCharisma.setFont(labeltotalCharisma.getFont().deriveFont(Font.PLAIN, 15));
+    		labeltotalCharisma.setForeground(Color.BLACK);
+			labelbonusCharisma.setFont(labelbonusCharisma.getFont().deriveFont(Font.PLAIN, 15));
+    		labelbonusCharisma.setForeground(Color.BLACK);
+			constraints.gridx = 10;
+        	constraints.gridy = 9;
+    		background.add(labeltotalCharisma, constraints);
+			constraints.gridx = 20;
+        	constraints.gridy = 9;
+    		background.add(labelbonusCharisma, constraints);
+
+			//Saving Throw Bonuses
+
+
+
+
+
+
 
     		//pack();
     		//setLocationRelativeTo(null);

@@ -112,3 +112,10 @@ Version 1.3.9 - 24.4.2023
 
 Version 1.4.0 - 25.4.2023
 - Added Popup window to Language & Shortcuts
+
+Version 1.4.1 - 25.4.2023
+- Added more output labels to OutputSheet
+
+
+
+
