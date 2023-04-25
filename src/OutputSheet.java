@@ -194,10 +194,178 @@ public class OutputSheet extends JPanel {
     		labelName.setForeground(Color.BLACK);
 			//
 			background.add(labelName);
-			labelName.setBounds(100, 90, 200, 30);
+			labelName.setBounds(75, 85, 250, 30);
+			
+			//Class & Level, Background, Player Name
+			labelClass.setFont(labelClass.getFont().deriveFont(Font.PLAIN, 15));
+    		labelClass.setForeground(Color.BLACK);
+			labelLevel.setFont(labelLevel.getFont().deriveFont(Font.PLAIN, 15));
+    		labelLevel.setForeground(Color.BLACK);
+			labelBackground.setFont(labelBackground.getFont().deriveFont(Font.PLAIN, 15));
+    		labelBackground.setForeground(Color.BLACK);
+    		labelPlayerName.setFont(labelPlayerName.getFont().deriveFont(Font.PLAIN, 15));
+    		labelPlayerName.setForeground(Color.BLACK);
+			//Coordinates
+			background.add(labelClass);
+			labelClass.setBounds(375, 65, 100, 30);
+			background.add(labelLevel);
+			labelLevel.setBounds(440, 65, 100, 30);
+			background.add(labelBackground);
+			labelBackground.setBounds(530, 65, 100, 30);
+			background.add(labelPlayerName);
+			labelPlayerName.setBounds(665, 65, 100, 30);
+			
+			//Race, Alignment, Exp
+			labelRace.setFont(labelRace.getFont().deriveFont(Font.PLAIN, 15));
+    		labelRace.setForeground(Color.BLACK);
+			labelAlignment.setFont(labelAlignment.getFont().deriveFont(Font.PLAIN, 15));
+    		labelAlignment.setForeground(Color.BLACK);
+			//Experience
+			background.add(labelRace);
+			labelRace.setBounds(375, 100, 100, 30);
+			background.add(labelAlignment);
+			labelAlignment.setBounds(530, 100, 100, 30);
+			//background.add(labelPlayerName);
+			//labelPlayerName.setBounds(665, 65, 100, 30);
+
+			//Proficiency Bonus:
+			labelbonusProficiency.setFont(labelbonusProficiency.getFont().deriveFont(Font.PLAIN, 15));
+    		labelbonusProficiency.setForeground(Color.BLACK);
+			//Coordinates
+			background.add(labelbonusProficiency);
+			labelbonusProficiency.setBounds(145, 231, 30, 30);
+
+			//ArmorClass, Initiative, Speed
+			labelarmorClass.setFont(labelarmorClass.getFont().deriveFont(Font.PLAIN, 15));
+    		labelarmorClass.setForeground(Color.BLACK);
+			labelbonusInitative.setFont(labelbonusInitative.getFont().deriveFont(Font.PLAIN, 15));
+    		labelbonusInitative.setForeground(Color.BLACK);
+			labelbaseMovementSpeed.setFont(labelbaseMovementSpeed.getFont().deriveFont(Font.PLAIN, 15));
+    		labelbaseMovementSpeed.setForeground(Color.BLACK);
+			//Coordinates
+			background.add(labelarmorClass);
+			labelarmorClass.setBounds(335, 205, 50, 30);
+			background.add(labelbonusInitative);
+			labelbonusInitative.setBounds(410, 205, 60, 30);
+			background.add(labelbaseMovementSpeed);
+			labelbaseMovementSpeed.setBounds(495, 205, 60, 30);
+			
+			//Ability Scores:
+			//Strenght
+			labeltotalStrenght.setFont(labeltotalStrenght.getFont().deriveFont(Font.PLAIN, 15));
+    		labeltotalStrenght.setForeground(Color.BLACK);
+			labelbonusStrenght.setFont(labelbonusStrenght.getFont().deriveFont(Font.PLAIN, 15));
+    		labelbonusStrenght.setForeground(Color.BLACK);
+			//Coordinates
+			background.add(labeltotalStrenght);
+			labeltotalStrenght.setBounds(70, 253, 60, 30);
+			background.add(labelbonusStrenght);
+			labelbonusStrenght.setBounds(70, 220, 60, 30);
+
+			//Dexterity
+			labeltotalDexterity.setFont(labeltotalDexterity.getFont().deriveFont(Font.PLAIN, 15));
+    		labeltotalDexterity.setForeground(Color.BLACK);
+			labelbonusDexterity.setFont(labelbonusDexterity.getFont().deriveFont(Font.PLAIN, 15));
+    		labelbonusDexterity.setForeground(Color.BLACK);
+			//Coordinates
+			background.add(labeltotalDexterity);
+			labeltotalDexterity.setBounds(70, 353, 60, 30);
+			background.add(labelbonusDexterity);
+			labelbonusDexterity.setBounds(70, 320, 60, 30);
+
+			//Constitution
+			labeltotalConstitution.setFont(labeltotalConstitution.getFont().deriveFont(Font.PLAIN, 15));
+    		labeltotalConstitution.setForeground(Color.BLACK);
+			labelbonusConstitution.setFont(labelbonusConstitution.getFont().deriveFont(Font.PLAIN, 15));
+    		labelbonusConstitution.setForeground(Color.BLACK);
+			//Coordinates
+			background.add(labeltotalConstitution);
+			labeltotalConstitution.setBounds(70, 453, 60, 30);
+			background.add(labelbonusConstitution);
+			labelbonusConstitution.setBounds(70, 420, 60, 30);
+
+			//Intelligence
+			labeltotalIntelligence.setFont(labeltotalIntelligence.getFont().deriveFont(Font.PLAIN, 15));
+    		labeltotalIntelligence.setForeground(Color.BLACK);
+			labelbonusIntelligence.setFont(labelbonusIntelligence.getFont().deriveFont(Font.PLAIN, 15));
+    		labelbonusIntelligence.setForeground(Color.BLACK);
+			//Coordinates
+			background.add(labeltotalIntelligence);
+			labeltotalIntelligence.setBounds(70, 553, 60, 30);
+			background.add(labelbonusIntelligence);
+			labelbonusIntelligence.setBounds(70, 520, 60, 30);
+
+			//Wisdom
+			labeltotalWisdom.setFont(labeltotalWisdom.getFont().deriveFont(Font.PLAIN, 15));
+    		labeltotalWisdom.setForeground(Color.BLACK);
+			labelbonusWisdom.setFont(labelbonusWisdom.getFont().deriveFont(Font.PLAIN, 15));
+    		labelbonusWisdom.setForeground(Color.BLACK);
+			//Coordinates
+			background.add(labeltotalWisdom);
+			labeltotalWisdom.setBounds(70, 653, 60, 30);
+			background.add(labelbonusWisdom);
+			labelbonusWisdom.setBounds(70, 620, 60, 30);
+
+			//Charisma
+			labeltotalCharisma.setFont(labeltotalCharisma.getFont().deriveFont(Font.PLAIN, 15));
+    		labeltotalCharisma.setForeground(Color.BLACK);
+			labelbonusCharisma.setFont(labelbonusCharisma.getFont().deriveFont(Font.PLAIN, 15));
+    		labelbonusCharisma.setForeground(Color.BLACK);
+			//Coordinates
+			background.add(labeltotalCharisma);
+			labeltotalCharisma.setBounds(70, 753, 60, 30);
+			background.add(labelbonusCharisma);
+			labelbonusCharisma.setBounds(70, 720, 60, 30);
+
+			//Passive Perception:
+			labelpassivePerception.setFont(labelpassivePerception.getFont().deriveFont(Font.PLAIN, 15));
+    		labelpassivePerception.setForeground(Color.BLACK);
+			//Coordinates
+			background.add(labelpassivePerception);
+			labelpassivePerception.setBounds(50, 817, 60, 30);
+			
+
+			//Max Hitpoints:
+			labelhitPointMaximum.setFont(labelhitPointMaximum.getFont().deriveFont(Font.PLAIN, 15));
+    		labelhitPointMaximum.setForeground(Color.BLACK);
+			//Coordinates
+			background.add(labelhitPointMaximum);
+			labelhitPointMaximum.setBounds(410, 265, 60, 30);
+
+
+			//Character Description
+			labeloutputCharacterPersonality.setFont(labeloutputCharacterPersonality.getFont().deriveFont(Font.PLAIN, 15));
+    		labeloutputCharacterPersonality.setForeground(Color.BLACK);
+			labeloutputCharacterIdeals.setFont(labeloutputCharacterIdeals.getFont().deriveFont(Font.PLAIN, 15));
+    		labeloutputCharacterIdeals.setForeground(Color.BLACK);
+			labeloutputCharacterBonds.setFont(labeloutputCharacterBonds.getFont().deriveFont(Font.PLAIN, 15));
+    		labeloutputCharacterBonds.setForeground(Color.BLACK);
+			labeloutputCharacterFlaws.setFont(labeloutputCharacterFlaws.getFont().deriveFont(Font.PLAIN, 15));
+    		labeloutputCharacterFlaws.setForeground(Color.BLACK);
+			//Coordinates
+			background.add(labeloutputCharacterPersonality);
+			labeloutputCharacterPersonality.setBounds(580, 195, 220, 30);
+			background.add(labeloutputCharacterIdeals);
+			labeloutputCharacterIdeals.setBounds(580, 295, 220, 30);
+			background.add(labeloutputCharacterBonds);
+			labeloutputCharacterBonds.setBounds(580, 365, 220, 30);
+			background.add(labeloutputCharacterFlaws);
+			labeloutputCharacterFlaws.setBounds(580, 445, 220, 30);
+
+			//Saving Throws
+
+			//Skill Proficiencies
+
+			//Equipment
+
+
+
+
+
+
 			// 
 			/*
-			
+			//GridbagLayout:
 			//background.setLayout(new BorderLayout());
 			//Changed to GridBagLayout
 			GridBagLayout gridBag = new GridBagLayout();
@@ -205,8 +373,6 @@ public class OutputSheet extends JPanel {
 			//background.setLayout(new GridBagLayout());
 			background.setLayout(gridBag);
         	constraints.fill = GridBagConstraints.HORIZONTAL;
-
-			
 
 			//Constraints:
 			constraints.weightx = 1;
@@ -385,15 +551,6 @@ public class OutputSheet extends JPanel {
     		//setLocationRelativeTo(null);
     		setVisible(true);
 
-			/* 
-			JLabel label = new JLabel("Test");
-			label.setText("Test Label");
-			label.setVisible(true);
-			//picLabel.add(label);
-			//picLabel.setPreferredSize(new Dimension(640, 480));
-			panel2.add(picLabel);
-			*/
-
 		} catch (IOException e) {
 			//Image not found
 			System.out.println("Image not Found");
@@ -548,7 +705,7 @@ public class OutputSheet extends JPanel {
 
 	public void setBonusProficiency(int bonusProficiency) {
 		this.bonusProficiency = bonusProficiency;
-		labelbonusProficiency.setText("" + bonusProficiency);
+		labelbonusProficiency.setText("+" + bonusProficiency);
 	}
 
 	public int getBonusStrenght() {
@@ -557,7 +714,7 @@ public class OutputSheet extends JPanel {
 
 	public void setBonusStrenght(int bonusStrenght) {
 		this.bonusStrenght = bonusStrenght;
-		labelbonusStrenght.setText("" + bonusStrenght);
+		labelbonusStrenght.setText("+" + bonusStrenght);
 	}
 
 	public int getBonusDexterity() {
@@ -566,7 +723,7 @@ public class OutputSheet extends JPanel {
 
 	public void setBonusDexterity(int bonusDexterity) {
 		this.bonusDexterity = bonusDexterity;
-		labelbonusDexterity.setText("" + bonusDexterity);
+		labelbonusDexterity.setText("+" + bonusDexterity);
 	}
 
 	public int getBonusConstitution() {
@@ -575,7 +732,7 @@ public class OutputSheet extends JPanel {
 
 	public void setBonusConstitution(int bonusConstitution) {
 		this.bonusConstitution = bonusConstitution;
-		labelbonusConstitution.setText("" + bonusConstitution);
+		labelbonusConstitution.setText("+" + bonusConstitution);
 	}
 
 	public int getBonusIntelligence() {
@@ -584,7 +741,7 @@ public class OutputSheet extends JPanel {
 
 	public void setBonusIntelligence(int bonusIntelligence) {
 		this.bonusIntelligence = bonusIntelligence;
-		labelbonusIntelligence.setText("" + bonusIntelligence);
+		labelbonusIntelligence.setText("+" + bonusIntelligence);
 	}
 
 	public int getBonusWisdom() {
@@ -593,7 +750,7 @@ public class OutputSheet extends JPanel {
 
 	public void setBonusWisdom(int bonusWisdom) {
 		this.bonusWisdom = bonusWisdom;
-		labelbonusWisdom.setText("" + bonusWisdom);
+		labelbonusWisdom.setText("+" + bonusWisdom);
 	}
 
 	public int getBonusCharisma() {
@@ -602,7 +759,7 @@ public class OutputSheet extends JPanel {
 
 	public void setBonusCharisma(int bonusCharisma) {
 		this.bonusCharisma = bonusCharisma;
-		labelbonusCharisma.setText("" + bonusCharisma);
+		labelbonusCharisma.setText("+" + bonusCharisma);
 	}
 
 	public int getArmorClass() {
@@ -620,7 +777,7 @@ public class OutputSheet extends JPanel {
 
 	public void setBonusInitative(int bonusInitative) {
 		this.bonusInitative = bonusInitative;
-		labelbonusInitative.setText("" + bonusInitative);
+		labelbonusInitative.setText("+" + bonusInitative);
 	}
 
 	public int getBaseMovementSpeed() {
