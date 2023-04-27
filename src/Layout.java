@@ -101,13 +101,14 @@ public class Layout extends JFrame{
 		glass.setLayout(new GridBagLayout());
 		//glass.setPreferredSize(new Dimension(1000,300));
 		glass.setOpaque(false);
-		//glass.setLocation(new Point(0,5000));
-		glass.setVisible(true);
+		glass.setVisible(false);
+		glass.setLocation(500,500);
 		
 		
-		frame.pack();
+		
+		//frame.pack();
 
-
+		frame.setLocationRelativeTo(null);
 
 		frame.setVisible(true);
         
