@@ -91,8 +91,8 @@ public class Layout extends JFrame{
 		frame.add(scrollPane2, BorderLayout.CENTER);
 		
 		
-		
-		frame.setGlassPane(panel3);
+		//Glass Pane popup
+		//frame.setGlassPane(panel3);
 		
 		JPanel glass = (JPanel) frame.getGlassPane();
 

@@ -452,6 +452,21 @@ public class CharacterSheet {
         OutputSheet.getInstance().setOutputCharacterFlaws(inputCharacterFlaws);
 
 
+        //Saving Throws
+        //Strenght
+        OutputSheet.getInstance().setOutputSavingThrowStrenght(savingThrowStrenght);
+        //Dexterity
+        OutputSheet.getInstance().setOutputSavingThrowDexterity(savingThrowDexterity);
+        //Constitution
+        OutputSheet.getInstance().setOutputSavingThrowConstitution(savingThrowConstitution);
+        //Intelligence
+        OutputSheet.getInstance().setOutputSavingThrowIntelligence(savingThrowIntelligence);
+        //Wisdom
+        OutputSheet.getInstance().setOutputSavingThrowWisdom(savingThrowWisdom);
+        //Charisma
+        OutputSheet.getInstance().setOutputSavingThrowCharisma(savingThrowCharisma);
+
+
 
         //
 

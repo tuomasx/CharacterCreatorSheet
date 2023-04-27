@@ -137,6 +137,25 @@ public class OutputSheet extends JPanel {
 	private JLabel labeloutputCharacterFlaws = new JLabel("LabelCharFlaws");
 	//
 
+	//Saving Throws
+	//Strenght
+	private int outputSavingThrowStrenght = 0;
+	private JLabel labeloutputSavingThrowStrenght = new JLabel("LabelSaveSTR");
+	//Dexterity
+	private int outputSavingThrowDexterity = 0;
+	private JLabel labeloutputSavingThrowDexterity = new JLabel("LabelSaveDEX");
+	//Constitution
+	private int outputSavingThrowConstitution = 0;
+	private JLabel labeloutputSavingThrowConstitution = new JLabel("LabelSaveCON");
+	//Intelligence
+	private int outputSavingThrowIntelligence = 0;
+	private JLabel labeloutputSavingThrowIntelligence = new JLabel("LabelSaveINT");
+	//Wisdom
+	private int outputSavingThrowWisdom = 0;
+	private JLabel labeloutputSavingThrowWisdom = new JLabel("LabelSaveWIS");
+	//Charisma
+	private int outputSavingThrowCharisma = 0;
+	private JLabel labeloutputSavingThrowCharisma = new JLabel("LabelSaveCHA");
 
 	
 
@@ -353,6 +372,47 @@ public class OutputSheet extends JPanel {
 			labeloutputCharacterFlaws.setBounds(580, 445, 220, 30);
 
 			//Saving Throws
+			//Strenght
+			labeloutputSavingThrowStrenght.setFont(labeloutputSavingThrowStrenght.getFont().deriveFont(Font.PLAIN, 15));
+    		labeloutputSavingThrowStrenght.setForeground(Color.BLACK);
+			//Coordinates
+			background.add(labeloutputSavingThrowStrenght);
+			labeloutputSavingThrowStrenght.setBounds(162, 276, 60, 30);
+			//Dexterity
+			labeloutputSavingThrowDexterity.setFont(labeloutputSavingThrowDexterity.getFont().deriveFont(Font.PLAIN, 15));
+    		labeloutputSavingThrowStrenght.setForeground(Color.BLACK);
+			//Coordinates
+			background.add(labeloutputSavingThrowDexterity);
+			labeloutputSavingThrowDexterity.setBounds(162, 295, 60, 30);
+			//Constitution
+			labeloutputSavingThrowConstitution.setFont(labeloutputSavingThrowConstitution.getFont().deriveFont(Font.PLAIN, 15));
+    		labeloutputSavingThrowConstitution.setForeground(Color.BLACK);
+			//Coordinates
+			background.add(labeloutputSavingThrowConstitution);
+			labeloutputSavingThrowConstitution.setBounds(162, 314, 60, 30);
+			//Intelligence
+			labeloutputSavingThrowIntelligence.setFont(labeloutputSavingThrowIntelligence.getFont().deriveFont(Font.PLAIN, 15));
+    		labeloutputSavingThrowIntelligence.setForeground(Color.BLACK);
+			//Coordinates
+			background.add(labeloutputSavingThrowIntelligence);
+			labeloutputSavingThrowIntelligence.setBounds(162, 333, 60, 30);
+			//Wisdom
+			labeloutputSavingThrowWisdom.setFont(labeloutputSavingThrowWisdom.getFont().deriveFont(Font.PLAIN, 15));
+    		labeloutputSavingThrowWisdom.setForeground(Color.BLACK);
+			//Coordinates
+			background.add(labeloutputSavingThrowWisdom);
+			labeloutputSavingThrowWisdom.setBounds(162, 352, 60, 30);
+			//Charisma
+			labeloutputSavingThrowCharisma.setFont(labeloutputSavingThrowCharisma.getFont().deriveFont(Font.PLAIN, 15));
+    		labeloutputSavingThrowCharisma.setForeground(Color.BLACK);
+			//Coordinates
+			background.add(labeloutputSavingThrowCharisma);
+			labeloutputSavingThrowCharisma.setBounds(162, 371, 60, 30);
+
+
+
+
+
 
 			//Skill Proficiencies
 
@@ -897,7 +957,62 @@ public class OutputSheet extends JPanel {
 		labeloutputCharacterFlaws.setText(outputCharacterFlaws);
 	}
 
+	//Saving Throws
+	public int getOutputSavingThrowStrenght() {
+		return outputSavingThrowStrenght;
+	}
 
+	public void setOutputSavingThrowStrenght(int outputSavingThrowStrenght) {
+		this.outputSavingThrowStrenght = outputSavingThrowStrenght;
+		labeloutputSavingThrowStrenght.setText("" + outputSavingThrowStrenght);
+	}
+
+	public int getOutputSavingThrowDexterity() {
+		return outputSavingThrowDexterity;
+	}
+
+	public void setOutputSavingThrowDexterity(int outputSavingThrowDexterity) {
+		this.outputSavingThrowDexterity = outputSavingThrowDexterity;
+		labeloutputSavingThrowDexterity.setText("" + outputSavingThrowDexterity);
+	}
+
+	public int getOutputSavingThrowConstitution() {
+		return outputSavingThrowConstitution;
+	}
+
+	public void setOutputSavingThrowConstitution(int outputSavingThrowConstitution) {
+		this.outputSavingThrowConstitution = outputSavingThrowConstitution;
+		labeloutputSavingThrowConstitution.setText("" + outputSavingThrowConstitution);
+	}
+
+	public int getOutputSavingThrowIntelligence() {
+		return outputSavingThrowIntelligence;
+	}
+
+	public void setOutputSavingThrowIntelligence(int outputSavingThrowIntelligence) {
+		this.outputSavingThrowIntelligence = outputSavingThrowIntelligence;
+		labeloutputSavingThrowIntelligence.setText("" + outputSavingThrowIntelligence);
+	}
+
+	public int getOutputSavingThrowWisdom() {
+		return outputSavingThrowWisdom;
+	}
+
+	public void setOutputSavingThrowWisdom(int outputSavingThrowWisdom) {
+		this.outputSavingThrowWisdom = outputSavingThrowWisdom;
+		labeloutputSavingThrowWisdom.setText("" + outputSavingThrowWisdom);
+	}
+
+	public int getOutputSavingThrowCharisma() {
+		return outputSavingThrowCharisma;
+	}
+
+	public void setOutputSavingThrowCharisma(int outputSavingThrowCharisma) {
+		this.outputSavingThrowCharisma = outputSavingThrowCharisma;
+		labeloutputSavingThrowCharisma.setText("" + outputSavingThrowCharisma);
+	}
+
+	
 
     
 }

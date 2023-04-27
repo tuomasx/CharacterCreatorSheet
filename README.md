@@ -126,4 +126,9 @@ Version 1.4.3 - 25.4.2023
 - Added more X/Y Coordinate Labels to outputsheet
 - TODO: Saving throws, Skill proficiencies, Equipment
 
+Version 1.4.4 - 27.4.2023
+- Added Saving Throws to OutputSheet
+
+
+
 
