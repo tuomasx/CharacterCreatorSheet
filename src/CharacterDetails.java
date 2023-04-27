@@ -6,6 +6,8 @@ import javax.swing.text.*;
 
 
 public class CharacterDetails extends JPanel implements ActionListener {
+	
+	ImageIcon icon = new ImageIcon("src/questionmark.png");
     
     private JTextField nameField;
     private JTextField ageField;
@@ -35,14 +37,34 @@ public class CharacterDetails extends JPanel implements ActionListener {
         GridBagConstraints constraints = new GridBagConstraints();
         
         JLabel label = new JLabel("Character Details");
+        
+        
         constraints.gridx = 0;
         constraints.gridy = 0;
         constraints.gridwidth = 5;
         constraints.anchor = GridBagConstraints.NORTH;
+        
         add(label, constraints);
+        
+        JButton btnOpenDialog = new JButton(icon);
+        constraints.gridx = 5;
+        constraints.gridy = 0;
+        constraints.gridwidth = 5;
+        constraints.insets = new Insets(0, 10, 0, 0);
+        btnOpenDialog.addActionListener(e -> {
+            JPanel panel = (JPanel) SwingUtilities.getRootPane(this).getGlassPane().getComponentAt(0,0);
+            if(panel.isVisible()) {
+                panel.setVisible(false);
+            } else {
+                panel.setVisible(true);
+            }
+        });
+        add(btnOpenDialog, constraints);
         
         JPanel fieldsPanel = new JPanel(new GridBagLayout());
         fieldsPanel.setBorder(BorderFactory.createEmptyBorder(10, 10, 10, 10));
+        
+        
         
         //Name:
         JLabel nameLabel = new JLabel("Name: ");
