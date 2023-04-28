@@ -417,6 +417,28 @@ public class OutputSheet extends JPanel {
 			//Skill Proficiencies
 
 			//Equipment
+			
+			//armor
+			labeloutputArmor.setFont(labeloutputArmor.getFont().deriveFont(Font.PLAIN, 15));
+			labeloutputArmor.setForeground(Color.BLACK);
+			labeloutputWeapon.setFont(labeloutputWeapon.getFont().deriveFont(Font.PLAIN, 15));
+			labeloutputWeapon.setForeground(Color.BLACK);
+			labeloutputOther.setFont(labeloutputOther.getFont().deriveFont(Font.PLAIN, 15));
+			labeloutputOther.setForeground(Color.BLACK);
+			
+			
+			background.add(labeloutputWeapon);
+			labeloutputArmor.setBounds(372, 830, 200, 20);
+			background.add(labeloutputArmor);
+			labeloutputWeapon.setBounds(372, 885, 200, 20);
+			background.add(labeloutputOther);
+			labeloutputOther.setBounds(372, 940, 200, 20);
+			
+			labeloutputGold.setFont(labeloutputGold.getFont().deriveFont(Font.PLAIN, 15));
+			labeloutputGold.setForeground(Color.BLACK);
+			//Coordinates 640, 1875, 80, 60
+			background.add(labeloutputGold);
+			labeloutputGold.setBounds(325, 937, 35, 30);
 
 
 
