@@ -33,13 +33,13 @@ public class CharacterEquipment extends JPanel implements ActionListener {
     //		"Glaive", "Greataxe", "Halberd", "Lance", "Longsword", "Maul", "Morningstar", "Pike", "Rapier", "Scimitar", "Shortsword"
     //		,"Spiked Chain", "Trident", "War pick", "Warhammer", "Whip", "War Scythe"};
     
-    private String weapons[]={"Club","Dagger","Greatclub","Handaxe","Javelin","Light hammer", "Mace", "Quarterstaff", "Sickle", "Spear","Battleaxe","Dwarven Urgrosh", "Elven Crescent Blade", "Flail", 
+    private String weapons[]={"", "Club","Dagger","Greatclub","Handaxe","Javelin","Light hammer", "Mace", "Quarterstaff", "Sickle", "Spear","Battleaxe","Dwarven Urgrosh", "Elven Crescent Blade", "Flail", 
     		"Glaive", "Greataxe", "Halberd", "Lance", "Longsword", "Maul", "Morningstar", "Pike", "Rapier", "Scimitar", "Shortsword"
     		,"Spiked Chain", "Trident", "War pick", "Warhammer", "Whip", "War Scythe"};
     private JComboBox weaponComboBox = new JComboBox<>(weapons);
     
     // Other
-    private String others[] = {"Bedroll","Book","Lamp","Torch"};
+    private String others[] = {"", "Bedroll","Book","Lamp","Torch"};
     private JComboBox otherComboBox = new JComboBox<>(others);
     
     // Shield
@@ -47,7 +47,7 @@ public class CharacterEquipment extends JPanel implements ActionListener {
     
     // Gold
     SpinnerModel goldValue = new SpinnerNumberModel(0, 0, 1000000, 10);
-    private String charArmor = "";
+    private String charArmor = "None";
     private String charWeapon = "";
     private String charOther = "";
     private int intGold = 0;

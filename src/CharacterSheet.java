@@ -36,7 +36,7 @@ public class CharacterSheet {
     static int inputWisdom = 10;
     static int inputCharisma = 10;
     // 4. Equipment
-    static String inputArmor = "";
+    static String inputArmor = "None";
     static String inputWeapon = "";
     static Boolean inputShield = false;
     static String inputOther = "";
@@ -159,15 +159,15 @@ public class CharacterSheet {
 
     // Armor Class: Armor choice + Dexterity Bonus up to the armors maximum + shield
     // + class bonus
-    static int armorClass = 0;
+    static int armorClass = 10;
 
     // Iniative Bonus: dexterity bonus + other bonuses (Class, Feats)
     static int bonusInitative = 0;
     // Passive Iniative: 10 + Iniative Bonus
-    static int passiveIniative = 0;
+    static int passiveIniative = 10;
 
     // Speed: Race + Class Bonus
-    static int baseMovementSpeed = 0;
+    static int baseMovementSpeed = 30;
 
     // Hit point Maximum: Class base HP + Class Hit Dice per lvl higher than 2 +
     // (Con mod * lvl) + (race bonus * lvl) + other bonuses
@@ -361,6 +361,8 @@ public class CharacterSheet {
         //outputGold = 0;
         outputGold = inputGold + outputClassGold + outputBackgroundGold + highLevelExtraGold;
 
+        //Update Outputs to OutputSheet: -moved here from printOutputs
+        updateOutputSheet();
 
     }
 
@@ -1390,7 +1392,7 @@ public class CharacterSheet {
         // Sets output variables Back to 0
 
         // Proficiency Bonus:
-        bonusProficiency = 0;
+        bonusProficiency = 2;
         // Racial Ability Score:
         racialStrenght = 0;
         racialDexterity = 0;
@@ -1484,15 +1486,15 @@ public class CharacterSheet {
         skillBonusPersuasion = 0;
 
         // passivePerception:
-        passivePerception = 0;
+        passivePerception = 10;
         // Armor Class:
-        armorClass = 0;
+        armorClass = 10;
         // Iniative Bonus:
         bonusInitative = 0;
         // Passive Iniative:
-        passiveIniative = 0;
+        passiveIniative = 10;
         // Speed:
-        baseMovementSpeed = 0;
+        baseMovementSpeed = 30;
         // Hit point Maximum:
         hitPointMaximum = 0;
         hitPointMaximumRangeLow = 0;
@@ -1590,7 +1592,7 @@ public class CharacterSheet {
         inputWisdom = 10;
         inputCharisma = 10;
         // 4. Equipment
-        inputArmor = "";
+        inputArmor = "None";
         inputWeapon = "";
         inputShield = false;
         inputOther = "";
@@ -1663,7 +1665,7 @@ public class CharacterSheet {
         System.out.println("Flaws:              " + inputCharacterFlaws);
 
 
-        updateOutputSheet();
+        //updateOutputSheet();
 
 
         /*
