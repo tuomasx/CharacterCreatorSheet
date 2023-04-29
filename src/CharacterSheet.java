@@ -932,6 +932,14 @@ public class CharacterSheet {
             //int levelmultplier = 0;
             //levelmultplier = inputLevel - 1;
             // Barbarian: +1d12
+            if (inputClass.equals("Artificer")) {
+                hitPointsGainedMin = ((inputLevel - 1) * 1);
+                hitPointsGainedAvg = ((inputLevel - 1) * 4.5); 
+                hitPointsGainedMax = ((inputLevel - 1) * 12);
+                // Hit Dice
+                hitDiceD8 = 1 + ((inputLevel - 1));
+            }
+            // Barbarian: +1d12
             if (inputClass.equals("Barbarian")) {
                 hitPointsGainedMin = ((inputLevel - 1) * 1);
                 hitPointsGainedAvg = ((inputLevel - 1) * 6.5); // 1d12 Avg 6.5

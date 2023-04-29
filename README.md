@@ -131,4 +131,5 @@ Version 1.4.4 - 27.4.2023
 Version 1.4.5 - 28.4.2023
 - Added Gold, Armor, Weapon and Other to OutputSheet
 
-
+Version 1.4.6 - 29.4.2023
+- Fixed missing Calculation in CharacterSheet
