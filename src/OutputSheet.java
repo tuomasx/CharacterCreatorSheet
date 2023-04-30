@@ -157,6 +157,54 @@ public class OutputSheet extends JPanel {
 	private int outputSavingThrowCharisma = 0;
 	private JLabel labeloutputSavingThrowCharisma = new JLabel("0");
 
+	//Skill bonuses:
+	private int outputskillBonusAthletics = 0;
+    //Dexterity:
+    private int outputskillBonusAcrobatics = 0;
+    private int outputskillBonusSleightOfHand = 0;
+    private int outputskillBonusStealth = 0;
+    //Intelligence:
+    private int outputskillBonusArcana = 0;
+    private int outputskillBonusHistory = 0;
+    private int outputskillBonusInvestigation = 0;
+    private int outputskillBonusNature = 0;
+    private int outputskillBonusReligion = 0;
+    //Wisdom:
+    private int outputskillBonusAnimalHandling = 0;
+    private int outputskillBonusInsight = 0;
+    private int outputskillBonusMedicine = 0;
+    private int outputskillBonusPerception = 0;
+    private int outputskillBonusSurvival = 0;
+    //Charisma:
+    private int outputskillBonusDeception = 0;
+    private int outputskillBonusIntimidation = 0;
+    private int outputskillBonusPerformance = 0;
+    private int outputskillBonusPersuasion = 0;
+
+	//Skill Labels:
+	private JLabel labeloutputskillBonusAthletics = new JLabel("Athletics");
+    //Dexterity:
+    private JLabel labeloutputskillBonusAcrobatics = new JLabel("Acrobatics");
+    private JLabel labeloutputskillBonusSleightOfHand = new JLabel("SleightOfHand");
+    private JLabel labeloutputskillBonusStealth = new JLabel("");
+    //Intelligence:
+    private JLabel labeloutputskillBonusArcana = new JLabel("");
+    private JLabel labeloutputskillBonusHistory = new JLabel("");
+    private JLabel labeloutputskillBonusInvestigation = new JLabel("");
+    private JLabel labeloutputskillBonusNature = new JLabel("");
+    private JLabel labeloutputskillBonusReligion = new JLabel("");
+    //Wisdom:
+    private JLabel labeloutputskillBonusAnimalHandling = new JLabel("");
+    private JLabel labeloutputskillBonusInsight = new JLabel("");
+    private JLabel labeloutputskillBonusMedicine = new JLabel("");
+    private JLabel labeloutputskillBonusPerception = new JLabel("");
+    private JLabel labeloutputskillBonusSurvival = new JLabel("");
+    //Charisma:
+    private JLabel labeloutputskillBonusDeception = new JLabel("");
+    private JLabel labeloutputskillBonusIntimidation = new JLabel("");
+    private JLabel labeloutputskillBonusPerformance = new JLabel("");
+    private JLabel labeloutputskillBonusPersuasion = new JLabel("");
+
 	
 
 
@@ -847,6 +895,174 @@ public class OutputSheet extends JPanel {
 		this.outputSavingThrowCharisma = outputSavingThrowCharisma;
 		labeloutputSavingThrowCharisma.setText("" + outputSavingThrowCharisma);
 	}
+
+
+
+	//Skill Bonuses:
+	public int getOutputskillBonusAthletics() {
+		return outputskillBonusAthletics;
+	}
+
+	public void setOutputskillBonusAthletics(int outputskillBonusAthletics) {
+		this.outputskillBonusAthletics = outputskillBonusAthletics;
+		labeloutputskillBonusAthletics.setText("" + outputskillBonusAthletics);
+	}
+
+	public int getOutputskillBonusAcrobatics() {
+		return outputskillBonusAcrobatics;
+	}
+
+	public void setOutputskillBonusAcrobatics(int outputskillBonusAcrobatics) {
+		this.outputskillBonusAcrobatics = outputskillBonusAcrobatics;
+		labeloutputskillBonusAcrobatics.setText("" + outputskillBonusAcrobatics);
+	}
+
+	public int getOutputskillBonusSleightOfHand() {
+		return outputskillBonusSleightOfHand;
+	}
+
+	public void setOutputskillBonusSleightOfHand(int outputskillBonusSleightOfHand) {
+		this.outputskillBonusSleightOfHand = outputskillBonusSleightOfHand;
+		labeloutputskillBonusSleightOfHand.setText("" + outputskillBonusSleightOfHand);
+	}
+
+	public int getOutputskillBonusStealth() {
+		return outputskillBonusStealth;
+	}
+
+	public void setOutputskillBonusStealth(int outputskillBonusStealth) {
+		this.outputskillBonusStealth = outputskillBonusStealth;
+		labeloutputskillBonusStealth.setText("" + outputskillBonusStealth);
+	}
+
+	public int getOutputskillBonusArcana() {
+		return outputskillBonusArcana;
+	}
+
+	public void setOutputskillBonusArcana(int outputskillBonusArcana) {
+		this.outputskillBonusArcana = outputskillBonusArcana;
+		labeloutputskillBonusArcana.setText("" + outputskillBonusArcana);
+	}
+
+	public int getOutputskillBonusHistory() {
+		return outputskillBonusHistory;
+	}
+
+	public void setOutputskillBonusHistory(int outputskillBonusHistory) {
+		this.outputskillBonusHistory = outputskillBonusHistory;
+		labeloutputskillBonusHistory.setText("" + outputskillBonusHistory);
+	}
+
+	public int getOutputskillBonusInvestigation() {
+		return outputskillBonusInvestigation;
+	}
+
+	public void setOutputskillBonusInvestigation(int outputskillBonusInvestigation) {
+		this.outputskillBonusInvestigation = outputskillBonusInvestigation;
+		labeloutputskillBonusInvestigation.setText("" + outputskillBonusInvestigation);
+	}
+
+	public int getOutputskillBonusNature() {
+		return outputskillBonusNature;
+	}
+
+	public void setOutputskillBonusNature(int outputskillBonusNature) {
+		this.outputskillBonusNature = outputskillBonusNature;
+		labeloutputskillBonusNature.setText("" + outputskillBonusNature);
+	}
+
+	public int getOutputskillBonusReligion() {
+		return outputskillBonusReligion;
+	}
+
+	public void setOutputskillBonusReligion(int outputskillBonusReligion) {
+		this.outputskillBonusReligion = outputskillBonusReligion;
+		labeloutputskillBonusReligion.setText("" + outputskillBonusReligion);
+	}
+
+	public int getOutputskillBonusAnimalHandling() {
+		return outputskillBonusAnimalHandling;
+	}
+
+	public void setOutputskillBonusAnimalHandling(int outputskillBonusAnimalHandling) {
+		this.outputskillBonusAnimalHandling = outputskillBonusAnimalHandling;
+		labeloutputskillBonusAnimalHandling.setText("" + outputskillBonusAnimalHandling);
+	}
+
+	public int getOutputskillBonusInsight() {
+		return outputskillBonusInsight;
+	}
+
+	public void setOutputskillBonusInsight(int outputskillBonusInsight) {
+		this.outputskillBonusInsight = outputskillBonusInsight;
+		labeloutputskillBonusInsight.setText("" + outputskillBonusInsight);
+	}
+
+	public int getOutputskillBonusMedicine() {
+		return outputskillBonusMedicine;
+	}
+
+	public void setOutputskillBonusMedicine(int outputskillBonusMedicine) {
+		this.outputskillBonusMedicine = outputskillBonusMedicine;
+		labeloutputskillBonusMedicine.setText("" + outputskillBonusMedicine);
+	}
+
+	public int getOutputskillBonusPerception() {
+		return outputskillBonusPerception;
+	}
+
+	public void setOutputskillBonusPerception(int outputskillBonusPerception) {
+		this.outputskillBonusPerception = outputskillBonusPerception;
+		labeloutputskillBonusPerception.setText("" + outputskillBonusPerception);
+	}
+
+	public int getOutputskillBonusSurvival() {
+		return outputskillBonusSurvival;
+	}
+
+	public void setOutputskillBonusSurvival(int outputskillBonusSurvival) {
+		this.outputskillBonusSurvival = outputskillBonusSurvival;
+		labeloutputskillBonusSurvival.setText("" + outputskillBonusSurvival);
+	}
+
+	public int getOutputskillBonusDeception() {
+		return outputskillBonusDeception;
+	}
+
+	public void setOutputskillBonusDeception(int outputskillBonusDeception) {
+		this.outputskillBonusDeception = outputskillBonusDeception;
+		labeloutputskillBonusDeception.setText("" + outputskillBonusDeception);
+	}
+
+	public int getOutputskillBonusIntimidation() {
+		return outputskillBonusIntimidation;
+	}
+
+	public void setOutputskillBonusIntimidation(int outputskillBonusIntimidation) {
+		this.outputskillBonusIntimidation = outputskillBonusIntimidation;
+		labeloutputskillBonusIntimidation.setText("" + outputskillBonusIntimidation);
+	}
+
+	public int getOutputskillBonusPerformance() {
+		return outputskillBonusPerformance;
+	}
+
+	public void setOutputskillBonusPerformance(int outputskillBonusPerformance) {
+		this.outputskillBonusPerformance = outputskillBonusPerformance;
+		labeloutputskillBonusPerformance.setText("" + outputskillBonusPerformance);
+	}
+
+	public int getOutputskillBonusPersuasion() {
+		return outputskillBonusPersuasion;
+	}
+
+	public void setOutputskillBonusPersuasion(int outputskillBonusPersuasion) {
+		this.outputskillBonusPersuasion = outputskillBonusPersuasion;
+		labeloutputskillBonusPersuasion.setText("" + outputskillBonusPersuasion);
+	}
+
+
+
 
 	
 

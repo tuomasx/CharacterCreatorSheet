@@ -469,8 +469,47 @@ public class CharacterSheet {
         OutputSheet.getInstance().setOutputSavingThrowCharisma(savingThrowCharisma);
 
 
-
-        //
+        //Skill Bonuses:
+        //static int skillBonusAthletics = 0;
+        OutputSheet.getInstance().setOutputskillBonusAthletics(skillBonusAthletics);
+        //Dexterity:
+        //static int skillBonusAcrobatics = 0;
+        OutputSheet.getInstance().setOutputskillBonusAcrobatics(skillBonusAcrobatics);
+        //static int skillBonusSleightOfHand = 0;
+        OutputSheet.getInstance().setOutputskillBonusSleightOfHand(skillBonusSleightOfHand);
+        //static int skillBonusStealth = 0;
+        OutputSheet.getInstance().setOutputskillBonusStealth(skillBonusStealth);
+        //Intelligence:
+        //static int skillBonusArcana = 0;
+        OutputSheet.getInstance().setOutputskillBonusArcana(skillBonusArcana);
+        //static int skillBonusHistory = 0;
+        OutputSheet.getInstance().setOutputskillBonusHistory(skillBonusHistory);
+        //static int skillBonusInvestigation = 0;
+        OutputSheet.getInstance().setOutputskillBonusInvestigation(skillBonusInvestigation);
+        //static int skillBonusNature = 0;
+        OutputSheet.getInstance().setOutputskillBonusNature(skillBonusNature);
+        //static int skillBonusReligion = 0;
+        OutputSheet.getInstance().setOutputskillBonusReligion(skillBonusReligion);
+        //Wisdom:
+        //static int skillBonusAnimalHandling = 0;
+        OutputSheet.getInstance().setOutputskillBonusAnimalHandling(skillBonusAnimalHandling);
+        //static int skillBonusInsight = 0;
+        OutputSheet.getInstance().setOutputskillBonusInsight(skillBonusInsight);
+        //static int skillBonusMedicine = 0;
+        OutputSheet.getInstance().setOutputskillBonusMedicine(skillBonusMedicine);
+        //static int skillBonusPerception = 0;
+        OutputSheet.getInstance().setOutputskillBonusPerception(skillBonusPerception);
+        //static int skillBonusSurvival = 0;
+        OutputSheet.getInstance().setOutputskillBonusSurvival(skillBonusSurvival);
+        //Charisma:
+        //static int skillBonusDeception = 0;
+        OutputSheet.getInstance().setOutputskillBonusDeception(skillBonusDeception);
+        //static int skillBonusIntimidation = 0;
+        OutputSheet.getInstance().setOutputskillBonusIntimidation(skillBonusIntimidation);
+        //static int skillBonusPerformance = 0;
+        OutputSheet.getInstance().setOutputskillBonusPerformance(skillBonusPerformance);
+        //static int skillBonusPersuasion = 0;
+        OutputSheet.getInstance().setOutputskillBonusPersuasion(skillBonusPersuasion);
 
 
     }

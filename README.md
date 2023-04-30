@@ -136,3 +136,6 @@ Version 1.4.6 - 29.4.2023
 
 Version 1.4.7 - 30.4.2023
 - Updated OutputSheet Default values
+
+Version 1.4.8 - 30.4.2023
+- Added Skill Bonus parameters to OutputSheet
