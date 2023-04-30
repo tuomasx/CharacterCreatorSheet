@@ -47,6 +47,27 @@ public class CharacterFeatures extends JPanel implements ActionListener {
         constraints2.anchor = GridBagConstraints.NORTH;
         add(label, constraints2);
         
+
+        
+        //Button for Help 2
+        JButton buttonHelp = new JButton("?");
+		    buttonHelp.addActionListener(new ActionListener(){
+			  @Override
+			  public void actionPerformed( ActionEvent e ) {
+				  //Open help window
+                new Help2();	
+			    }
+		    });
+        buttonHelp.setPreferredSize(new Dimension(25, 25));
+        buttonHelp.setMargin(new java.awt.Insets(1, 1, 1, 1));
+        constraints2.gridx = 2;
+        constraints2.gridy = 0;
+        constraints2.gridwidth = 5;
+        constraints2.anchor = GridBagConstraints.EAST;
+        //Add button next to "Character Details"
+        add(buttonHelp, constraints2);
+        //
+        constraints2.anchor = GridBagConstraints.NORTH;
         
 
         

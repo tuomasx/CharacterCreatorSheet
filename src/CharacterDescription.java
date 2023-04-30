@@ -27,6 +27,28 @@ public class CharacterDescription extends JPanel implements ActionListener {
         constraints.anchor = GridBagConstraints.NORTH;
         add(label, constraints);
         
+        //Button for Help 5
+        JButton buttonHelp = new JButton("?");
+		    buttonHelp.addActionListener(new ActionListener(){
+			  @Override
+			  public void actionPerformed( ActionEvent e ) {
+				  //Open help window
+                new Help5();	
+			    }
+		    });
+        buttonHelp.setPreferredSize(new Dimension(25, 25));
+        buttonHelp.setMargin(new java.awt.Insets(1, 1, 1, 1));
+        constraints.gridx = 2;
+        constraints.gridy = 0;
+        constraints.gridwidth = 5;
+        constraints.anchor = GridBagConstraints.EAST;
+        //Add button next to "Character Details"
+        add(buttonHelp, constraints);
+        //
+        constraints.anchor = GridBagConstraints.NORTH;
+
+
+
         
         JPanel fieldsPanel = new JPanel(new GridBagLayout());
         fieldsPanel.setBorder(BorderFactory.createEmptyBorder(10, 10, 10, 10));

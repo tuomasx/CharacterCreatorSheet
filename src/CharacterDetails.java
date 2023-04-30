@@ -37,6 +37,7 @@ public class CharacterDetails extends JPanel implements ActionListener {
         GridBagConstraints constraints = new GridBagConstraints();
         
         JLabel label = new JLabel("Character Details");
+        label.setPreferredSize(new Dimension(100, 30));
         
         
         constraints.gridx = 0;
@@ -45,7 +46,34 @@ public class CharacterDetails extends JPanel implements ActionListener {
         constraints.anchor = GridBagConstraints.NORTH;
         
         add(label, constraints);
-        
+
+        //Button for Help 1
+        JButton buttonHelp = new JButton("?");
+		buttonHelp.addActionListener(new ActionListener(){
+			@Override
+			public void actionPerformed( ActionEvent e ) {
+				//Open help window
+                new Help1();	
+			}
+		});
+        buttonHelp.setPreferredSize(new Dimension(25, 25));
+        buttonHelp.setMargin(new java.awt.Insets(1, 1, 1, 1));
+        constraints.gridx = 2;
+        constraints.gridy = 0;
+        constraints.gridwidth = 5;
+        constraints.anchor = GridBagConstraints.EAST;
+        //Add button next to "Character Details"
+        add(buttonHelp, constraints);
+        //
+        constraints.anchor = GridBagConstraints.NORTH;
+
+
+
+
+
+
+        // 
+        /* 
         JButton btnOpenDialog = new JButton(icon);
         constraints.gridx = 5;
         constraints.gridy = 0;
@@ -59,6 +87,7 @@ public class CharacterDetails extends JPanel implements ActionListener {
                 panel.setVisible(true);
             }
         });
+        // */
 
         //Help Button, Top right on left side bar
         //Commented out due to spacing issues caused to CharacterDescription input fields
