@@ -17,8 +17,11 @@ public class Layout extends JFrame{
 	private static JFrame frame = new JFrame();
 
 	public static JPanel panel1 = new Content();
+	//public static JPanel panel1 = new JPanel();
+
 	private static JPanel panel2 = OutputSheet.getInstance().createOutputSheet();
-	public static JPanel panel3 = new HelpDialog();
+	
+	//public static JPanel panel3 = new HelpDialog();
 
 	// Singleton: prevent duplicate objects
     private Layout() {
@@ -94,15 +97,15 @@ public class Layout extends JFrame{
 		//Glass Pane popup
 		//frame.setGlassPane(panel3);
 		
-		JPanel glass = (JPanel) frame.getGlassPane();
+		//JPanel glass = (JPanel) frame.getGlassPane();
 
 		
+			//glass.setLayout(new GridBagLayout());
 		//glass.setLayout(new GridBagLayout());
-		glass.setLayout(new GridBagLayout());
-		//glass.setPreferredSize(new Dimension(1000,300));
-		glass.setOpaque(false);
-		glass.setVisible(false);
-		glass.setLocation(500,500);
+			//glass.setPreferredSize(new Dimension(1000,300));
+		//glass.setOpaque(false);
+		//glass.setVisible(false);
+		//glass.setLocation(500,500);
 		
 		
 		

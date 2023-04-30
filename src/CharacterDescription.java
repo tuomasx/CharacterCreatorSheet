@@ -269,5 +269,21 @@ public class CharacterDescription extends JPanel implements ActionListener {
         
        
     }
+
+    public void update() {
+      //Set input values from GUI to CharacterSheet Inputs:
+      CharacterSheet.getInstance().setInputCharacterDescription(characterDescription.getText());
+      CharacterSheet.getInstance().setInputCharacterPersonality(characterPersonality.getText());
+      CharacterSheet.getInstance().setInputCharacterIdeals(characterIdeals.getText());
+      CharacterSheet.getInstance().setInputCharacterBonds(characterBonds.getText());
+      CharacterSheet.getInstance().setInputCharacterFlaws(characterFlaws.getText());
+      //CharacterSheet.getInstance().setInputCharacterDescription(characterDescription.getText());
+      //Calculate Changes:
+      CharacterSheet.getInstance().calculateOutput();
+      //Display Changes:
+      //Test print to console
+      CharacterSheet.getInstance().printOutputs();
+
+    }
     
 }

@@ -142,3 +142,7 @@ Version 1.4.8 - 30.4.2023
 
 Version 1.4.9 - 30.4.2023
 - Added Skill Bonus Labels to OutputSheet
+
+Version 1.5.0 - 30.4.2023
+- Commented out Help button on left side menu due to issues caused to CharacterDescription text input fields
+- Added Basic Help 0 Window to Menu

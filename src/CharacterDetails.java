@@ -59,7 +59,10 @@ public class CharacterDetails extends JPanel implements ActionListener {
                 panel.setVisible(true);
             }
         });
-        add(btnOpenDialog, constraints);
+
+        //Help Button, Top right on left side bar
+        //Commented out due to spacing issues caused to CharacterDescription input fields
+        //add(btnOpenDialog, constraints);
         
         JPanel fieldsPanel = new JPanel(new GridBagLayout());
         fieldsPanel.setBorder(BorderFactory.createEmptyBorder(10, 10, 10, 10));
