@@ -28,21 +28,21 @@ import javax.swing.JTextArea;
 
 
 
-public class Help1 extends JFrame {
+public class Help3 extends JFrame {
 
     JFrame frameHelp0 = new JFrame();
 
-    Help1 () {
+    Help3 () {
         System.out.println("Help");
 
-        frameHelp0.setTitle("Help 1/5: ");
+        frameHelp0.setTitle("Help 3/5: ");
         frameHelp0.setBackground(new Color(255, 255, 255));
 			
 		JPanel help0Panel = new JPanel();
 		help0Panel.setPreferredSize(new Dimension(300, 170));
         help0Panel.setBackground(new Color(255, 255, 255));
 
-		JTextArea help0Label = new JTextArea("Help 1/5: \n \n \n \n \n \n ");
+		JTextArea help0Label = new JTextArea("Help 3/5: \n \n \n \n \n \n ");
 		help0Label.setPreferredSize(new Dimension(300, 130));
 
 		JButton buttonClose = new JButton("Close");
@@ -59,6 +59,18 @@ public class Help1 extends JFrame {
 			@Override
 			public void actionPerformed( ActionEvent e ) {
 				//Open next help window
+				new Help4();
+				//Close current window
+				frameHelp0.setVisible(false);
+				frameHelp0.dispose();
+					
+			}
+		});
+		JButton buttonPrevious = new JButton("Previous");
+		buttonPrevious.addActionListener(new ActionListener(){
+			@Override
+			public void actionPerformed( ActionEvent e ) {
+				//Open next help window
                 new Help2();
 				//Close current window
 				frameHelp0.setVisible(false);
@@ -66,24 +78,12 @@ public class Help1 extends JFrame {
 					
 			}
 		});
-        JButton buttonPrevious = new JButton("Previous");
-		buttonPrevious.addActionListener(new ActionListener(){
-			@Override
-			public void actionPerformed( ActionEvent e ) {
-				//Open next help window
-                new Help0();
-				//Close current window
-				frameHelp0.setVisible(false);
-				frameHelp0.dispose();
-					
-			}
-		});
+
 
 		help0Panel.add(help0Label);
-        help0Panel.add(buttonPrevious);
+		help0Panel.add(buttonPrevious);
 		//help0Panel.add(buttonClose);
 		help0Panel.add(buttonNext);
-        
 
 		frameHelp0.add(help0Panel);
 			

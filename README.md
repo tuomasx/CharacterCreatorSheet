@@ -152,3 +152,7 @@ Version 1.5.1 - 30.4.2023
 
 Version 1.5.2 - 30.4.2023
 - Added Help1 Class & added Next Help button functionality
+
+Version 1.5.3 - 30.4.2023
+- Added Help2 to Help5 classes
+- Added Previous button & functionality
