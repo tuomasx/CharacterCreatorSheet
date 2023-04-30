@@ -182,28 +182,28 @@ public class OutputSheet extends JPanel {
     private int outputskillBonusPersuasion = 0;
 
 	//Skill Labels:
-	private JLabel labeloutputskillBonusAthletics = new JLabel("Athletics");
+	private JLabel labeloutputskillBonusAthletics = new JLabel("0");
     //Dexterity:
-    private JLabel labeloutputskillBonusAcrobatics = new JLabel("Acrobatics");
-    private JLabel labeloutputskillBonusSleightOfHand = new JLabel("SleightOfHand");
-    private JLabel labeloutputskillBonusStealth = new JLabel("");
+    private JLabel labeloutputskillBonusAcrobatics = new JLabel("0");
+    private JLabel labeloutputskillBonusSleightOfHand = new JLabel("0");
+    private JLabel labeloutputskillBonusStealth = new JLabel("0");
     //Intelligence:
-    private JLabel labeloutputskillBonusArcana = new JLabel("");
-    private JLabel labeloutputskillBonusHistory = new JLabel("");
-    private JLabel labeloutputskillBonusInvestigation = new JLabel("");
-    private JLabel labeloutputskillBonusNature = new JLabel("");
-    private JLabel labeloutputskillBonusReligion = new JLabel("");
+    private JLabel labeloutputskillBonusArcana = new JLabel("0");
+    private JLabel labeloutputskillBonusHistory = new JLabel("0");
+    private JLabel labeloutputskillBonusInvestigation = new JLabel("0");
+    private JLabel labeloutputskillBonusNature = new JLabel("0");
+    private JLabel labeloutputskillBonusReligion = new JLabel("0");
     //Wisdom:
-    private JLabel labeloutputskillBonusAnimalHandling = new JLabel("");
-    private JLabel labeloutputskillBonusInsight = new JLabel("");
-    private JLabel labeloutputskillBonusMedicine = new JLabel("");
-    private JLabel labeloutputskillBonusPerception = new JLabel("");
-    private JLabel labeloutputskillBonusSurvival = new JLabel("");
+    private JLabel labeloutputskillBonusAnimalHandling = new JLabel("0");
+    private JLabel labeloutputskillBonusInsight = new JLabel("0");
+    private JLabel labeloutputskillBonusMedicine = new JLabel("0");
+    private JLabel labeloutputskillBonusPerception = new JLabel("0");
+    private JLabel labeloutputskillBonusSurvival = new JLabel("0");
     //Charisma:
-    private JLabel labeloutputskillBonusDeception = new JLabel("");
-    private JLabel labeloutputskillBonusIntimidation = new JLabel("");
-    private JLabel labeloutputskillBonusPerformance = new JLabel("");
-    private JLabel labeloutputskillBonusPersuasion = new JLabel("");
+    private JLabel labeloutputskillBonusDeception = new JLabel("0");
+    private JLabel labeloutputskillBonusIntimidation = new JLabel("0");
+    private JLabel labeloutputskillBonusPerformance = new JLabel("0");
+    private JLabel labeloutputskillBonusPersuasion = new JLabel("0");
 
 	
 
@@ -458,15 +458,121 @@ public class OutputSheet extends JPanel {
 			labeloutputSavingThrowCharisma.setBounds(162, 371, 60, 30);
 
 
-
-
-
-
 			//Skill Proficiencies
+			//
+			labeloutputskillBonusAcrobatics.setFont(labeloutputskillBonusAcrobatics.getFont().deriveFont(Font.PLAIN, 15));
+    		labeloutputskillBonusAcrobatics.setForeground(Color.BLACK);
+			//Coordinates
+			background.add(labeloutputskillBonusAcrobatics);
+			labeloutputskillBonusAcrobatics.setBounds(162, 435, 60, 30);
+			//
+			labeloutputskillBonusAnimalHandling.setFont(labeloutputskillBonusAnimalHandling.getFont().deriveFont(Font.PLAIN, 15));
+    		labeloutputskillBonusAnimalHandling.setForeground(Color.BLACK);
+			//Coordinates
+			background.add(labeloutputskillBonusAnimalHandling);
+			labeloutputskillBonusAnimalHandling.setBounds(162, 455, 60, 30);
+			//
+			labeloutputskillBonusArcana.setFont(labeloutputskillBonusArcana.getFont().deriveFont(Font.PLAIN, 15));
+    		labeloutputskillBonusArcana.setForeground(Color.BLACK);
+			//Coordinates
+			background.add(labeloutputskillBonusArcana);
+			labeloutputskillBonusArcana.setBounds(162, 474, 60, 30);
+			//
+			labeloutputskillBonusAthletics.setFont(labeloutputskillBonusAthletics.getFont().deriveFont(Font.PLAIN, 15));
+    		labeloutputskillBonusAthletics.setForeground(Color.BLACK);
+			//Coordinates
+			background.add(labeloutputskillBonusAthletics);
+			labeloutputskillBonusAthletics.setBounds(162, 493, 60, 30);
+			//
+			labeloutputskillBonusDeception.setFont(labeloutputskillBonusDeception.getFont().deriveFont(Font.PLAIN, 15));
+    		labeloutputskillBonusDeception.setForeground(Color.BLACK);
+			//Coordinates
+			background.add(labeloutputskillBonusDeception);
+			labeloutputskillBonusDeception.setBounds(162, 512, 60, 30);
+			//
+			labeloutputskillBonusHistory.setFont(labeloutputskillBonusHistory.getFont().deriveFont(Font.PLAIN, 15));
+    		labeloutputskillBonusHistory.setForeground(Color.BLACK);
+			//Coordinates
+			background.add(labeloutputskillBonusHistory);
+			labeloutputskillBonusHistory.setBounds(162, 531, 60, 30);
+			//
+			labeloutputskillBonusInsight.setFont(labeloutputskillBonusInsight.getFont().deriveFont(Font.PLAIN, 15));
+    		labeloutputskillBonusInsight.setForeground(Color.BLACK);
+			//Coordinates
+			background.add(labeloutputskillBonusInsight);
+			labeloutputskillBonusInsight.setBounds(162, 550, 60, 30);
+			//
+			labeloutputskillBonusIntimidation.setFont(labeloutputskillBonusIntimidation.getFont().deriveFont(Font.PLAIN, 15));
+    		labeloutputskillBonusIntimidation.setForeground(Color.BLACK);
+			//Coordinates
+			background.add(labeloutputskillBonusIntimidation);
+			labeloutputskillBonusIntimidation.setBounds(162, 569, 60, 30);
+			//
+			labeloutputskillBonusInvestigation.setFont(labeloutputskillBonusInvestigation.getFont().deriveFont(Font.PLAIN, 15));
+    		labeloutputskillBonusInvestigation.setForeground(Color.BLACK);
+			//Coordinates
+			background.add(labeloutputskillBonusInvestigation);
+			labeloutputskillBonusInvestigation.setBounds(162, 587, 60, 30);
+			//
+			labeloutputskillBonusMedicine.setFont(labeloutputskillBonusMedicine.getFont().deriveFont(Font.PLAIN, 15));
+    		labeloutputskillBonusMedicine.setForeground(Color.BLACK);
+			//Coordinates
+			background.add(labeloutputskillBonusMedicine);
+			labeloutputskillBonusMedicine.setBounds(162, 606, 60, 30);
+			//
+			labeloutputskillBonusNature.setFont(labeloutputskillBonusNature.getFont().deriveFont(Font.PLAIN, 15));
+    		labeloutputskillBonusNature.setForeground(Color.BLACK);
+			//Coordinates
+			background.add(labeloutputskillBonusNature);
+			labeloutputskillBonusNature.setBounds(162, 624, 60, 30);
+			//
+			labeloutputskillBonusPerception.setFont(labeloutputskillBonusPerception.getFont().deriveFont(Font.PLAIN, 15));
+    		labeloutputskillBonusPerception.setForeground(Color.BLACK);
+			//Coordinates
+			background.add(labeloutputskillBonusPerception);
+			labeloutputskillBonusPerception.setBounds(162, 643, 60, 30);
+			//
+			labeloutputskillBonusPerformance.setFont(labeloutputskillBonusPerformance.getFont().deriveFont(Font.PLAIN, 15));
+    		labeloutputskillBonusPerformance.setForeground(Color.BLACK);
+			//Coordinates
+			background.add(labeloutputskillBonusPerformance);
+			labeloutputskillBonusPerformance.setBounds(162, 662, 60, 30);
+			//
+			labeloutputskillBonusPersuasion.setFont(labeloutputskillBonusPersuasion.getFont().deriveFont(Font.PLAIN, 15));
+    		labeloutputskillBonusPersuasion.setForeground(Color.BLACK);
+			//Coordinates
+			background.add(labeloutputskillBonusPersuasion);
+			labeloutputskillBonusPersuasion.setBounds(162, 681, 60, 30);
+			//
+			labeloutputskillBonusReligion.setFont(labeloutputskillBonusReligion.getFont().deriveFont(Font.PLAIN, 15));
+    		labeloutputskillBonusReligion.setForeground(Color.BLACK);
+			//Coordinates
+			background.add(labeloutputskillBonusReligion);
+			labeloutputskillBonusReligion.setBounds(162, 700, 60, 30);
+			//
+			labeloutputskillBonusSleightOfHand.setFont(labeloutputskillBonusSleightOfHand.getFont().deriveFont(Font.PLAIN, 15));
+    		labeloutputskillBonusSleightOfHand.setForeground(Color.BLACK);
+			//Coordinates
+			background.add(labeloutputskillBonusSleightOfHand);
+			labeloutputskillBonusSleightOfHand.setBounds(162, 718, 60, 30);
+			//
+			labeloutputskillBonusStealth.setFont(labeloutputskillBonusStealth.getFont().deriveFont(Font.PLAIN, 15));
+    		labeloutputskillBonusStealth.setForeground(Color.BLACK);
+			//Coordinates
+			background.add(labeloutputskillBonusStealth);
+			labeloutputskillBonusStealth.setBounds(162, 737, 60, 30);
+			//
+			labeloutputskillBonusSurvival.setFont(labeloutputskillBonusSurvival.getFont().deriveFont(Font.PLAIN, 15));
+    		labeloutputskillBonusSurvival.setForeground(Color.BLACK);
+			//Coordinates
+			background.add(labeloutputskillBonusSurvival);
+			labeloutputskillBonusSurvival.setBounds(162, 756, 60, 30);
+
+
+
 
 			//Equipment
-			
-			//armor
+			//Armor, Weapon & Other
 			labeloutputArmor.setFont(labeloutputArmor.getFont().deriveFont(Font.PLAIN, 15));
 			labeloutputArmor.setForeground(Color.BLACK);
 			labeloutputWeapon.setFont(labeloutputWeapon.getFont().deriveFont(Font.PLAIN, 15));

@@ -139,3 +139,6 @@ Version 1.4.7 - 30.4.2023
 
 Version 1.4.8 - 30.4.2023
 - Added Skill Bonus parameters to OutputSheet
+
+Version 1.4.9 - 30.4.2023
+- Added Skill Bonus Labels to OutputSheet
