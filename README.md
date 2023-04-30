@@ -149,3 +149,6 @@ Version 1.5.0 - 30.4.2023
 
 Version 1.5.1 - 30.4.2023
 - Migrated Help0 to seperate Class
+
+Version 1.5.2 - 30.4.2023
+- Added Help1 Class & added Next Help button functionality
