@@ -45,7 +45,22 @@ public class Layout extends JFrame{
 		Layout frame = new Layout();
 		//JFrame frame = new Layout();
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+
+
+
+		//Window Default Starting Size:
 		frame.setSize(1600, 1000);
+
+		//Setting the window to Screen size:
+		Toolkit tk=Toolkit.getDefaultToolkit(); 
+		Dimension screenSize = tk.getScreenSize(); 
+		frame.setSize(screenSize.width,screenSize.height);
+		//Setting window to 90% Screen size:
+		frame.setSize(screenSize.width*9/10,screenSize.height*9/10);
+
+		//Set to Fullscreen:
+		//frame.setExtendedState(JFrame.MAXIMIZED_BOTH);
+
 		frame.setLayout(new BorderLayout());
 		
 

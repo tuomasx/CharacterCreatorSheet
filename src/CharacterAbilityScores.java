@@ -3,6 +3,7 @@
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.beans.Visibility;
 
 import javax.swing.*;
 import javax.swing.event.DocumentEvent;
@@ -31,6 +32,7 @@ public class CharacterAbilityScores extends JPanel implements ActionListener {
 
     public CharacterAbilityScores () {
 
+        //this.setPreferredSize(new Dimension(260, 170));
         
         setLayout(new GridBagLayout());
         GridBagConstraints constraints2 = new GridBagConstraints();
@@ -61,18 +63,22 @@ public class CharacterAbilityScores extends JPanel implements ActionListener {
         //Add button next to "Character Details"
         add(buttonHelp, constraints2);
         //
-        constraints2.anchor = GridBagConstraints.NORTH;
+        constraints2.anchor = GridBagConstraints.NORTHWEST;
 
 
-
+        //this.setPreferredSize(new Dimension(260, 170));
         
         JPanel fieldsPanel = new JPanel(new GridBagLayout());
         fieldsPanel.setBorder(BorderFactory.createEmptyBorder(10, 10, 10, 10));
        
+        //fieldsPanel.setPreferredSize(new Dimension(300, 200));
+
+
         //Fields:
 
         //Strenght:
         JLabel strenghtLabel = new JLabel("Strenght: ");
+        strenghtLabel.setPreferredSize(new Dimension(50, 20));
         //JSpinner number select:
         JSpinner strenghtSpinner = new JSpinner(strenghtValue);
         //Document Listener:
@@ -91,11 +97,14 @@ public class CharacterAbilityScores extends JPanel implements ActionListener {
         }); //End of DocumentListener
         constraints2.gridx = 0;
         constraints2.gridy = 0;
-        constraints2.gridwidth = 1;
+        constraints2.gridwidth = 5;
         constraints2.fill = GridBagConstraints.HORIZONTAL;
+        
         fieldsPanel.add(strenghtLabel, constraints2);
-        constraints2.gridx = 1;
+        constraints2.gridx = 10;
         fieldsPanel.add(strenghtSpinner, constraints2);
+
+        
 
         //Dexterity:
         JLabel dexterityLabel = new JLabel("Dexterity: ");
@@ -117,10 +126,14 @@ public class CharacterAbilityScores extends JPanel implements ActionListener {
         }); //End of DocumentListener
         constraints2.gridx = 0;
         constraints2.gridy = 1;
-        constraints2.gridwidth = 1;
+        constraints2.gridwidth = 5;
         constraints2.fill = GridBagConstraints.HORIZONTAL;
         fieldsPanel.add(dexterityLabel, constraints2);
-        constraints2.gridx = 1;
+
+        constraints2.gridx = 5;
+        fieldsPanel.add(new JLabel("           "), constraints2);
+        
+        constraints2.gridx = 10;
         fieldsPanel.add(dexteritySpinner, constraints2);
 
         //Constitution:
@@ -143,10 +156,10 @@ public class CharacterAbilityScores extends JPanel implements ActionListener {
         }); //End of DocumentListener
         constraints2.gridx = 0;
         constraints2.gridy = 2;
-        constraints2.gridwidth = 1;
+        constraints2.gridwidth = 5;
         constraints2.fill = GridBagConstraints.HORIZONTAL;
         fieldsPanel.add(constitutionLabel, constraints2);
-        constraints2.gridx = 1;
+        constraints2.gridx = 10;
         fieldsPanel.add(constitutionSpinner, constraints2);
 
         //Intelligence:
@@ -169,10 +182,10 @@ public class CharacterAbilityScores extends JPanel implements ActionListener {
         }); //End of DocumentListener
         constraints2.gridx = 0;
         constraints2.gridy = 3;
-        constraints2.gridwidth = 1;
+        constraints2.gridwidth = 5;
         constraints2.fill = GridBagConstraints.HORIZONTAL;
         fieldsPanel.add(intelligenceLabel, constraints2);
-        constraints2.gridx = 1;
+        constraints2.gridx = 10;
         fieldsPanel.add(intelligenceSpinner, constraints2);
 
         //Wisdom:
@@ -195,10 +208,10 @@ public class CharacterAbilityScores extends JPanel implements ActionListener {
         }); //End of DocumentListener
         constraints2.gridx = 0;
         constraints2.gridy = 4;
-        constraints2.gridwidth = 1;
+        constraints2.gridwidth = 5;
         constraints2.fill = GridBagConstraints.HORIZONTAL;
         fieldsPanel.add(wisdomLabel, constraints2);
-        constraints2.gridx = 1;
+        constraints2.gridx = 10;
         fieldsPanel.add(wisdomSpinner, constraints2);
 
         //Charisma:
@@ -221,10 +234,10 @@ public class CharacterAbilityScores extends JPanel implements ActionListener {
         }); //End of DocumentListener
         constraints2.gridx = 0;
         constraints2.gridy = 5;
-        constraints2.gridwidth = 1;
+        constraints2.gridwidth = 5;
         constraints2.fill = GridBagConstraints.HORIZONTAL;
         fieldsPanel.add(charismaLabel, constraints2);
-        constraints2.gridx = 1;
+        constraints2.gridx = 10;
         fieldsPanel.add(charismaSpinner, constraints2);
 
         //
@@ -232,8 +245,11 @@ public class CharacterAbilityScores extends JPanel implements ActionListener {
         constraints2.gridy = 1;
         constraints2.gridwidth = 5;
         constraints2.fill = GridBagConstraints.HORIZONTAL;
-        add(fieldsPanel, constraints2);
 
+        constraints2.anchor = GridBagConstraints.NORTHWEST;
+        add(fieldsPanel, constraints2);
+        validate();
+        //setVisible(true);
 
     }
 

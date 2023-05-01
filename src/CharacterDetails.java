@@ -32,6 +32,8 @@ public class CharacterDetails extends JPanel implements ActionListener {
     private JComboBox genderComboBox = new JComboBox<>(genders);
 
     public CharacterDetails() {
+
+        //this.setPreferredSize(new Dimension(260, 170));
         
         setLayout(new GridBagLayout());
         GridBagConstraints constraints = new GridBagConstraints();
