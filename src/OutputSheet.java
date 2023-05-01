@@ -109,32 +109,32 @@ public class OutputSheet extends JPanel {
 	private JLabel labeloutputArmor = new JLabel("None");
 	//
 	private String outputWeapon = "";
-	private JLabel labeloutputWeapon = new JLabel("LabelWeapon");
+	private JLabel labeloutputWeapon = new JLabel("");
 	//
 	private boolean outputShield = false;
 	//private JLabel labeloutputShield = new JLabel("LabelShield");
 	//
 	private String outputOther = "";
-	private JLabel labeloutputOther = new JLabel("LabelOtherItem");
+	private JLabel labeloutputOther = new JLabel("");
 	//
 	private int outputGold = 0;
 	private JLabel labeloutputGold = new JLabel("0");
 	//Character Description
 	//
 	private String outputCharacterDescription = "";
-	private JLabel labeloutputCharacterDescription = new JLabel("LabelCharDescription");
+	private JLabel labeloutputCharacterDescription = new JLabel("");
 	//
 	private String outputCharacterPersonality = "";
-	private JLabel labeloutputCharacterPersonality = new JLabel("LabelCharPersonality");
+	private JLabel labeloutputCharacterPersonality = new JLabel("");
 	//
 	private String outputCharacterIdeals = "";
-	private JLabel labeloutputCharacterIdeals = new JLabel("LabelCharIdeals");
+	private JLabel labeloutputCharacterIdeals = new JLabel("");
 	//
 	private String outputCharacterBonds = "";
-	private JLabel labeloutputCharacterBonds = new JLabel("LabelCharBonds");
+	private JLabel labeloutputCharacterBonds = new JLabel("");
 	//
 	private String outputCharacterFlaws = "";
-	private JLabel labeloutputCharacterFlaws = new JLabel("LabelCharFlaws");
+	private JLabel labeloutputCharacterFlaws = new JLabel("");
 	//
 
 	//Saving Throws

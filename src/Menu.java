@@ -41,7 +41,7 @@ public class Menu extends JMenuBar implements ActionListener{
 		i2 = new JMenuItem("Save File");
 		i3 = new JMenuItem("Save File as");
 		i4 = new JMenuItem("Load File");
-		i5 = new JMenuItem("item Print File");
+		i5 = new JMenuItem("Print File");
 		i6 = new JMenuItem("Create PDF/PNG");
 		i7 = new JMenuItem("Help");
 		

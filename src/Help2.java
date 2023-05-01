@@ -31,19 +31,22 @@ import javax.swing.JTextArea;
 public class Help2 extends JFrame {
 
     JFrame frameHelp0 = new JFrame();
+	
 
     Help2 () {
         System.out.println("Help");
 
-        frameHelp0.setTitle("Help 2/5: ");
+
+        frameHelp0.setTitle("Help 2/5: Character Features ");
         frameHelp0.setBackground(new Color(255, 255, 255));
-			
+		frameHelp0.setPreferredSize(new Dimension(500, 200));
+
 		JPanel help0Panel = new JPanel();
-		help0Panel.setPreferredSize(new Dimension(300, 170));
+		help0Panel.setPreferredSize(new Dimension(490, 200));
         help0Panel.setBackground(new Color(255, 255, 255));
 
-		JTextArea help0Label = new JTextArea("Help 2/5: \n \n \n \n \n \n ");
-		help0Label.setPreferredSize(new Dimension(300, 130));
+		JTextArea help0Label = new JTextArea(" In the Character Features panel the user can select the characters Race, Class, Level \n & Background. \n \n Race: the selected race determines ability Score Bonuses & racial abilities \n Class: determines the gameplay features, proficiencies & saving throw proficiencies \n Level: the level of progression, determines health & proficiency \n Background: Determines skill proficiencies ");
+		help0Label.setPreferredSize(new Dimension(490, 120));
 
 		JButton buttonClose = new JButton("Close");
 		buttonClose.addActionListener(new ActionListener(){

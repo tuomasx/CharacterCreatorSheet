@@ -159,3 +159,6 @@ Version 1.5.3 - 30.4.2023
 
 Version 1.5.3 - 30.4.2023
 - Added Help ? Buttons to Left Side Menu
+
+Version 1.5.4 - 1.5.2023
+- Added Descriptions to Help 0, 1 & 2

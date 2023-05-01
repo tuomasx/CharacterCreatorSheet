@@ -35,7 +35,7 @@ public class Help3 extends JFrame {
     Help3 () {
         System.out.println("Help");
 
-        frameHelp0.setTitle("Help 3/5: ");
+        frameHelp0.setTitle("Help 3/5: Ability Scores");
         frameHelp0.setBackground(new Color(255, 255, 255));
 			
 		JPanel help0Panel = new JPanel();

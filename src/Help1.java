@@ -33,16 +33,16 @@ public class Help1 extends JFrame {
     JFrame frameHelp0 = new JFrame();
 
     Help1 () {
-        System.out.println("Help");
+        System.out.println("Help 1: Character Details");
 
-        frameHelp0.setTitle("Help 1/5: ");
+        frameHelp0.setTitle("Help 1/5: Character Details");
         frameHelp0.setBackground(new Color(255, 255, 255));
 			
 		JPanel help0Panel = new JPanel();
 		help0Panel.setPreferredSize(new Dimension(300, 170));
         help0Panel.setBackground(new Color(255, 255, 255));
 
-		JTextArea help0Label = new JTextArea("Help 1/5: \n \n \n \n \n \n ");
+		JTextArea help0Label = new JTextArea(" In the Character Details section the user can input \n the Characters Name, Age, Gender, Alignment and \n the Players name. \n \n These fields are optional and can be left empty. \n \n ");
 		help0Label.setPreferredSize(new Dimension(300, 130));
 
 		JButton buttonClose = new JButton("Close");
