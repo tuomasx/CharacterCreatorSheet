@@ -166,6 +166,6 @@ Version 1.5.4 - 1.5.2023
 Version 1.5.5 - 1.5.2023
 - Added Descriptions to Help 3, 4 & 5
 
-Version 1.5.5 - 1.5.2023
+Version 1.5.6 - 1.5.2023
 - Improved Side Menu Panel layout
 - changed the starting window size to be Screen resolution dependent
