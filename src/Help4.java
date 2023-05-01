@@ -37,13 +37,14 @@ public class Help4 extends JFrame {
 
         frameHelp0.setTitle("Help 4/5: Equipment");
         frameHelp0.setBackground(new Color(255, 255, 255));
+		frameHelp0.setPreferredSize(new Dimension(500, 200));
 			
 		JPanel help0Panel = new JPanel();
-		help0Panel.setPreferredSize(new Dimension(300, 170));
+		help0Panel.setPreferredSize(new Dimension(490, 200));
         help0Panel.setBackground(new Color(255, 255, 255));
 
-		JTextArea help0Label = new JTextArea("Help 4/5: \n \n \n \n \n \n ");
-		help0Label.setPreferredSize(new Dimension(300, 130));
+		JTextArea help0Label = new JTextArea(" In the Equipment panel the user can select the starting equipment of the character.\n The selected Armor determines how hard the character is to hit. \n A shield gives +2 to armor class but requires one hand to hold. \n A weapon determines the damage and range of attacks made using it. \n The user may also select other items the character may start with. \n The user may also add additional gold if starting at higher levels. \n ");
+		help0Label.setPreferredSize(new Dimension(490, 120));
 
 		JButton buttonClose = new JButton("Close");
 		buttonClose.addActionListener(new ActionListener(){

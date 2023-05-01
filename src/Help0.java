@@ -37,13 +37,14 @@ public class Help0 extends JFrame {
 
         frameHelp0.setTitle("Help 0/5: Menu");
         frameHelp0.setBackground(new Color(255, 255, 255));
+		frameHelp0.setPreferredSize(new Dimension(500, 200));
 			
 		JPanel help0Panel = new JPanel();
-		help0Panel.setPreferredSize(new Dimension(300, 170));
+		help0Panel.setPreferredSize(new Dimension(490, 200));
         help0Panel.setBackground(new Color(255, 255, 255));
 
 		JTextArea help0Label = new JTextArea(" New File: Resets the inputs back to starting values. \n Save File: Unimplemented \n Save File as: Unimplemented \n Load File: Unimplemented \n Print File: Unimplemented \n Create PDF: Unimplemented \n");
-		help0Label.setPreferredSize(new Dimension(300, 130));
+		help0Label.setPreferredSize(new Dimension(490, 120));
 
 		JButton buttonClose = new JButton("Close");
 		buttonClose.addActionListener(new ActionListener(){

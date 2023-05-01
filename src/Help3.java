@@ -37,13 +37,14 @@ public class Help3 extends JFrame {
 
         frameHelp0.setTitle("Help 3/5: Ability Scores");
         frameHelp0.setBackground(new Color(255, 255, 255));
+		frameHelp0.setPreferredSize(new Dimension(500, 200));
 			
 		JPanel help0Panel = new JPanel();
-		help0Panel.setPreferredSize(new Dimension(300, 170));
+		help0Panel.setPreferredSize(new Dimension(490, 200));
         help0Panel.setBackground(new Color(255, 255, 255));
 
-		JTextArea help0Label = new JTextArea("Help 3/5: \n \n \n \n \n \n ");
-		help0Label.setPreferredSize(new Dimension(300, 130));
+		JTextArea help0Label = new JTextArea(" In the Ability Scores panel the user can set the starting Ability scores. \n The standard starting values the user can allocate are 15, 14, 13, 12, 10 & 8. \n \n \n \n \n ");
+		help0Label.setPreferredSize(new Dimension(490, 120));
 
 		JButton buttonClose = new JButton("Close");
 		buttonClose.addActionListener(new ActionListener(){
