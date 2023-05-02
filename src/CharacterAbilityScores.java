@@ -77,7 +77,7 @@ public class CharacterAbilityScores extends JPanel implements ActionListener {
         //Fields:
 
         //Strenght:
-        JLabel strenghtLabel = new JLabel("Strenght: ");
+        JLabel strenghtLabel = new JLabel("Strength: ");
         strenghtLabel.setPreferredSize(new Dimension(50, 20));
         //JSpinner number select:
         JSpinner strenghtSpinner = new JSpinner(strenghtValue);
