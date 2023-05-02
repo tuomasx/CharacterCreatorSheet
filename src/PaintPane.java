@@ -7,11 +7,11 @@ import javax.swing.JPanel;
 
 public class PaintPane extends JPanel {
 
+    //Based on Example:
+    
     private Image background;
 
     public PaintPane(Image image) {     
-        // This is just an example, I'd prefer to use setters/getters
-        // and would also need to provide alignment options ;)
         background = image;            
     }
 

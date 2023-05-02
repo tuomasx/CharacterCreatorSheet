@@ -223,11 +223,11 @@ public class CharacterEquipment extends JPanel implements ActionListener {
 	
 	public void update() {
         //Set input values from GUI to CharacterSheet Inputs:
+
         //Armor:
 		charArmor = armorComboBox.getSelectedItem().toString();
         CharacterSheet.getInstance().setInputArmor(charArmor);
-        //CharacterSheet.getInstance().setInputArmor(armorField.getText());
-
+    
         //Shield:
         shield = shieldSelect.isSelected();
         CharacterSheet.getInstance().setInputShield(shield);
@@ -242,19 +242,17 @@ public class CharacterEquipment extends JPanel implements ActionListener {
         //Other:
         charOther = otherComboBox.getSelectedItem().toString();
         CharacterSheet.getInstance().setInputOther(charOther);
-        //Change Alignment to ComboBox dropdown select.
-        //CharacterSheet.getInstance().setInputAlignment(alignmentField.getText());
-
-                
+        
+    
         //Calculate Changes:
         CharacterSheet.getInstance().calculateOutput();
+
         //Display Changes: //Test print to console
         CharacterSheet.getInstance().printOutputs();
     }
 
 	@Override
 	public void actionPerformed(ActionEvent e) {
-		// TODO Auto-generated method stub
 		update();
 	}
 }

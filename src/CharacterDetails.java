@@ -15,7 +15,7 @@ public class CharacterDetails extends JPanel implements ActionListener {
     private JTextField alignmentField;
     private JTextField playerField;
     
-    //private String races[]={"India","Aus","U.S.A","England","Newzealand"};
+    
     // "Dragonborn" "Dwarf" "Elf" "Gnome" "Half-Elf" "Half-Orc" "Halfling" "Human" "Tiefling"
     //private String races[]={"Dragonborn","Dwarf","Elf","Gnome","Half-Elf","Half-Orc","Halfling","Human","Tiefling"};
     
@@ -70,34 +70,8 @@ public class CharacterDetails extends JPanel implements ActionListener {
         constraints.anchor = GridBagConstraints.NORTH;
 
 
-
-
-
-
-        // 
-        /* 
-        JButton btnOpenDialog = new JButton(icon);
-        constraints.gridx = 5;
-        constraints.gridy = 0;
-        constraints.gridwidth = 5;
-        constraints.insets = new Insets(0, 10, 0, 0);
-        btnOpenDialog.addActionListener(e -> {
-            JPanel panel = (JPanel) SwingUtilities.getRootPane(this).getGlassPane().getComponentAt(0,0);
-            if(panel.isVisible()) {
-                panel.setVisible(false);
-            } else {
-                panel.setVisible(true);
-            }
-        });
-        // */
-
-        //Help Button, Top right on left side bar
-        //Commented out due to spacing issues caused to CharacterDescription input fields
-        //add(btnOpenDialog, constraints);
-        
         JPanel fieldsPanel = new JPanel(new GridBagLayout());
         fieldsPanel.setBorder(BorderFactory.createEmptyBorder(10, 10, 10, 10));
-        
         
         
         //Name:
@@ -115,9 +89,8 @@ public class CharacterDetails extends JPanel implements ActionListener {
             public void insertUpdate(DocumentEvent e) {
               update();
             }
-          
-            
         }); //End of DocumentListener
+
         constraints.gridx = 0;
         constraints.gridy = 0;
         constraints.gridwidth = 1;
@@ -128,8 +101,6 @@ public class CharacterDetails extends JPanel implements ActionListener {
 
         //Age:
         JLabel ageLabel = new JLabel("Age: ");
-        //ageField = new JTextField(3);
-        //ageField.setPreferredSize(new Dimension(150, 24));
         JSpinner ageSpinner = new JSpinner(ageValue);
         //Document Listener:
         JSpinner.DefaultEditor editor = (JSpinner.DefaultEditor)ageSpinner.getEditor();
@@ -156,8 +127,6 @@ public class CharacterDetails extends JPanel implements ActionListener {
 
         //Gender:
         JLabel genderLabel = new JLabel("Gender: ");
-        //genderField = new JTextField(6);
-        //genderField.setPreferredSize(new Dimension(75, 24));
         //ComboBox:
         genderComboBox = new JComboBox<>(genders);
         genderComboBox.setPreferredSize(new Dimension(150, 24));
@@ -172,8 +141,6 @@ public class CharacterDetails extends JPanel implements ActionListener {
 
         //Alignment:
         JLabel alignmentLabel = new JLabel("Alignment: ");
-        //alignmentField = new JTextField(10);
-        //alignmentField.setPreferredSize(new Dimension(150, 24));
         //ComboBox:
         alignmentComboBox = new JComboBox<>(alignments);
         alignmentComboBox.setPreferredSize(new Dimension(150, 24));
@@ -201,9 +168,8 @@ public class CharacterDetails extends JPanel implements ActionListener {
             public void insertUpdate(DocumentEvent e) {
               update();
             }
-          
-            
         }); //End of DocumentListener
+
         constraints.gridx = 0;
         constraints.gridy = 4;
         fieldsPanel.add(playerLabel, constraints);
@@ -246,6 +212,7 @@ public class CharacterDetails extends JPanel implements ActionListener {
 
     public void update() {
         //Set input values from GUI to CharacterSheet Inputs:
+
                 //Name:
                 CharacterSheet.getInstance().setInputName(nameField.getText());
 
@@ -256,77 +223,21 @@ public class CharacterDetails extends JPanel implements ActionListener {
                 //Gender:
                 charGender = genderComboBox.getSelectedItem().toString();
                 CharacterSheet.getInstance().setInputGender(charGender);
-                //CharacterSheet.getInstance().setInputGender(genderField.getText());
+           
 
                 //Alignment:
                 charAlignment = alignmentComboBox.getSelectedItem().toString();
                 CharacterSheet.getInstance().setInputAlignment(charAlignment);
-                //Change Alignment to ComboBox dropdown select.
-                //CharacterSheet.getInstance().setInputAlignment(alignmentField.getText());
 
                 //Player Name:
                 CharacterSheet.getInstance().setInputPlayerName(playerField.getText());
                 
                 //Calculate Changes:
                 CharacterSheet.getInstance().calculateOutput();
+
                 //Display Changes: //Test print to console
                 CharacterSheet.getInstance().printOutputs();
     }
     
 }
 
-
-/* 
-        //Name:
-        CharacterSheet.getInstance().setInputName(nameField.getText());
-
-        //Age:
-        charAge = (Integer) ageValue.getValue();
-        CharacterSheet.getInstance().setInputAge(charAge);
-
-        //Gender:
-        //charGender = genderComboBox.getSelectedItem().toString();
-        //CharacterSheet.getInstance().setInputGender(charGender);
-        //Change Gender to ComboBox dropdown select?
-        CharacterSheet.getInstance().setInputGender(genderField.getText());
-
-        //Alignment:
-        charAlignment = alignmentComboBox.getSelectedItem().toString();
-        CharacterSheet.getInstance().setInputAlignment(charAlignment);
-        //CharacterSheet.getInstance().setInputAlignment(alignmentField.getText());
-
-        //Player Name:
-        CharacterSheet.getInstance().setInputPlayerName(playerField.getText());
-        
-        //Calculate Changes:
-        CharacterSheet.getInstance().calculateOutput();
-        //Display Changes: //Test print to console
-        CharacterSheet.getInstance().printOutputs();
-        */
-
-/*
- public void update() {
-                //Set input values from GUI to CharacterSheet Inputs:
-                //Age:
-                charAge = (Integer) ageValue.getValue();
-                CharacterSheet.getInstance().setInputAge(charAge);
-                //Gender:
-                //charGender = genderComboBox.getSelectedItem().toString();
-                //CharacterSheet.getInstance().setInputGender(charGender);
-                //Change Gender to ComboBox dropdown select?
-                CharacterSheet.getInstance().setInputGender(genderField.getText());
-                //Alignment:
-                charAlignment = alignmentComboBox.getSelectedItem().toString();
-                CharacterSheet.getInstance().setInputAlignment(charAlignment);
-                //Change Alignment to ComboBox dropdown select.
-                //CharacterSheet.getInstance().setInputAlignment(alignmentField.getText());
-                //Player Name:
-                CharacterSheet.getInstance().setInputPlayerName(playerField.getText());
-                //Name:
-                CharacterSheet.getInstance().setInputName(nameField.getText());
-                //Calculate Changes:
-                CharacterSheet.getInstance().calculateOutput();
-                //Display Changes: //Test print to console
-                CharacterSheet.getInstance().printOutputs();
-             }
- */

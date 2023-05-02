@@ -192,30 +192,28 @@ public class CharacterFeatures extends JPanel implements ActionListener {
     
     @Override
     public void actionPerformed(ActionEvent e) {
-
-        //Check for null: ?
-
-
         //Set input values from GUI to CharacterSheet Inputs:
+
         //Race
-        //CharacterSheet.getInstance().setInputRace(raceField.getText());
         charRace = raceComboBox.getSelectedItem().toString();
         CharacterSheet.getInstance().setInputRace(charRace);
+
         //Class
-        //CharacterSheet.getInstance().setInputClass(classField.getText());
         charClass = classComboBox.getSelectedItem().toString();
         CharacterSheet.getInstance().setInputClass(charClass);
+
         //Added Change Listener to Level JSpinner instead
         int value = (Integer) levelValue.getValue();
         CharacterSheet.getInstance().setInputLevel(value);
+
         //Background
         charBackground = backgroundComboBox.getSelectedItem().toString();
         CharacterSheet.getInstance().setInputBackground(charBackground);
 
         //Calculate Changes:
         CharacterSheet.getInstance().calculateOutput();
-        //Display Changes:
-        //Test print to console
+
+        //Display Changes: //Test print to console
         CharacterSheet.getInstance().printOutputs();
         
        
@@ -223,54 +221,3 @@ public class CharacterFeatures extends JPanel implements ActionListener {
     
 }
 
-
-
-
-//ChangeListener:
-        /*
-        levelSpinner.addChangeListener(new ChangeListener() {      
-            @Override
-            public void stateChanged(ChangeEvent e) {
-              // handle update:
-                //Level:
-                int value = (Integer) levelValue.getValue();
-                CharacterSheet.getInstance().setInputLevel(value);
-
-                //Set input values from GUI to CharacterSheet Inputs:
-                //Race
-                charRace = raceComboBox.getSelectedItem().toString();
-                CharacterSheet.getInstance().setInputRace(charRace);
-                //Class
-                charClass = classComboBox.getSelectedItem().toString();
-                CharacterSheet.getInstance().setInputClass(charClass);
-                //Background
-                charBackground = backgroundComboBox.getSelectedItem().toString();
-                CharacterSheet.getInstance().setInputBackground(charBackground);
-
-            }
-          });
-        */
-        //DocumentListener:
-        /* 
-        levelSpinner.getDocument().addDocumentListener(new DocumentListener() {
-            public void changedUpdate(DocumentEvent e) {
-              update();
-            }
-            public void removeUpdate(DocumentEvent e) {
-              update();
-            }
-            public void insertUpdate(DocumentEvent e) {
-              update();
-            }
-          
-            public void update() {
-               //Set input values from GUI to CharacterSheet Inputs:
-                //CharacterSheet.getInstance().setInputCharacterDescription(characterDescription.getText());
-                //Calculate Changes:
-                CharacterSheet.getInstance().calculateOutput();
-                //Display Changes:
-                //Test print to console
-                CharacterSheet.getInstance().printOutputs();
-            }
-        }); //End of DocumentListener Updater
-        */

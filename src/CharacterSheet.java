@@ -266,16 +266,6 @@ public class CharacterSheet {
 
 
 
-    /* 
-    //Constructor:
-    public CharacterSheet() {
-        //Sets Input & Output values to Defaults
-        clearInputs();
-        clearOutputs();
-    }
-    */
-
-
 
 
 
@@ -470,45 +460,45 @@ public class CharacterSheet {
 
 
         //Skill Bonuses:
-        //static int skillBonusAthletics = 0;
+        //static int skillBonusAthletics
         OutputSheet.getInstance().setOutputskillBonusAthletics(skillBonusAthletics);
         //Dexterity:
-        //static int skillBonusAcrobatics = 0;
+        //static int skillBonusAcrobatics
         OutputSheet.getInstance().setOutputskillBonusAcrobatics(skillBonusAcrobatics);
-        //static int skillBonusSleightOfHand = 0;
+        //static int skillBonusSleightOfHand
         OutputSheet.getInstance().setOutputskillBonusSleightOfHand(skillBonusSleightOfHand);
-        //static int skillBonusStealth = 0;
+        //static int skillBonusStealth
         OutputSheet.getInstance().setOutputskillBonusStealth(skillBonusStealth);
         //Intelligence:
-        //static int skillBonusArcana = 0;
+        //static int skillBonusArcana
         OutputSheet.getInstance().setOutputskillBonusArcana(skillBonusArcana);
-        //static int skillBonusHistory = 0;
+        //static int skillBonusHistory
         OutputSheet.getInstance().setOutputskillBonusHistory(skillBonusHistory);
-        //static int skillBonusInvestigation = 0;
+        //static int skillBonusInvestigation
         OutputSheet.getInstance().setOutputskillBonusInvestigation(skillBonusInvestigation);
-        //static int skillBonusNature = 0;
+        //static int skillBonusNature
         OutputSheet.getInstance().setOutputskillBonusNature(skillBonusNature);
-        //static int skillBonusReligion = 0;
+        //static int skillBonusReligion
         OutputSheet.getInstance().setOutputskillBonusReligion(skillBonusReligion);
         //Wisdom:
-        //static int skillBonusAnimalHandling = 0;
+        //static int skillBonusAnimalHandling
         OutputSheet.getInstance().setOutputskillBonusAnimalHandling(skillBonusAnimalHandling);
-        //static int skillBonusInsight = 0;
+        //static int skillBonusInsight
         OutputSheet.getInstance().setOutputskillBonusInsight(skillBonusInsight);
-        //static int skillBonusMedicine = 0;
+        //static int skillBonusMedicine
         OutputSheet.getInstance().setOutputskillBonusMedicine(skillBonusMedicine);
-        //static int skillBonusPerception = 0;
+        //static int skillBonusPerception
         OutputSheet.getInstance().setOutputskillBonusPerception(skillBonusPerception);
-        //static int skillBonusSurvival = 0;
+        //static int skillBonusSurvival
         OutputSheet.getInstance().setOutputskillBonusSurvival(skillBonusSurvival);
         //Charisma:
-        //static int skillBonusDeception = 0;
+        //static int skillBonusDeception
         OutputSheet.getInstance().setOutputskillBonusDeception(skillBonusDeception);
-        //static int skillBonusIntimidation = 0;
+        //static int skillBonusIntimidation
         OutputSheet.getInstance().setOutputskillBonusIntimidation(skillBonusIntimidation);
-        //static int skillBonusPerformance = 0;
+        //static int skillBonusPerformance
         OutputSheet.getInstance().setOutputskillBonusPerformance(skillBonusPerformance);
-        //static int skillBonusPersuasion = 0;
+        //static int skillBonusPersuasion
         OutputSheet.getInstance().setOutputskillBonusPersuasion(skillBonusPersuasion);
 
 
@@ -966,13 +956,13 @@ public class CharacterSheet {
         int hitPointsGainedMax = 0;
         int hitPointsGainedAvgInt = 0;
 
+        //Hp when level is greater than 1
         if (inputLevel > 1) {
             // Constitution Bonus per level
             bonusConstitutionHPatHigherLevels = (inputLevel - 1) * bonusConstitution;
+
             // Hit points gained per level based on Class:
-            //int levelmultplier = 0;
-            //levelmultplier = inputLevel - 1;
-            // Barbarian: +1d12
+            // Artificer: +1d8
             if (inputClass.equals("Artificer")) {
                 hitPointsGainedMin = ((inputLevel - 1) * 1);
                 hitPointsGainedAvg = ((inputLevel - 1) * 4.5); 
@@ -1244,8 +1234,7 @@ public class CharacterSheet {
         int backgroundGold = 0;
         // Backgrounds:
         // "Acolyte" 15 "Charlatan" 15 "Criminal" 15 "Entertainer" 15 "Folk Hero" 10 "Gladiator" 15 "Guild Artisan" 15 "Guild Merchant" 15 "Hermit" 5 "Knight" 25 "Noble" 25 "Outlander" 10 "Pirate" 10 "Sage" 10 "Sailor" 10 "Soldier" 10 "Urchin" 10 ""
-        //skillProficiency = true;
-
+        //
         // Skill Proficiencies known: From Background
         if (inputBackground.equals("")) {
             backgroundGold = 0;
@@ -1702,66 +1691,6 @@ public class CharacterSheet {
         System.out.println("Ideals:             " + inputCharacterIdeals);
         System.out.println("Bonds:              " + inputCharacterBonds);
         System.out.println("Flaws:              " + inputCharacterFlaws);
-
-
-        //updateOutputSheet();
-
-
-        /*
-        // 1. Character Details
-        inputName = "";
-        inputAge = 0;
-        inputGender = "";
-        inputAlignment = "";
-        inputPlayerName = "";
-
-        // 2. Character Features
-        inputRace = "";
-        inputClass = "";
-        inputLevel = 1;
-        inputBackground = "";
-
-        // 3. Ability Scores
-        totalStrenght = 10;
-        totalDexterity = 10;
-        totalConstitution = 10;
-        totalIntelligence = 10;
-        totalWisdom = 10;
-        totalCharisma = 10;
-
-        //Modifiers
-        bonusProficiency = 2;
-        bonusStrenght = 0;
-        bonusDexterity = 0;
-        bonusConstitution = 0;
-        bonusIntelligence = 0;
-        bonusWisdom = 0;
-        bonusCharisma = 0;
-
-        //Other Stats
-        armorClass = 10;
-        bonusInitative = 0;
-        baseMovementSpeed = 30;
-        hitPointMaximum = 0;
-        passivePerception = 10;
-
-        // 4. Equipment
-        inputArmor = "";
-        inputWeapon = "";
-        inputShield = false;
-        inputOther = "";
-        outputGold = 0;
-        
-        // 5. Character Description
-        inputCharacterDescription = "";
-        inputCharacterPersonality = "";
-        inputCharacterIdeals = "";
-        inputCharacterBonds = "";
-        inputCharacterFlaws = "";
-       
-         */
-
-
 
     }
 

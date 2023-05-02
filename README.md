@@ -177,3 +177,5 @@ Version 1.5.7 - 2.5.2023
 Version 1.5.8 - 2.5.2023
 - Updated Character Description fields
 
+Version 1.5.9 - 2.5.2023
+- Cleaned up code & Comments

@@ -5,7 +5,7 @@ import java.awt.event.*;
 import javax.swing.event.*;
 import javax.swing.text.*;
 
-public class CharacterDescription extends JPanel implements ActionListener {
+public class CharacterDescription extends JPanel {
 
     private JTextField characterDescription;
     //private JTextArea characterDescription;
@@ -55,17 +55,15 @@ public class CharacterDescription extends JPanel implements ActionListener {
         JPanel fieldsPanel = new JPanel(new GridBagLayout());
         fieldsPanel.setBorder(BorderFactory.createEmptyBorder(10, 10, 10, 10));
         fieldsPanel.setPreferredSize(new Dimension(300, 300));
+       
         //Fields:
         
         //Character Description:
         JLabel descriptionLabel = new JLabel("Character Description: ");
         //descriptionLabel.setPreferredSize(new Dimension(100, 24));
-
         characterDescription = new JTextField(10);
         //characterDescription = new JTextArea();
         characterDescription.setPreferredSize(new Dimension(200, 24));
-        //Actionlistener:
-        //characterDescription.addActionListener(this);
         //DocumentListener:
         characterDescription.getDocument().addDocumentListener(new DocumentListener() {
             public void changedUpdate(DocumentEvent e) {
@@ -77,7 +75,6 @@ public class CharacterDescription extends JPanel implements ActionListener {
             public void insertUpdate(DocumentEvent e) {
               update();
             }
-          
             public void update() {
                //Set input values from GUI to CharacterSheet Inputs:
                 CharacterSheet.getInstance().setInputCharacterDescription(characterDescription.getText());
@@ -85,7 +82,6 @@ public class CharacterDescription extends JPanel implements ActionListener {
                 CharacterSheet.getInstance().setInputCharacterIdeals(characterIdeals.getText());
                 CharacterSheet.getInstance().setInputCharacterBonds(characterBonds.getText());
                 CharacterSheet.getInstance().setInputCharacterFlaws(characterFlaws.getText());
-                //CharacterSheet.getInstance().setInputCharacterDescription(characterDescription.getText());
                 //Calculate Changes:
                 CharacterSheet.getInstance().calculateOutput();
                 //Display Changes:
@@ -108,8 +104,6 @@ public class CharacterDescription extends JPanel implements ActionListener {
         JLabel personalityLabel = new JLabel("Personality: ");
         characterPersonality = new JTextField(3);
         characterPersonality.setPreferredSize(new Dimension(150, 24));
-        //Actionlistener:
-        //characterPersonality.addActionListener(this);
         //DocumentListener:
         characterPersonality.getDocument().addDocumentListener(new DocumentListener() {
             public void changedUpdate(DocumentEvent e) {
@@ -121,7 +115,6 @@ public class CharacterDescription extends JPanel implements ActionListener {
             public void insertUpdate(DocumentEvent e) {
               update();
             }
-          
             public void update() {
                //Set input values from GUI to CharacterSheet Inputs:
                 CharacterSheet.getInstance().setInputCharacterDescription(characterDescription.getText());
@@ -150,8 +143,6 @@ public class CharacterDescription extends JPanel implements ActionListener {
         JLabel idealsLabel = new JLabel("Ideals: ");
         characterIdeals = new JTextField(6);
         characterIdeals.setPreferredSize(new Dimension(75, 24));
-        //Actionlistener:
-        //characterIdeals.addActionListener(this);
         //DocumentListener:
         characterIdeals.getDocument().addDocumentListener(new DocumentListener() {
             public void changedUpdate(DocumentEvent e) {
@@ -163,7 +154,6 @@ public class CharacterDescription extends JPanel implements ActionListener {
             public void insertUpdate(DocumentEvent e) {
               update();
             }
-          
             public void update() {
                //Set input values from GUI to CharacterSheet Inputs:
                 CharacterSheet.getInstance().setInputCharacterDescription(characterDescription.getText());
@@ -179,6 +169,7 @@ public class CharacterDescription extends JPanel implements ActionListener {
                 CharacterSheet.getInstance().printOutputs();
             }
         }); //End of DocumentListener Updater
+
         //Constraints:
         constraints.gridx = 0;
         constraints.gridy = 4;
@@ -191,8 +182,6 @@ public class CharacterDescription extends JPanel implements ActionListener {
         JLabel bondsLabel = new JLabel("Bonds: ");
         characterBonds = new JTextField(10);
         characterBonds.setPreferredSize(new Dimension(150, 24));
-        //Actionlistener:
-        //characterBonds.addActionListener(this);
         //DocumentListener:
         characterBonds.getDocument().addDocumentListener(new DocumentListener() {
             public void changedUpdate(DocumentEvent e) {
@@ -232,8 +221,6 @@ public class CharacterDescription extends JPanel implements ActionListener {
         JLabel flawsLabel = new JLabel("Flaws: ");
         characterFlaws = new JTextField(10);
         characterFlaws.setPreferredSize(new Dimension(150, 24));
-        //Actionlistener:
-        //characterFlaws.addActionListener(this);
         //DocumentListener:
         characterFlaws.getDocument().addDocumentListener(new DocumentListener() {
             public void changedUpdate(DocumentEvent e) {
@@ -279,7 +266,7 @@ public class CharacterDescription extends JPanel implements ActionListener {
     }
 
     
-
+    /* 
     //Deprecated in CharacterDescription, Uses DocumentListener instead
     @Override
     public void actionPerformed(ActionEvent e) {
@@ -301,6 +288,7 @@ public class CharacterDescription extends JPanel implements ActionListener {
         
        
     }
+    */
 
     public void update() {
       //Set input values from GUI to CharacterSheet Inputs:

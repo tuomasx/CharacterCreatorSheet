@@ -87,7 +87,6 @@ public class Help4 extends JFrame {
 		help0Panel.add(buttonNext);
 
 		frameHelp0.add(help0Panel);
-			
 		//Set frame opening location:
 		frameHelp0.setLocationRelativeTo(null);
 		frameHelp0.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);

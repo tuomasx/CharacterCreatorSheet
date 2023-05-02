@@ -75,20 +75,16 @@ public class Menu extends JMenuBar implements ActionListener{
 	@Override
 	public void actionPerformed(ActionEvent e) {
 		// TODO Auto-generated method stub
-		// throw new UnsupportedOperationException("Unimplemented method 'actionPerformed'");
+
 		
 		//New File
 		if(e.getSource()==i1){
 			System.out.println("New File");
 			CharacterSheet.getInstance().newFile();
 			//Reset Layout content menu values:
-			//incomplete:
-			//Layout.clearContentMenu();
 			Layout.getInstance().clearContentMenu();
-			//Layout.getInstance().createLayout();
 			//
-			
-			Layout.panel1 = new Content();
+			Layout.getInstance().panel1 = new Content();
 			
 		}
 		//Save File
@@ -119,7 +115,6 @@ public class Menu extends JMenuBar implements ActionListener{
 			   System.out.println("File saved");
 			   //
             }else{
-               //label.setText("Save command canceled");
 			   System.out.println("Saving Canceled");
 			   //
             }
@@ -153,12 +148,6 @@ public class Menu extends JMenuBar implements ActionListener{
 			System.out.println("Help 0/5:");
 			
 			new Help0();
-
-			//JFrame frameHelp0 = new Help0();
-			//frameHelp0.setLocationRelativeTo(null);
-			//frameHelp0.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
-			//frameHelp0.pack();
-			//frameHelp0.setVisible(true);
 
 		}
 
@@ -224,37 +213,3 @@ public class Menu extends JMenuBar implements ActionListener{
 
 
 
-
-		
-		//JPanel panel = new JPanel();
-		//panel.setPreferredSize(new Dimension(300, 300));
-		
-		/* 
-		JButton button = new JButton();
-		button.setText("Close");
-		button.addActionListener(new ActionListener() {
-			public void actionPerformed(ActionEvent evt) {
-				System.out.println("Print Test");
-				frame.setVisible(false);
-			}
-		});
-		
-		JLabel shortcutsLabel = new JLabel("Shortcuts: ");
-
-		panel.add(shortcutsLabel);
-		panel.add(button);
-		*/
-
-		//frame.add(panel);
-		//frame.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
-		//frame.pack();
-		//frame.setVisible(true);
-
-/*
-				try {
-					//doSomethingExceptional();
-				}
-				catch(IOException e) {
-					//showQuickErrorDialog(frame, e);
-				}
-				*/
