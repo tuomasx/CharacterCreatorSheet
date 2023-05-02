@@ -82,7 +82,7 @@ public class Layout extends JFrame{
 	}
 	
 
-	public static void clearContentMenu() {
+	public void clearContentMenu() {
 		
 		System.out.println("Clearing Content Menu");
 		//Remove Previous:

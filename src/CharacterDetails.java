@@ -26,10 +26,10 @@ public class CharacterDetails extends JPanel implements ActionListener {
     
 
     private String alignments[]={"", "Lawful Good","Neutral Good","Chaotic Good","Lawful Neutral","Neutral","Chaotic Neutral","Lawful Evil","Neutral Evil","Chaotic Evil","None","Unknown","Other"};
-    private JComboBox alignmentComboBox = new JComboBox<>(alignments);
+    private JComboBox<String> alignmentComboBox = new JComboBox<>(alignments);
 
     private String genders[]={"", "Male","Female","None","Other","Neutral","Unknown","Both","Neither","Either","Variable"};
-    private JComboBox genderComboBox = new JComboBox<>(genders);
+    private JComboBox<String> genderComboBox = new JComboBox<>(genders);
 
     public CharacterDetails() {
 

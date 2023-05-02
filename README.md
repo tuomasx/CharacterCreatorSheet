@@ -183,5 +183,9 @@ Version 1.5.9 - 2.5.2023
 Version 1.6.0 - 2.5.2023
 - Updated CharacterDescription
 
-Version 1.6.0 - 2.5.2023
+Version 1.6.1 - 2.5.2023
 - Cleaned up problems
+
+Version 1.6.2 - 2.5.2023
+- Added type String to JComboBoxes
+- Resolved most Problems

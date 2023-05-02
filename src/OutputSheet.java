@@ -241,7 +241,7 @@ public class OutputSheet extends JPanel {
 			BufferedImage myPicture = ImageIO.read(new File( root, "CharacterSheetBase.png"));
 			
 			Image newImage = myPicture.getScaledInstance(850, 1100, Image.SCALE_DEFAULT);
-			JLabel picLabel = new JLabel(new ImageIcon(newImage));
+			//JLabel picLabel = new JLabel(new ImageIcon(newImage));
 			
 
 
@@ -250,7 +250,7 @@ public class OutputSheet extends JPanel {
 
 			//X/Y Layout:
 			//
-			Dimension size = background.getPreferredSize();
+			//Dimension size = background.getPreferredSize();
 			//background.setBounds(25 + insets.left, 5 + insets.top, size.width, size.height);
 
 			//setLayout(null);

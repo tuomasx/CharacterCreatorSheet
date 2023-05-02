@@ -25,9 +25,9 @@ public class CharacterFeatures extends JPanel implements ActionListener {
     // Level: Number range: 1 - 20
     SpinnerModel levelValue = new SpinnerNumberModel(1, 1, 20, 1);
 
-    private JComboBox raceComboBox = new JComboBox<>(races);
-    private JComboBox classComboBox = new JComboBox<>(classes);
-    private JComboBox backgroundComboBox = new JComboBox<>(backgrounds);
+    private JComboBox<String> raceComboBox = new JComboBox<>(races);
+    private JComboBox<String> classComboBox = new JComboBox<>(classes);
+    private JComboBox<String> backgroundComboBox = new JComboBox<>(backgrounds);
     
     private String charRace = "";
     private String charClass = "";

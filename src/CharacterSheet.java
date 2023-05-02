@@ -1702,7 +1702,7 @@ public class CharacterSheet {
 
 
 
-    public static void setInputName(String inputName) {
+    public void setInputName(String inputName) {
         CharacterSheet.inputName = inputName;
     }
 
@@ -1714,7 +1714,7 @@ public class CharacterSheet {
 
 
 
-    public static void setInputAge(int inputAge) {
+    public void setInputAge(int inputAge) {
         CharacterSheet.inputAge = inputAge;
     }
 
@@ -1726,7 +1726,7 @@ public class CharacterSheet {
 
 
 
-    public static void setInputGender(String inputGender) {
+    public void setInputGender(String inputGender) {
         CharacterSheet.inputGender = inputGender;
     }
 
@@ -1738,7 +1738,7 @@ public class CharacterSheet {
 
 
 
-    public static void setInputAlignment(String inputAlignment) {
+    public void setInputAlignment(String inputAlignment) {
         CharacterSheet.inputAlignment = inputAlignment;
     }
 
@@ -1750,7 +1750,7 @@ public class CharacterSheet {
 
 
 
-    public static void setInputPlayerName(String inputPlayerName) {
+    public void setInputPlayerName(String inputPlayerName) {
         CharacterSheet.inputPlayerName = inputPlayerName;
     }
 
@@ -1882,7 +1882,7 @@ public class CharacterSheet {
 
 
 
-    public static void setInputArmor(String inputArmor) {
+    public void setInputArmor(String inputArmor) {
         CharacterSheet.inputArmor = inputArmor;
     }
 
@@ -1894,7 +1894,7 @@ public class CharacterSheet {
 
 
 
-    public static void setInputWeapon(String inputWeapon) {
+    public void setInputWeapon(String inputWeapon) {
         CharacterSheet.inputWeapon = inputWeapon;
     }
 
@@ -1906,7 +1906,7 @@ public class CharacterSheet {
 
 
 
-    public static void setInputShield(Boolean inputShield) {
+    public void setInputShield(Boolean inputShield) {
         CharacterSheet.inputShield = inputShield;
     }
 
@@ -1918,7 +1918,7 @@ public class CharacterSheet {
 
 
 
-    public static void setInputOther(String inputOther) {
+    public void setInputOther(String inputOther) {
         CharacterSheet.inputOther = inputOther;
     }
 
@@ -1930,7 +1930,7 @@ public class CharacterSheet {
 
 
 
-    public static void setInputGold(int inputGold) {
+    public void setInputGold(int inputGold) {
         CharacterSheet.inputGold = inputGold;
     }
 

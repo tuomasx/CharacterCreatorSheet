@@ -23,7 +23,7 @@ public class CharacterEquipment extends JPanel implements ActionListener {
         // Medium:  // "Breastplate" "Chain Shirt" "Half Plate Armor" "Hide Armor" "Scale Mail"
         // Heavy:   // "Chain Mail" "Plate Armor" "Ring Mail" "Splint Armor"
     private String armors[]={"None", "Leather Armor","Padded Armor","Studded Leather Armor","Breastplate","Chain Shirt","Half Plate Armor","Hide Armor","Scale Mail","Chain Mail","Plate Armor","Ring Mail","Splint Armor"};
-    private JComboBox armorComboBox = new JComboBox<>(armors);
+    private JComboBox<String> armorComboBox = new JComboBox<>(armors);
     
     private JCheckBox shieldSelect = new JCheckBox();
     //
@@ -36,11 +36,11 @@ public class CharacterEquipment extends JPanel implements ActionListener {
     private String[] weapons={"", "Club","Dagger","Greatclub","Handaxe","Javelin","Light hammer", "Mace", "Quarterstaff", "Sickle", "Spear","Battleaxe","Dwarven Urgrosh", "Elven Crescent Blade", "Flail", 
     		"Glaive", "Greataxe", "Halberd", "Lance", "Longsword", "Maul", "Morningstar", "Pike", "Rapier", "Scimitar", "Shortsword"
     		,"Spiked Chain", "Trident", "War pick", "Warhammer", "Whip", "War Scythe"};
-    private JComboBox weaponComboBox = new JComboBox<>(weapons);
+    private JComboBox<String> weaponComboBox = new JComboBox<>(weapons);
     
     // Other
     private String others[] = {"", "Bedroll","Book","Lamp","Torch"};
-    private JComboBox otherComboBox = new JComboBox<>(others);
+    private JComboBox<String> otherComboBox = new JComboBox<>(others);
     
     // Shield
     private boolean shield = false;

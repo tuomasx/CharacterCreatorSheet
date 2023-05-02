@@ -27,7 +27,7 @@ public class Menu extends JMenuBar implements ActionListener{
 	//Languages
 	
 	private String[] langStrings = { "English", "Finnish" };
-	private JComboBox languageList = new JComboBox<>(langStrings);
+	private JComboBox<String> languageList = new JComboBox<>(langStrings);
 	//private String selectLanguage = "English";
 	
 	public Menu( ){
@@ -84,7 +84,7 @@ public class Menu extends JMenuBar implements ActionListener{
 			//Reset Layout content menu values:
 			Layout.getInstance().clearContentMenu();
 			//
-			Layout.getInstance().panel1 = new Content();
+			//Layout.getInstance().panel1 = new Content();
 			
 		}
 		//Save File
