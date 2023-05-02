@@ -3,7 +3,7 @@ import javax.swing.*;
 import java.awt.event.*;  
 
 import javax.swing.event.*;
-import javax.swing.text.*;
+//import javax.swing.text.*;
 
 public class CharacterDescription extends JPanel {
 
@@ -75,19 +75,6 @@ public class CharacterDescription extends JPanel {
             public void insertUpdate(DocumentEvent e) {
               update();
             }
-            public void update() {
-               //Set input values from GUI to CharacterSheet Inputs:
-                CharacterSheet.getInstance().setInputCharacterDescription(characterDescription.getText());
-                CharacterSheet.getInstance().setInputCharacterPersonality(characterPersonality.getText());
-                CharacterSheet.getInstance().setInputCharacterIdeals(characterIdeals.getText());
-                CharacterSheet.getInstance().setInputCharacterBonds(characterBonds.getText());
-                CharacterSheet.getInstance().setInputCharacterFlaws(characterFlaws.getText());
-                //Calculate Changes:
-                CharacterSheet.getInstance().calculateOutput();
-                //Display Changes:
-                //Test print to console
-                CharacterSheet.getInstance().printOutputs();
-            }
         }); //End of DocumentListener Updater
         
         //Constraints:
@@ -115,20 +102,6 @@ public class CharacterDescription extends JPanel {
             public void insertUpdate(DocumentEvent e) {
               update();
             }
-            public void update() {
-               //Set input values from GUI to CharacterSheet Inputs:
-                CharacterSheet.getInstance().setInputCharacterDescription(characterDescription.getText());
-                CharacterSheet.getInstance().setInputCharacterPersonality(characterPersonality.getText());
-                CharacterSheet.getInstance().setInputCharacterIdeals(characterIdeals.getText());
-                CharacterSheet.getInstance().setInputCharacterBonds(characterBonds.getText());
-                CharacterSheet.getInstance().setInputCharacterFlaws(characterFlaws.getText());
-                //CharacterSheet.getInstance().setInputCharacterDescription(characterDescription.getText());
-                //Calculate Changes:
-                CharacterSheet.getInstance().calculateOutput();
-                //Display Changes:
-                //Test print to console
-                CharacterSheet.getInstance().printOutputs();
-            }
         }); //End of DocumentListener Updater
 
         //Constraints:
@@ -153,20 +126,6 @@ public class CharacterDescription extends JPanel {
             }
             public void insertUpdate(DocumentEvent e) {
               update();
-            }
-            public void update() {
-               //Set input values from GUI to CharacterSheet Inputs:
-                CharacterSheet.getInstance().setInputCharacterDescription(characterDescription.getText());
-                CharacterSheet.getInstance().setInputCharacterPersonality(characterPersonality.getText());
-                CharacterSheet.getInstance().setInputCharacterIdeals(characterIdeals.getText());
-                CharacterSheet.getInstance().setInputCharacterBonds(characterBonds.getText());
-                CharacterSheet.getInstance().setInputCharacterFlaws(characterFlaws.getText());
-                //CharacterSheet.getInstance().setInputCharacterDescription(characterDescription.getText());
-                //Calculate Changes:
-                CharacterSheet.getInstance().calculateOutput();
-                //Display Changes:
-                //Test print to console
-                CharacterSheet.getInstance().printOutputs();
             }
         }); //End of DocumentListener Updater
 
@@ -193,21 +152,6 @@ public class CharacterDescription extends JPanel {
             public void insertUpdate(DocumentEvent e) {
               update();
             }
-          
-            public void update() {
-               //Set input values from GUI to CharacterSheet Inputs:
-                CharacterSheet.getInstance().setInputCharacterDescription(characterDescription.getText());
-                CharacterSheet.getInstance().setInputCharacterPersonality(characterPersonality.getText());
-                CharacterSheet.getInstance().setInputCharacterIdeals(characterIdeals.getText());
-                CharacterSheet.getInstance().setInputCharacterBonds(characterBonds.getText());
-                CharacterSheet.getInstance().setInputCharacterFlaws(characterFlaws.getText());
-                //CharacterSheet.getInstance().setInputCharacterDescription(characterDescription.getText());
-                //Calculate Changes:
-                CharacterSheet.getInstance().calculateOutput();
-                //Display Changes:
-                //Test print to console
-                CharacterSheet.getInstance().printOutputs();
-            }
         }); //End of DocumentListener Updater
         //Constraints:
         constraints.gridx = 0;
@@ -232,21 +176,6 @@ public class CharacterDescription extends JPanel {
             public void insertUpdate(DocumentEvent e) {
               update();
             }
-          
-            public void update() {
-               //Set input values from GUI to CharacterSheet Inputs:
-                CharacterSheet.getInstance().setInputCharacterDescription(characterDescription.getText());
-                CharacterSheet.getInstance().setInputCharacterPersonality(characterPersonality.getText());
-                CharacterSheet.getInstance().setInputCharacterIdeals(characterIdeals.getText());
-                CharacterSheet.getInstance().setInputCharacterBonds(characterBonds.getText());
-                CharacterSheet.getInstance().setInputCharacterFlaws(characterFlaws.getText());
-                //CharacterSheet.getInstance().setInputCharacterDescription(characterDescription.getText());
-                //Calculate Changes:
-                CharacterSheet.getInstance().calculateOutput();
-                //Display Changes:
-                //Test print to console
-                CharacterSheet.getInstance().printOutputs();
-            }
         }); //End of DocumentListener Updater
         //Constraints:
         constraints.gridx = 0;
@@ -265,31 +194,6 @@ public class CharacterDescription extends JPanel {
 
     }
 
-    
-    /* 
-    //Deprecated in CharacterDescription, Uses DocumentListener instead
-    @Override
-    public void actionPerformed(ActionEvent e) {
-        // TODO Auto-generated method stub
-        // throw new UnsupportedOperationException("Unimplemented method 'actionPerformed'");
-
-        //Set input values from GUI to CharacterSheet Inputs:
-        CharacterSheet.getInstance().setInputCharacterDescription(characterDescription.getText());
-        CharacterSheet.getInstance().setInputCharacterPersonality(characterPersonality.getText());
-        CharacterSheet.getInstance().setInputCharacterIdeals(characterIdeals.getText());
-        CharacterSheet.getInstance().setInputCharacterBonds(characterBonds.getText());
-        CharacterSheet.getInstance().setInputCharacterFlaws(characterFlaws.getText());
-        //CharacterSheet.getInstance().setInputCharacterDescription(characterDescription.getText());
-        //Calculate Changes:
-        CharacterSheet.getInstance().calculateOutput();
-        //Display Changes:
-        //Test print to console
-        CharacterSheet.getInstance().printOutputs();
-        
-       
-    }
-    */
-
     public void update() {
       //Set input values from GUI to CharacterSheet Inputs:
       CharacterSheet.getInstance().setInputCharacterDescription(characterDescription.getText());
@@ -297,11 +201,11 @@ public class CharacterDescription extends JPanel {
       CharacterSheet.getInstance().setInputCharacterIdeals(characterIdeals.getText());
       CharacterSheet.getInstance().setInputCharacterBonds(characterBonds.getText());
       CharacterSheet.getInstance().setInputCharacterFlaws(characterFlaws.getText());
-      //CharacterSheet.getInstance().setInputCharacterDescription(characterDescription.getText());
+
       //Calculate Changes:
       CharacterSheet.getInstance().calculateOutput();
-      //Display Changes:
-      //Test print to console
+
+      //Display Changes: //Test print to console
       CharacterSheet.getInstance().printOutputs();
 
     }

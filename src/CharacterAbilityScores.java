@@ -3,14 +3,14 @@
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import java.beans.Visibility;
+//import java.beans.Visibility;
 
 import javax.swing.*;
 import javax.swing.event.DocumentEvent;
 
-import java.awt.event.*;  
+//import java.awt.event.*;  
 import javax.swing.event.*;
-import javax.swing.text.*;
+//import javax.swing.text.*;
 
 
 public class CharacterAbilityScores extends JPanel implements ActionListener {

@@ -2,7 +2,7 @@ import java.awt.*;
 import javax.swing.*;
 import java.awt.event.*;  
 import javax.swing.event.*;
-import javax.swing.text.*;
+//import javax.swing.text.*;
 
 
 public class CharacterDetails extends JPanel implements ActionListener {

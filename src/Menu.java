@@ -1,8 +1,8 @@
 import java.awt.Dimension;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import java.io.File;
-import java.io.IOException;
+//import java.io.File;
+//import java.io.IOException;
 
 import javax.swing.JButton;
 import javax.swing.JComboBox;
@@ -14,7 +14,7 @@ import javax.swing.JMenuBar;
 import javax.swing.JMenuItem;
 import javax.swing.JOptionPane;
 import javax.swing.JPanel;
-import javax.swing.JTextArea;
+//import javax.swing.JTextArea;
 
 public class Menu extends JMenuBar implements ActionListener{
 	
@@ -28,7 +28,7 @@ public class Menu extends JMenuBar implements ActionListener{
 	
 	private String[] langStrings = { "English", "Finnish" };
 	private JComboBox languageList = new JComboBox<>(langStrings);
-	private String selectLanguage = "English";
+	//private String selectLanguage = "English";
 	
 	public Menu( ){
 		//this.layout = layout;

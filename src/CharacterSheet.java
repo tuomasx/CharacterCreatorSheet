@@ -1810,7 +1810,7 @@ public class CharacterSheet {
 
 
 
-    public static void setInputStrenght(int inputStrenght) {
+    public void setInputStrenght(int inputStrenght) {
         CharacterSheet.inputStrenght = inputStrenght;
     }
 
@@ -1822,7 +1822,7 @@ public class CharacterSheet {
 
 
 
-    public static void setInputDexterity(int inputDexterity) {
+    public void setInputDexterity(int inputDexterity) {
         CharacterSheet.inputDexterity = inputDexterity;
     }
 
@@ -1834,7 +1834,7 @@ public class CharacterSheet {
 
 
 
-    public static void setInputConstitution(int inputConstitution) {
+    public void setInputConstitution(int inputConstitution) {
         CharacterSheet.inputConstitution = inputConstitution;
     }
 
@@ -1846,7 +1846,7 @@ public class CharacterSheet {
 
 
 
-    public static void setInputIntelligence(int inputIntelligence) {
+    public void setInputIntelligence(int inputIntelligence) {
         CharacterSheet.inputIntelligence = inputIntelligence;
     }
 
@@ -1858,7 +1858,7 @@ public class CharacterSheet {
 
 
 
-    public static void setInputWisdom(int inputWisdom) {
+    public void setInputWisdom(int inputWisdom) {
         CharacterSheet.inputWisdom = inputWisdom;
     }
 
@@ -1870,7 +1870,7 @@ public class CharacterSheet {
 
 
 
-    public static void setInputCharisma(int inputCharisma) {
+    public void setInputCharisma(int inputCharisma) {
         CharacterSheet.inputCharisma = inputCharisma;
     }
 

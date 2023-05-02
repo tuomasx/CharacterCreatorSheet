@@ -5,14 +5,14 @@ import javax.swing.*;
 import java.awt.event.*;  
 
 import javax.swing.event.*;
-import javax.swing.text.*;
+//import javax.swing.text.*;
 
 public class CharacterFeatures extends JPanel implements ActionListener {
 
-    private JTextField raceField = new JTextField("");
-    private JTextField classField = new JTextField("");
+    //private JTextField raceField = new JTextField("");
+    //private JTextField classField = new JTextField("");
     //private JTextField levelField;
-    private JTextField backgroundField = new JTextField("");
+    //private JTextField backgroundField = new JTextField("");
     
     
 
@@ -31,7 +31,7 @@ public class CharacterFeatures extends JPanel implements ActionListener {
     
     private String charRace = "";
     private String charClass = "";
-    private int charLevel = 1;
+    //private int charLevel = 1;
     private String charBackground = "";
 
     public CharacterFeatures () {

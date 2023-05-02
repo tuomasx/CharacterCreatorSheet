@@ -1,13 +1,13 @@
 import java.awt.*;
-import java.awt.event.*;
+//import java.awt.event.*;
 import javax.swing.*;
-import javax.swing.SpringLayout.Constraints;
+//import javax.swing.SpringLayout.Constraints;
 
-import java.io.*;
+//import java.io.*;
 
 public class Content extends JPanel{
     
-	private JPanel contentPane;
+	//private JPanel contentPane;
     
     Content( ) {
     	

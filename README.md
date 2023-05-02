@@ -179,3 +179,9 @@ Version 1.5.8 - 2.5.2023
 
 Version 1.5.9 - 2.5.2023
 - Cleaned up code & Comments
+
+Version 1.6.0 - 2.5.2023
+- Updated CharacterDescription
+
+Version 1.6.0 - 2.5.2023
+- Cleaned up problems

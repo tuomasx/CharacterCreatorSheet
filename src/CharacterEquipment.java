@@ -13,7 +13,7 @@ public class CharacterEquipment extends JPanel implements ActionListener {
 
 	private JTextField armorField;
 	private JCheckBox shieldField;
-	private JTextField weaponField;
+	//private JTextField weaponField;
 	private JTextField goldField;
 	private JTextField otherField;
 	
@@ -33,7 +33,7 @@ public class CharacterEquipment extends JPanel implements ActionListener {
     //		"Glaive", "Greataxe", "Halberd", "Lance", "Longsword", "Maul", "Morningstar", "Pike", "Rapier", "Scimitar", "Shortsword"
     //		,"Spiked Chain", "Trident", "War pick", "Warhammer", "Whip", "War Scythe"};
     
-    private String weapons[]={"", "Club","Dagger","Greatclub","Handaxe","Javelin","Light hammer", "Mace", "Quarterstaff", "Sickle", "Spear","Battleaxe","Dwarven Urgrosh", "Elven Crescent Blade", "Flail", 
+    private String[] weapons={"", "Club","Dagger","Greatclub","Handaxe","Javelin","Light hammer", "Mace", "Quarterstaff", "Sickle", "Spear","Battleaxe","Dwarven Urgrosh", "Elven Crescent Blade", "Flail", 
     		"Glaive", "Greataxe", "Halberd", "Lance", "Longsword", "Maul", "Morningstar", "Pike", "Rapier", "Scimitar", "Shortsword"
     		,"Spiked Chain", "Trident", "War pick", "Warhammer", "Whip", "War Scythe"};
     private JComboBox weaponComboBox = new JComboBox<>(weapons);
@@ -118,7 +118,6 @@ public class CharacterEquipment extends JPanel implements ActionListener {
         //weaponComboBox.setPreferredSize(new Dimension(150, 24));
         shieldSelect = new JCheckBox();
         shieldSelect.addActionListener(this);
-        //shieldSelect.addItemListener();
 
         constraints2.gridx = 0;
         constraints2.gridy = 1;
