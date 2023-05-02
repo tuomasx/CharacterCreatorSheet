@@ -755,7 +755,7 @@ public class OutputSheet extends JPanel {
 
 	public void setBonusProficiency(int bonusProficiency) {
 		this.bonusProficiency = bonusProficiency;
-		labelbonusProficiency.setText("+" + bonusProficiency);
+		labelbonusProficiency.setText("" + bonusProficiency);
 	}
 
 	public int getBonusStrenght() {
@@ -764,7 +764,7 @@ public class OutputSheet extends JPanel {
 
 	public void setBonusStrenght(int bonusStrenght) {
 		this.bonusStrenght = bonusStrenght;
-		labelbonusStrenght.setText("+" + bonusStrenght);
+		labelbonusStrenght.setText("" + bonusStrenght);
 	}
 
 	public int getBonusDexterity() {
@@ -773,7 +773,7 @@ public class OutputSheet extends JPanel {
 
 	public void setBonusDexterity(int bonusDexterity) {
 		this.bonusDexterity = bonusDexterity;
-		labelbonusDexterity.setText("+" + bonusDexterity);
+		labelbonusDexterity.setText("" + bonusDexterity);
 	}
 
 	public int getBonusConstitution() {
@@ -782,7 +782,7 @@ public class OutputSheet extends JPanel {
 
 	public void setBonusConstitution(int bonusConstitution) {
 		this.bonusConstitution = bonusConstitution;
-		labelbonusConstitution.setText("+" + bonusConstitution);
+		labelbonusConstitution.setText("" + bonusConstitution);
 	}
 
 	public int getBonusIntelligence() {
@@ -791,7 +791,7 @@ public class OutputSheet extends JPanel {
 
 	public void setBonusIntelligence(int bonusIntelligence) {
 		this.bonusIntelligence = bonusIntelligence;
-		labelbonusIntelligence.setText("+" + bonusIntelligence);
+		labelbonusIntelligence.setText("" + bonusIntelligence);
 	}
 
 	public int getBonusWisdom() {
@@ -800,7 +800,7 @@ public class OutputSheet extends JPanel {
 
 	public void setBonusWisdom(int bonusWisdom) {
 		this.bonusWisdom = bonusWisdom;
-		labelbonusWisdom.setText("+" + bonusWisdom);
+		labelbonusWisdom.setText("" + bonusWisdom);
 	}
 
 	public int getBonusCharisma() {
@@ -809,7 +809,7 @@ public class OutputSheet extends JPanel {
 
 	public void setBonusCharisma(int bonusCharisma) {
 		this.bonusCharisma = bonusCharisma;
-		labelbonusCharisma.setText("+" + bonusCharisma);
+		labelbonusCharisma.setText("" + bonusCharisma);
 	}
 
 	public int getArmorClass() {
@@ -827,7 +827,7 @@ public class OutputSheet extends JPanel {
 
 	public void setBonusInitative(int bonusInitative) {
 		this.bonusInitative = bonusInitative;
-		labelbonusInitative.setText("+" + bonusInitative);
+		labelbonusInitative.setText("" + bonusInitative);
 	}
 
 	public int getBaseMovementSpeed() {

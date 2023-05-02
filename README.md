@@ -169,3 +169,8 @@ Version 1.5.5 - 1.5.2023
 Version 1.5.6 - 1.5.2023
 - Improved Side Menu Panel layout
 - changed the starting window size to be Screen resolution dependent
+
+Version 1.5.7 - 2.5.2023
+- Updated CharacterDescription panel size
+- Removed + symbol from outputsheet
+
