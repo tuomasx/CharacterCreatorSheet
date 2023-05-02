@@ -8,6 +8,7 @@ import javax.swing.text.*;
 public class CharacterDescription extends JPanel implements ActionListener {
 
     private JTextField characterDescription;
+    //private JTextArea characterDescription;
     private JTextField characterPersonality;
     private JTextField characterIdeals;
     private JTextField characterBonds;
@@ -16,6 +17,7 @@ public class CharacterDescription extends JPanel implements ActionListener {
 
     public CharacterDescription ( ) {
 
+        this.setPreferredSize(new Dimension(300, 400));
         
         setLayout(new GridBagLayout());
         GridBagConstraints constraints = new GridBagConstraints();
@@ -24,7 +26,7 @@ public class CharacterDescription extends JPanel implements ActionListener {
         constraints.gridx = 0;
         constraints.gridy = 0;
         constraints.gridwidth = 5;
-        constraints.anchor = GridBagConstraints.NORTH;
+        constraints.anchor = GridBagConstraints.NORTHWEST;
         add(label, constraints);
         
         //Button for Help 5
@@ -38,27 +40,30 @@ public class CharacterDescription extends JPanel implements ActionListener {
 		    });
         buttonHelp.setPreferredSize(new Dimension(25, 25));
         buttonHelp.setMargin(new java.awt.Insets(1, 1, 1, 1));
-        constraints.gridx = 2;
+        constraints.gridx = 1;
         constraints.gridy = 0;
         constraints.gridwidth = 5;
         constraints.anchor = GridBagConstraints.EAST;
         //Add button next to "Character Details"
         add(buttonHelp, constraints);
         //
-        constraints.anchor = GridBagConstraints.NORTH;
+        constraints.anchor = GridBagConstraints.NORTHWEST;
 
 
 
         
         JPanel fieldsPanel = new JPanel(new GridBagLayout());
         fieldsPanel.setBorder(BorderFactory.createEmptyBorder(10, 10, 10, 10));
-        
+        fieldsPanel.setPreferredSize(new Dimension(300, 300));
         //Fields:
         
         //Character Description:
         JLabel descriptionLabel = new JLabel("Character Description: ");
+        //descriptionLabel.setPreferredSize(new Dimension(100, 24));
+
         characterDescription = new JTextField(10);
-        characterDescription.setPreferredSize(new Dimension(150, 24));
+        //characterDescription = new JTextArea();
+        characterDescription.setPreferredSize(new Dimension(200, 24));
         //Actionlistener:
         //characterDescription.addActionListener(this);
         //DocumentListener:
@@ -92,10 +97,11 @@ public class CharacterDescription extends JPanel implements ActionListener {
         //Constraints:
         constraints.gridx = 0;
         constraints.gridy = 0;
-        constraints.gridwidth = 1;
+        constraints.gridwidth = 5;
         constraints.fill = GridBagConstraints.HORIZONTAL;
         fieldsPanel.add(descriptionLabel, constraints);
-        constraints.gridx = 1;
+        //constraints.gridx = 1;
+        constraints.gridy = 1;
         fieldsPanel.add(characterDescription, constraints);
 
         //Personality:
@@ -134,9 +140,10 @@ public class CharacterDescription extends JPanel implements ActionListener {
 
         //Constraints:
         constraints.gridx = 0;
-        constraints.gridy = 1;
+        constraints.gridy = 2;
         fieldsPanel.add(personalityLabel, constraints);
-        constraints.gridx = 1;
+        //constraints.gridx = 1;
+        constraints.gridy = 3;
         fieldsPanel.add(characterPersonality, constraints);
 
         //Ideals:
@@ -174,9 +181,10 @@ public class CharacterDescription extends JPanel implements ActionListener {
         }); //End of DocumentListener Updater
         //Constraints:
         constraints.gridx = 0;
-        constraints.gridy = 2;
+        constraints.gridy = 4;
         fieldsPanel.add(idealsLabel, constraints);
-        constraints.gridx = 1;
+        //constraints.gridx = 1;
+        constraints.gridy = 5;
         fieldsPanel.add(characterIdeals, constraints);
 
         //Bonds:
@@ -214,9 +222,10 @@ public class CharacterDescription extends JPanel implements ActionListener {
         }); //End of DocumentListener Updater
         //Constraints:
         constraints.gridx = 0;
-        constraints.gridy = 3;
+        constraints.gridy = 6;
         fieldsPanel.add(bondsLabel, constraints);
-        constraints.gridx = 1;
+        //constraints.gridx = 1;
+        constraints.gridy = 7;
         fieldsPanel.add(characterBonds, constraints);
 
         //Flaws:
@@ -254,9 +263,10 @@ public class CharacterDescription extends JPanel implements ActionListener {
         }); //End of DocumentListener Updater
         //Constraints:
         constraints.gridx = 0;
-        constraints.gridy = 4;
+        constraints.gridy = 8;
         fieldsPanel.add(flawsLabel, constraints);
-        constraints.gridx = 1;
+        //constraints.gridx = 1;
+        constraints.gridy = 9;
         fieldsPanel.add(characterFlaws, constraints);
         
         //End of Fields

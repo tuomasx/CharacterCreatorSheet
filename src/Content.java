@@ -75,7 +75,7 @@ public class Content extends JPanel{
 		//Character Description
 		GridBagConstraints constraints5 = new GridBagConstraints();
     	
-		constraints5.anchor = GridBagConstraints.NORTHWEST;
+		constraints5.anchor = GridBagConstraints.NORTH;
     	constraints5.weighty = 1;
 		
 		constraints5.gridx = 0;
@@ -83,7 +83,7 @@ public class Content extends JPanel{
         constraints5.gridwidth = 5;
 
 		JPanel panelCharacterDescription = new CharacterDescription();
-		panelCharacterDescription.setPreferredSize(new Dimension(300, 170));
+		panelCharacterDescription.setPreferredSize(new Dimension(300, 400));
 		add(panelCharacterDescription, constraints5);
 
 

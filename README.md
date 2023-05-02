@@ -174,3 +174,6 @@ Version 1.5.7 - 2.5.2023
 - Updated CharacterDescription panel size
 - Removed + symbol from outputsheet
 
+Version 1.5.8 - 2.5.2023
+- Updated Character Description fields
+
