@@ -60,6 +60,7 @@ public class CharacterDescription extends JPanel {
         
         //Character Description:
         JLabel descriptionLabel = new JLabel("Character Description: ");
+        descriptionLabel.setPreferredSize(new Dimension(100, 24));
         //descriptionLabel.setPreferredSize(new Dimension(100, 24));
         characterDescription = new JTextField(10);
         //characterDescription = new JTextArea();

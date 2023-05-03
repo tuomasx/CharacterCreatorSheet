@@ -190,7 +190,7 @@ Version 1.6.2 - 2.5.2023
 - Added type String to JComboBoxes
 - Resolved most Problems
 
-Version 1.6.3 - 2.5.2023
+Version 1.6.3 - 3.5.2023
 - Improved Help Descriptions
 - Removed Unused Character Description input
 
