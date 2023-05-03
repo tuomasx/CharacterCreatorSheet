@@ -122,7 +122,7 @@ public class OutputSheet extends JPanel {
 	//Character Description
 	//
 	private String outputCharacterDescription = "";
-	private JLabel labeloutputCharacterDescription = new JLabel("");
+	//private JLabel labeloutputCharacterDescription = new JLabel("");
 	//
 	private String outputCharacterPersonality = "";
 	private JLabel labeloutputCharacterPersonality = new JLabel("");

@@ -27,7 +27,7 @@ public class Help3 extends JFrame {
 		help0Panel.setPreferredSize(new Dimension(490, 200));
         help0Panel.setBackground(new Color(255, 255, 255));
 
-		JTextArea help0Label = new JTextArea(" In the Ability Scores panel the user can set the starting Ability scores. \n The standard starting values the user can allocate are 15, 14, 13, 12, 10 & 8. \n \n \n \n \n ");
+		JTextArea help0Label = new JTextArea(" In the Ability Scores panel the user can set the starting Ability scores. \n The standard starting values the user can allocate are 15, 14, 13, 12, 10 & 8. \n For Example: \n Strenght and Dexterity can give a bonus to attacks, Constitution gives additional health, \n Intelligence gives a bonus to Arcana & History checks, Wisdom gives a bonus to \n perception & Charisma gives a bonus to Speech, Intimidation and Deception \n \n \n \n ");
 		help0Label.setPreferredSize(new Dimension(490, 120));
 
 		JButton buttonClose = new JButton("Close");

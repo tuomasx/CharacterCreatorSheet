@@ -47,7 +47,7 @@ public class CharacterDescription extends JPanel {
         //Add button next to "Character Details"
         add(buttonHelp, constraints);
         //
-        constraints.anchor = GridBagConstraints.NORTHWEST;
+        constraints.anchor = GridBagConstraints.NORTH;
 
 
 
@@ -82,13 +82,13 @@ public class CharacterDescription extends JPanel {
         constraints.gridy = 0;
         constraints.gridwidth = 5;
         constraints.fill = GridBagConstraints.HORIZONTAL;
-        fieldsPanel.add(descriptionLabel, constraints);
+        //fieldsPanel.add(descriptionLabel, constraints);
         //constraints.gridx = 1;
         constraints.gridy = 1;
-        fieldsPanel.add(characterDescription, constraints);
+        //fieldsPanel.add(characterDescription, constraints);
 
         //Personality:
-        JLabel personalityLabel = new JLabel("Personality: ");
+        JLabel personalityLabel = new JLabel("Personality:                     ");
         characterPersonality = new JTextField(3);
         characterPersonality.setPreferredSize(new Dimension(150, 24));
         //DocumentListener:

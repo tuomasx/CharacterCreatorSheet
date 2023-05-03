@@ -29,6 +29,9 @@ public class Help0 extends JFrame {
         help0Panel.setBackground(new Color(255, 255, 255));
 
 		JTextArea help0Label = new JTextArea(" New File: Resets the inputs back to starting values. \n Save File: Unimplemented \n Save File as: Unimplemented \n Load File: Unimplemented \n Print File: Unimplemented \n Create PDF: Unimplemented \n");
+		//JTextArea help0Label = new JTextArea(" New File: Resets the inputs back to starting values. \n Save File: Unimplemented \n Save File as: Unimplemented \n Load File: Unimplemented \n Print File: Unimplemented \n Create PDF: Unimplemented \n");
+		
+
 		help0Label.setPreferredSize(new Dimension(490, 120));
 
 		JButton buttonClose = new JButton("Close");

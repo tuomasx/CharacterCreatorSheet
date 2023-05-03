@@ -29,7 +29,7 @@ public class Help1 extends JFrame {
 		help0Panel.setPreferredSize(new Dimension(490, 200));
         help0Panel.setBackground(new Color(255, 255, 255));
 
-		JTextArea help0Label = new JTextArea(" In the Character Details section the user can input \n the Characters Name, Age, Gender, Alignment and \n the Players name. \n \n These fields are optional and can be left empty. \n \n ");
+		JTextArea help0Label = new JTextArea(" The Character sheet template on the right is filled by using the menu on left side. \n In the first panel: Character Details section the user can input the Characters Name, \n Age, Gender, Alignment and the Players name. \n \n These fields are optional and can be left empty. \n \n ");
 		help0Label.setPreferredSize(new Dimension(490, 120));
 
 		JButton buttonClose = new JButton("Close");
