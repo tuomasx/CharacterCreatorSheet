@@ -1,9 +1,9 @@
-Ohjelmointi 4 : Programming 4
-Group 20: Heikki Haapaniemi & Tuomas Numminen
-Course Project: D&D Character Sheet Creator App
+- Ohjelmointi 4 : Programming 4
+- Group 20: Heikki Haapaniemi & Tuomas Numminen
+- Course Project: D&D Character Sheet Creator App
 
 Add to Assignment submission: Permission to use X/Y coordinate Layout.
-25.4.2023 - Jouni Lappalainen gave permission to use X/Y Coordinates for the OutputSheet label layout.
+- 25.4.2023 - Jouni Lappalainen gave permission to use X/Y Coordinates for the OutputSheet label layout.
 
 
 Changelog:
@@ -205,5 +205,5 @@ Version 1.6.5 - 4.5.2023
 - Changed OutputSheet Image file path to work when exporting to .Jar
 
 Version 1.6.6 - 4.5.2023
--Changed OutputSheet Image file path
--Added Error pop-up for missing image
+- Changed OutputSheet Image file path
+- Added Error pop-up for missing image
