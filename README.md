@@ -1,6 +1,10 @@
 Ohjelmointi 4 : Programming 4
-Group 20: 
+Group 20: Heikki Haapaniemi & Tuomas Numminen
 Course Project: D&D Character Sheet Creator App
+
+Add to Assignment submission: Permission to use X/Y coordinate Layout.
+25.4.2023 - Jouni Lappalainen gave permission to use X/Y Coordinates for the OutputSheet label layout.
+
 
 Changelog:
 
