@@ -9,6 +9,7 @@ import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.IOException;
 import java.net.URISyntaxException;
+import java.net.URL;
 
 
 
@@ -240,7 +241,8 @@ public class OutputSheet extends JPanel {
 
 			//This Works locally when Exporting to .jar //,Commented out catch(URI exception) on line 615
 			
-			BufferedImage myPicture = ImageIO.read(new File("src/CharacterSheetBase.png"));
+			URL url = OutputSheet.class.getResource("/CharacterSheetBase.png");
+			BufferedImage myPicture = ImageIO.read(url);
 			
 			//This did not work When Exporting to .jar
 			//File path to root
