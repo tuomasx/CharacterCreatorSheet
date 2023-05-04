@@ -196,3 +196,6 @@ Version 1.6.3 - 3.5.2023
 
 Version 1.6.4 - 4.5.2023
 - Removed Unused Files & classes
+
+Version 1.6.5 - 4.5.2023
+- Changed OutputSheet Image file path to work when exporting to .Jar

@@ -234,11 +234,17 @@ public class OutputSheet extends JPanel {
 		//1275 x 1650
 		try {
 			//Change File Path:
+
 			//BufferedImage myPicture = ImageIO.read(new File("src/CharacterSheetBase.png"));
-			//BufferedImage myPicture = ImageIO.read(new File("CharacterCreatorSheet/src/CharacterSheetBase.png"));
+
+
+			//This Works locally when Exporting to .jar //,Commented out catch(URI exception) on line 615
+			BufferedImage myPicture = ImageIO.read(new File("CharacterCreatorSheet/src/CharacterSheetBase.png"));
+			
+			//This did not work When Exporting to .jar
 			//File path to root
-			File root = new File(Thread.currentThread().getContextClassLoader().getResource("").toURI());
-			BufferedImage myPicture = ImageIO.read(new File( root, "CharacterSheetBase.png"));
+			//File root = new File(Thread.currentThread().getContextClassLoader().getResource("").toURI());
+			//BufferedImage myPicture = ImageIO.read(new File( root, "CharacterSheetBase.png"));
 			
 			Image newImage = myPicture.getScaledInstance(850, 1100, Image.SCALE_DEFAULT);
 			//JLabel picLabel = new JLabel(new ImageIcon(newImage));
@@ -604,11 +610,15 @@ public class OutputSheet extends JPanel {
 		} catch (IOException e) {
 			//Image not found
 			System.out.println("Image not Found");
+		}
+
+		// 
+		/* 
 		} catch (URISyntaxException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-
+		// */
         return panel;
 
     }
