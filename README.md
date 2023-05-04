@@ -194,3 +194,5 @@ Version 1.6.3 - 3.5.2023
 - Improved Help Descriptions
 - Removed Unused Character Description input
 
+Version 1.6.4 - 4.5.2023
+- Removed Unused Files & classes

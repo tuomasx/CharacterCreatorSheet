@@ -68,7 +68,7 @@ public class Content extends JPanel{
         constraints4.gridwidth = 5;
 
 		JPanel panelCharacterEquipment = new CharacterEquipment();
-		panelCharacterEquipment.setPreferredSize(new Dimension(260, 170));
+		panelCharacterEquipment.setPreferredSize(new Dimension(260, 160));
 		add(panelCharacterEquipment, constraints4);
 
 
@@ -83,7 +83,8 @@ public class Content extends JPanel{
         constraints5.gridwidth = 5;
 
 		JPanel panelCharacterDescription = new CharacterDescription();
-		panelCharacterDescription.setPreferredSize(new Dimension(280, 300));
+		panelCharacterDescription.setPreferredSize(new Dimension(260, 250));
+		//panelCharacterDescription.setBackground(new Color(255, 255, 255));
 		add(panelCharacterDescription, constraints5);
 
 

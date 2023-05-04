@@ -22,11 +22,11 @@ public class CharacterDescription extends JPanel {
         setLayout(new GridBagLayout());
         GridBagConstraints constraints = new GridBagConstraints();
         
-        JLabel label = new JLabel("Character Description");
+        JLabel label = new JLabel("   Character Description    ");
         constraints.gridx = 0;
         constraints.gridy = 0;
         constraints.gridwidth = 5;
-        constraints.anchor = GridBagConstraints.NORTHWEST;
+        constraints.anchor = GridBagConstraints.NORTH;
         add(label, constraints);
         
         //Button for Help 5
@@ -89,7 +89,7 @@ public class CharacterDescription extends JPanel {
         //fieldsPanel.add(characterDescription, constraints);
 
         //Personality:
-        JLabel personalityLabel = new JLabel("Personality:                     ");
+        JLabel personalityLabel = new JLabel("Personality:                               ");
         characterPersonality = new JTextField(3);
         characterPersonality.setPreferredSize(new Dimension(150, 24));
         //DocumentListener:
@@ -191,7 +191,11 @@ public class CharacterDescription extends JPanel {
         constraints.gridy = 1;
         constraints.gridwidth = 5;
         constraints.fill = GridBagConstraints.HORIZONTAL;
+
+        
         add(fieldsPanel, constraints);
+
+        
 
     }
 
