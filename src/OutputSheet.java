@@ -239,7 +239,8 @@ public class OutputSheet extends JPanel {
 
 
 			//This Works locally when Exporting to .jar //,Commented out catch(URI exception) on line 615
-			BufferedImage myPicture = ImageIO.read(new File("CharacterCreatorSheet/src/CharacterSheetBase.png"));
+			
+			BufferedImage myPicture = ImageIO.read(new File("src/CharacterSheetBase.png"));
 			
 			//This did not work When Exporting to .jar
 			//File path to root
@@ -610,6 +611,9 @@ public class OutputSheet extends JPanel {
 		} catch (IOException e) {
 			//Image not found
 			System.out.println("Image not Found");
+			JOptionPane.showMessageDialog(new JFrame(),"Missing CharacterSheetBase.png. "
+					+ "CharacterSheetBase.png needs to locate on folder src", "Missing base image",
+			        JOptionPane.ERROR_MESSAGE);
 		}
 
 		// 
