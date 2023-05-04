@@ -27,7 +27,7 @@ public class Help5 extends JFrame {
 		help0Panel.setPreferredSize(new Dimension(490, 200));
         help0Panel.setBackground(new Color(255, 255, 255));
 
-		JTextArea help0Label = new JTextArea(" In the Character Description panel the user can add a description of their character. \n \n \n \n \n \n ");
+		JTextArea help0Label = new JTextArea(" In the Character Description panel the user can add a description of their character. \n The user can use the text fields to descibe their characters Personality, Ideals, Bonds and \n Flaws. \n \n \n \n ");
 		help0Label.setPreferredSize(new Dimension(490, 120));
 
 		JButton buttonClose = new JButton("Close");

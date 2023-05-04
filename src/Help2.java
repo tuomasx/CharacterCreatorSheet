@@ -24,14 +24,14 @@ public class Help2 extends JFrame {
 
         frameHelp0.setTitle("Help 2/5: Character Features ");
         frameHelp0.setBackground(new Color(255, 255, 255));
-		frameHelp0.setPreferredSize(new Dimension(500, 300));
+		frameHelp0.setPreferredSize(new Dimension(500, 250));
 
 		JPanel help0Panel = new JPanel();
-		help0Panel.setPreferredSize(new Dimension(490, 300));
+		help0Panel.setPreferredSize(new Dimension(490, 250));
         help0Panel.setBackground(new Color(255, 255, 255));
 
 		JTextArea help0Label = new JTextArea(" In the Character Features panel the user can select the characters Race, Class, Level \n & Background. \n \n Race: the selected race determines ability Score Bonuses & racial abilities \n Class: determines the gameplay features, proficiencies & saving throw proficiencies \n Level: the level of progression, determines health & proficiency \n Background: Determines skill proficiencies \n \n For more information see the players handbook. \n ");
-		help0Label.setPreferredSize(new Dimension(490, 220));
+		help0Label.setPreferredSize(new Dimension(490, 160));
 
 		JButton buttonClose = new JButton("Close");
 		buttonClose.addActionListener(new ActionListener(){
