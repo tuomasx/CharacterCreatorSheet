@@ -199,3 +199,7 @@ Version 1.6.4 - 4.5.2023
 
 Version 1.6.5 - 4.5.2023
 - Changed OutputSheet Image file path to work when exporting to .Jar
+
+Version 1.6.6 - 4.5.2023
+-Changed OutputSheet Image file path
+-Added Error pop-up for missing image
